@@ -1,3 +1,5 @@
+// ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH
+
 window.addEventListener('DOMContentLoaded', navigation, false);
 window.addEventListener('hashchange', navigation, false);
 
@@ -16,6 +18,8 @@ function navigation() {
 };
 
 // IMPLEMENTACION DE PRODUCTOS EN OBJETOS Y RENDERIZADO EN HTML
+
+let parrafoTerminos = 'Promociones válidas con modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 let dolarCot = 162;
 
 class Products {
@@ -40,6 +44,9 @@ const produc10 = new Products('./img/ssd240Gigabyte.png', 'Disco Sólido SATA 24
 const productsPromo = [product1, product2, product3, product4, product5, product6, product7, product8, product9,];
 
 function renderProducts(arrayProducts) {
+
+    
+
     arrayProducts.forEach(product => {
         const divProductContainer = document.createElement('div');
         divProductContainer.classList.add('grid-container-product');
@@ -64,8 +71,22 @@ function renderProducts(arrayProducts) {
         figureImgContainer.appendChild(imgProductImage);
         divProductContainer.appendChild(paragraphProductName);
         divProductContainer.appendChild(h4ProductPrice);
+
+        
     });
+
+    const sectionHotProducts = document.querySelector('.section-hot-products');
+
+    const divTerminos = document.createElement('div');
+    divTerminos.classList.add('terminos');
+    const pTerminos = document.createElement('p');
+    pTerminos.innerText = parrafoTerminos;
+    divTerminos.appendChild(pTerminos);
+
+    sectionHotProducts.appendChild(divTerminos);
+
 };
+
 renderProducts(productsPromo);
 
 
