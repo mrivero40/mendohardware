@@ -17,7 +17,7 @@ html {
   --grayBackground: #202020;
   --blackPrimary: #050505;
   --blackBackground: #040404;
-  --fontSmall: 1.4rem;
+  --fontSmall: 1.3rem;
   --fontStandard: 1.6rem;
   --fontSecondary: 1.8rem;
   --fontPrimary: 2.6rem;
@@ -129,37 +129,61 @@ header .nav-right .nav-item {
   margin-block-end: 4rem;
 }
 
-.flex-item-lateral {
-  height: 30rem;
-  width: 25rem;
+.flex-item {
+  width: 30rem;
+  height: 40rem;
   border-radius: 2rem;
-  object-fit: contain;
-  opacity: .8;
+  background: linear-gradient(0deg, rgba(6,6,7,1) 0%, rgba(250,250,250,1) 100%);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 40%;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  will-change: transform;
 }
 
-.flex-item-lateral:hover {
-  transform: rotate(360deg) scale(1.2);
-  will-change: transform;
+.flex-item figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  opacity: .9;
+  transition: transform 3s;
+}
+
+.flex-item figure img:hover {
+  transform: scale(1.2);
   transition: transform 1.5s;
   opacity: 1;
 }
 
+.flex-item div h4 {
+  font-size: var(--fontPrimary);
+}
+
+.flex-item div span {
+  color: var(--orangeLogo);
+}
+
+.flex-item div .text-description {
+  font-size: var(--fontStandard);
+  padding-block: 1rem;
+
+}
+
+.flex-item div .text-detail {
+  font-size: var(--fontSmall);
+  color: var(--grayPrimary)
+}
+
 .flex-item-center {
-  height: 30rem;
-  width: 50rem;
-  border-radius: 2rem;
-  will-change: transform;
-  transition: transform 1s;
-  object-fit: cover;
-  opacity: .8;
+  width: 40rem;
+  height: 40rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 40%;
+  text-align: center;
 }
 
-.flex-item-center:hover {  
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-.container-home p {
+.container-home .text-phrase {
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -373,19 +397,13 @@ footer p {
     width: 95%;
   }
 
-  .flex-item-lateral {
-    height: 25rem;
-    width: 30rem;
+  .flex-item {
+    height: 35rem;
   }
-
-  .flex-item-lateral:hover {
-    transform: none;
-  }
-
+  
   .flex-item-center {
-    height: 45rem;
-    width: 30rem;
-    margin-block: 4rem;
+    height: 40rem;
+    margin-block: 2rem;
   }
 
 

@@ -35,17 +35,14 @@ const product2 = new Products( './img/xiaomiRedmiLite3.png', 'Auricular bluetoot
 const product3 = new Products('./img/xiaomiEarphonesBasic2.png', 'Auricular bluetooth Xiaomi Earphones Basic 2', 44.05);
 const product4 = new Products('./img/ssd480Gigabyte.png', 'Disco Sólido SATA 480gb Gigabyte', 69.67);
 const product5 = new Products('./img/auricularMsiGamer.png', 'Auricular gamer Msi Inmerse Gh30', 57.62);
-const product6 = new Products('./img/kitGigabyte.png', 'Kit Tec+Mou usb Gigabyte Km6300 (inglés)', 18.95);
+const product6 = new Products('./img/kitGigabyte.png', 'Kit Tec+Mou usb Gigabyte Km6300 (inglés)', 18.95); //sin publicar
 const product7 = new Products('./img/usbWifi300.png', 'Wifi usb 300mbps Perfonmance', 7.54);
 const product8 = new Products('./img/mouseTrust.png', 'Mouse inalámbrico Trust YVI', 11.41);
 const product9 = new Products('./img/ssd240Gigabyte.png', 'Disco Sólido SATA 240gb Gigabyte', 44.31);
-const produc10 = new Products('./img/ssd240Gigabyte.png', 'Disco Sólido SATA 240gb Gigabyte', 59.31);
 
-const productsPromo = [product1, product2, product3, product4, product5, product6, product7, product8, product9,];
+const productsPromo = [product1, product2, product3, product4, product5,  product7, product8, product9,];
 
-function renderProducts(arrayProducts) {
-
-    
+function renderProducts(arrayProducts) {    
 
     arrayProducts.forEach(product => {
         const divProductContainer = document.createElement('div');
