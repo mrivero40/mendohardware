@@ -20,7 +20,7 @@ function navigation() {
 // IMPLEMENTACION DE PRODUCTOS EN OBJETOS Y RENDERIZADO EN HTML
 
 let parrafoTerminos = 'Promociones válidas con modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
-let dolarCot = 162;
+let dolarCot = 166.5;
 let urlImg = 'https://mendohardware.com.ar/img/';
 
 class Products {
@@ -31,17 +31,49 @@ class Products {
     };
 };
 
-const product1 = new Products( `${urlImg}epsonT544.png`, 'Botella de Tinta Epson T544 original c/u', 22.15);
-const product2 = new Products( `${urlImg}xiaomiRedmiLite3.png`, 'Auricular bluetooth Xiaomi Redmi Buds 3 Lite', 31.06);
-const product3 = new Products(`${urlImg}xiaomiEarphonesBasic2.png`, 'Auricular bluetooth Xiaomi Earphones Basic 2', 44.05);
-const product4 = new Products(`${urlImg}ssd480Gigabyte.png`, 'Disco Sólido SATA 480gb Gigabyte', 69.67);
-const product5 = new Products(`${urlImg}auricularMsiGamer.png`, 'Auricular gamer Msi Inmerse Gh30', 57.62);
-const product6 = new Products(`${urlImg}kitGigabyte.png`, 'Kit Tec+Mou usb Gigabyte Km6300 (inglés)', 18.95); //sin publicar
-const product7 = new Products(`${urlImg}usbWifi300.png`, 'Wifi usb 300mbps Perfonmance', 7.54);
-const product8 = new Products(`${urlImg}mouseTrust.png`, 'Mouse inalámbrico Trust YVI', 11.41);
-const product9 = new Products(`${urlImg}ssd240Gigabyte.png`, 'Disco Sólido SATA 240gb Gigabyte', 44.31);
+const product1 = new Products(
+    `${urlImg}epsonT544.png`,
+    'Botella de Tinta Epson T544 original c/u',
+    18 );
+const product2 = new Products(
+    `${urlImg}xiaomiRedmiLite3.png`,
+    'Auricular bluetooth Xiaomi Redmi Buds 3 Lite',
+    27.02 );
+const product3 = new Products(
+    `${urlImg}xiaomiEarphonesBasic2.png`,
+    'Auricular bluetooth Xiaomi Earphones Basic 2',
+    40.84 );
+const product4 = new Products(
+    `${urlImg}ssd480Gigabyte.png`,
+    'Disco Sólido SATA 480gb Gigabyte',
+    64.86 );
+const product5 = new Products(
+    `${urlImg}auricularMsiGamer.png`,
+    'Auricular gamer Msi Inmerse Gh30',
+    53.45 );
+const product6 = new Products(
+    `${urlImg}kitGigabyte.png`,
+    'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
+    18.95 ); //sin publicar
+const product7 = new Products(
+    `${urlImg}usbWifi300.png`,
+    'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
+    9 );
+const product8 = new Products(
+    `${urlImg}mouseTrust.png`,
+    'Mouse inalámbrico Trust YVI',
+    11.41 );
+const product9 = new Products(
+    `${urlImg}ssd240Gigabyte.png`,
+    'Disco Sólido SATA 240gb Gigabyte',
+    40.84 );
+const product10 = new Products(
+    `${urlImg}parlanteGeniusHF280.png`,
+    'Parlantes 2.0 USB Genius 6w SP-HF280',
+    16.81 );
 
-const productsPromo = [product1, product2, product3, product4, product5,  product7, product8, product9,];
+
+const productsPromo = [product1, product2, product3, product4, product5,  product7, product8, product9, product10,];
 
 function renderProducts(arrayProducts) {    
 
@@ -61,7 +93,7 @@ function renderProducts(arrayProducts) {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        h4ProductPrice.innerText = `$${ parseInt( dolarCot * product.price )},00`;
+        h4ProductPrice.innerText = `$${ parseInt( dolarCot * product.price )}`;
 
         const divContainerPrincipal = document.querySelector('.grid-container-principal');
         divContainerPrincipal.appendChild(divProductContainer);
