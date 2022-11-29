@@ -20,7 +20,7 @@ function navigation() {
 // IMPLEMENTACION DE PRODUCTOS EN OBJETOS Y RENDERIZADO EN HTML
 
 let parrafoTerminos = 'Promociones válidas con modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
-let dolarCot = 166.5;
+let dolarCot = 175;
 let urlImg = 'https://mendohardware.com.ar/img/';
 
 class Products {
@@ -54,7 +54,7 @@ const product5 = new Products(
 const product6 = new Products(
     `${urlImg}kitGigabyte.png`,
     'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
-    18.95 ); //sin publicar
+    18.95 );
 const product7 = new Products(
     `${urlImg}usbWifi300.png`,
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
@@ -72,8 +72,7 @@ const product10 = new Products(
     'Parlantes 2.0 USB Genius 6w SP-HF280',
     16.81 );
 
-
-const productsPromo = [product1, product2, product3, product4, product5,  product7, product8, product9, product10,];
+const productsPromo = [product1, product2, product3, product4, product5, product7, product8, product9, product10, product6];
 
 function renderProducts(arrayProducts) {    
 
@@ -93,7 +92,7 @@ function renderProducts(arrayProducts) {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        h4ProductPrice.innerText = `$${ parseInt( dolarCot * product.price )}`;
+        h4ProductPrice.innerText = '$' + Math.ceil(dolarCot * product.price);
 
         const divContainerPrincipal = document.querySelector('.grid-container-principal');
         divContainerPrincipal.appendChild(divProductContainer);
