@@ -20,7 +20,7 @@ function navigation() {
 // IMPLEMENTACION DE PRODUCTOS EN OBJETOS Y RENDERIZADO EN HTML
 
 let parrafoTerminos = 'Promociones válidas con modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
-let dolarCot = 175;
+let dolarCot = 180;
 let urlImg = 'https://mendohardware.com.ar/img/';
 
 class Products {
@@ -38,39 +38,39 @@ const product1 = new Products(
 const product2 = new Products(
     `${urlImg}xiaomiRedmiLite3.png`,
     'Auricular bluetooth Xiaomi Redmi Buds 3 Lite',
-    27.02 );
+    29.23 );
 const product3 = new Products(
     `${urlImg}xiaomiEarphonesBasic2.png`,
     'Auricular bluetooth Xiaomi Earphones Basic 2',
-    40.84 );
+    44.48 );
 const product4 = new Products(
     `${urlImg}ssd480Gigabyte.png`,
     'Disco Sólido SATA 480gb Gigabyte',
-    64.86 );
+    70.55 );
 const product5 = new Products(
     `${urlImg}auricularMsiGamer.png`,
     'Auricular gamer Msi Inmerse Gh30',
-    53.45 );
+    55.68 );
 const product6 = new Products(
     `${urlImg}kitGigabyte.png`,
     'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
-    18.95 );
+    19.36 );
 const product7 = new Products(
     `${urlImg}usbWifi300.png`,
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
-    9 );
+    9.8 );
 const product8 = new Products(
     `${urlImg}mouseTrust.png`,
     'Mouse inalámbrico Trust YVI',
-    11.41 );
+    11.98 );
 const product9 = new Products(
     `${urlImg}ssd240Gigabyte.png`,
     'Disco Sólido SATA 240gb Gigabyte',
-    40.84 );
+    44.21 );
 const product10 = new Products(
     `${urlImg}parlanteGeniusHF280.png`,
     'Parlantes 2.0 USB Genius 6w SP-HF280',
-    16.81 );
+    18.49 );
 
 const productsPromo = [product1, product2, product3, product4, product5, product7, product8, product9, product10, product6];
 
