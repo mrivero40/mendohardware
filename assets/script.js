@@ -1,3 +1,8 @@
+// UTIL GENERALES
+const dolarCot = 188;
+const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
+const urlImg = 'https://mendohardware.com.ar/img/';
+
 // ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH
 
 window.addEventListener('DOMContentLoaded', navigation, false);
@@ -17,11 +22,62 @@ function navigation() {
     };
 };
 
-// IMPLEMENTACION DE PRODUCTOS EN OBJETOS Y RENDERIZADO EN HTML
 
-let parrafoTerminos = 'Promociones válidas con modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
-let dolarCot = 180;
-let urlImg = 'https://mendohardware.com.ar/img/';
+// IMPLEMENTACION DE PRECIOS CALCULADOS PARA PROMOS PRINCIPALES DEL HOME
+
+const spanPriceLeft = document.querySelector('#spanPriceLeft');
+const spanDuesLeft = document.querySelector('#spanDuesLeft');
+const spanTFLeft = document.querySelector('#spanTFLeft');
+renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1202.13); // Not 15.6 Dell 3511 i3-11va
+
+const spanPriceCenter = document.querySelector('#spanPriceCenter');
+const spanDuesCenter = document.querySelector('#spanDuesCenter');
+const spanTFCenter = document.querySelector('#spanTFCenter');
+renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 950.8); // Not 14 Hp 240-g8 i3-10ma
+
+const spanPriceRight = document.querySelector('#spanPriceRight');
+const spanDuesRight = document.querySelector('#spanDuesRight');
+const spanTFRight = document.querySelector('#spanTFRight');
+renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1464.77); // Not 15.6 Lenovo T-Book i5-11va
+
+function renderHomePrice(priceCont, duesCont, pTFCont, price) {
+    const pricePayment = (dolarCot * price).toFixed(0);
+    const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
+    const priceTF = (pricePayment * 1.5).toFixed(0);
+
+    priceCont.innerText = '$'
+        + pricePayment[0]
+        + pricePayment[1]
+        + pricePayment[2]
+        + '.'
+        + pricePayment[3]
+        + pricePayment[4]
+        + pricePayment[5]
+        + '*'
+    ;
+    duesCont.innerText = '$'
+        + priceDues[0]
+        + priceDues[1]
+        + '.'
+        + priceDues[2]
+        + priceDues[3]
+        + priceDues[4]
+        + '*'
+    ;
+    pTFCont.innerText = 'PFT$'
+        + priceTF[0]
+        + priceTF[1]
+        + priceTF[2]
+        + '.'
+        + priceTF[3]
+        + priceTF[4]
+        + priceTF[5]
+        + '*'
+    ;
+};
+
+
+// IMPLEMENTACION DE PRODUCTOS EN OBJETOS Y RENDERIZADO EN HTML
 
 class Products {
     constructor( image, name, price ) {
@@ -72,7 +128,7 @@ const product10 = new Products(
     'Parlantes 2.0 USB Genius 6w SP-HF280',
     18.49 );
 
-const productsPromo = [product1, product2, product3, product4, product5, product7, product8, product9, product10, product6];
+const productsPromo = [product1, product2, product3, product5, product7, product8, product10, product6];
 
 function renderProducts(arrayProducts) {    
 
