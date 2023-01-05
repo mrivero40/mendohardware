@@ -3,6 +3,23 @@ const dolarCot = 188;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 const urlImg = 'https://mendohardware.com.ar/img/';
 
+function priceWithPoint(price) {
+    const priceToString = price.toString();
+    let pricePoint = '';
+    for(index in priceToString) {
+        if(index > priceToString.length - 4) {
+            pricePoint += priceToString[index];
+        }
+        if (index == priceToString.length - 4) {
+            pricePoint += priceToString[index] + '.';
+        }
+        if (index < priceToString.length - 4) {
+            pricePoint += priceToString[index];
+        };
+    };    
+    return pricePoint;
+};
+
 // ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH
 
 window.addEventListener('DOMContentLoaded', navigation, false);
@@ -45,39 +62,15 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
     const priceTF = (pricePayment * 1.5).toFixed(0);
 
-    priceCont.innerText = '$'
-        + pricePayment[0]
-        + pricePayment[1]
-        + pricePayment[2]
-        + '.'
-        + pricePayment[3]
-        + pricePayment[4]
-        + pricePayment[5]
-        + '*'
-    ;
-    duesCont.innerText = '$'
-        + priceDues[0]
-        + priceDues[1]
-        + '.'
-        + priceDues[2]
-        + priceDues[3]
-        + priceDues[4]
-        + '*'
-    ;
-    pTFCont.innerText = 'PFT$'
-        + priceTF[0]
-        + priceTF[1]
-        + priceTF[2]
-        + '.'
-        + priceTF[3]
-        + priceTF[4]
-        + priceTF[5]
-        + '*'
-    ;
+    priceCont.innerText = `$${priceWithPoint(pricePayment)}`;
+    
+    duesCont.innerText = `$${priceWithPoint(priceDues)}*`;
+    
+    pTFCont.innerText = `PTF$${priceWithPoint(priceTF)}*`;    
 };
 
 
-// IMPLEMENTACION DE PRODUCTOS EN OBJETOS Y RENDERIZADO EN HTML
+// IMPLEMENTACION DE PRODUCTOS EN OBJETOS
 
 class Products {
     constructor( image, name, price ) {
@@ -90,45 +83,68 @@ class Products {
 const product1 = new Products(
     `${urlImg}epsonT544.png`,
     'Botella de Tinta Epson T544 original c/u',
-    18 );
+    18,
+);
 const product2 = new Products(
     `${urlImg}xiaomiRedmiLite3.png`,
     'Auricular bluetooth Xiaomi Redmi Buds 3 Lite',
-    29.23 );
+    29.23,
+);
 const product3 = new Products(
     `${urlImg}xiaomiEarphonesBasic2.png`,
     'Auricular bluetooth Xiaomi Earphones Basic 2',
-    44.48 );
+    44.48,
+);
 const product4 = new Products(
     `${urlImg}ssd480Gigabyte.png`,
     'Disco Sólido SATA 480gb Gigabyte',
-    70.55 );
+    70.55,
+);
 const product5 = new Products(
     `${urlImg}auricularMsiGamer.png`,
     'Auricular gamer Msi Inmerse Gh30',
-    55.68 );
+    55.68,
+);
 const product6 = new Products(
     `${urlImg}kitGigabyte.png`,
     'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
-    19.36 );
+    19.36,
+);
 const product7 = new Products(
     `${urlImg}usbWifi300.png`,
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
-    9.8 );
+    9.8,
+);
 const product8 = new Products(
     `${urlImg}mouseTrust.png`,
-    'Mouse inalámbrico Trust YVI',
-    11.98 );
+    'Mouse inalámbrico Trust YVI ambidiestro',
+    11.98,
+);
 const product9 = new Products(
     `${urlImg}ssd240Gigabyte.png`,
     'Disco Sólido SATA 240gb Gigabyte',
-    44.21 );
+    44.21,
+);
 const product10 = new Products(
     `${urlImg}parlanteGeniusHF280.png`,
     'Parlantes 2.0 USB Genius 6w SP-HF280',
-    18.49 );
+    18.49,
+);
+const product11 = new Products(
+    `${urlImg}ssd120Gigabyte.png`,
+    'Disco Sólido SATA 120gb Gigabyte',
+    35.42,
+);
+const product12 = new Products(
+    `${urlImg}decoM5TpLink.png`,
+    'Sistema WIFI Deco M5 AC1300 Mesh',
+    112.4,
+);
 
-const productsPromo = [product1, product2, product3, product5, product7, product8, product10, product6];
+
+// RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB
+
+const productsPromo = [product12, product11, product1, product2, product3, product5, product7, product8, product10, product6,];
 
 function renderProducts(arrayProducts) {    
 
@@ -148,7 +164,7 @@ function renderProducts(arrayProducts) {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        h4ProductPrice.innerText = '$' + Math.ceil(dolarCot * product.price);
+        h4ProductPrice.innerText = priceWithPoint((Math.ceil(dolarCot * product.price)));
 
         const divContainerPrincipal = document.querySelector('.grid-container-principal');
         divContainerPrincipal.appendChild(divProductContainer);
@@ -158,7 +174,6 @@ function renderProducts(arrayProducts) {
         divProductContainer.appendChild(h4ProductPrice);
         
     });
-
     const sectionHotProducts = document.querySelector('.section-hot-products');
 
     const divTerminos = document.createElement('div');
@@ -168,7 +183,6 @@ function renderProducts(arrayProducts) {
     divTerminos.appendChild(pTerminos);
 
     sectionHotProducts.appendChild(divTerminos);
-
 };
 
 renderProducts(productsPromo);
