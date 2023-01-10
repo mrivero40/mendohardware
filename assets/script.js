@@ -20,6 +20,9 @@ function priceWithPoint(price) {
     return pricePoint;
 };
 
+window.addEventListener('load', renderProducts);
+
+
 // ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH
 
 window.addEventListener('DOMContentLoaded', navigation, false);
@@ -146,9 +149,8 @@ const product12 = new Products(
 
 const productsPromo = [product12, product11, product1, product2, product3, product5, product7, product8, product10, product6,];
 
-function renderProducts(arrayProducts) {    
-
-    arrayProducts.forEach(product => {
+function renderProducts() {
+    productsPromo.forEach(product => {
         const divProductContainer = document.createElement('div');
         divProductContainer.classList.add('grid-container-product');
 
@@ -184,8 +186,4 @@ function renderProducts(arrayProducts) {
 
     sectionHotProducts.appendChild(divTerminos);
 };
-
-renderProducts(productsPromo);
-
-
 
