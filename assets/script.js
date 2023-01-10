@@ -23,7 +23,7 @@ function priceWithPoint(price) {
 window.addEventListener('load', renderProducts);
 
 
-// ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH
+// ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH (no implementado)
 
 window.addEventListener('DOMContentLoaded', navigation, false);
 window.addEventListener('hashchange', navigation, false);
@@ -65,10 +65,8 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
     const priceTF = (pricePayment * 1.5).toFixed(0);
 
-    priceCont.innerText = `$${priceWithPoint(pricePayment)}`;
-    
-    duesCont.innerText = `$${priceWithPoint(priceDues)}*`;
-    
+    priceCont.innerText = `$${priceWithPoint(pricePayment)}`;    
+    duesCont.innerText = `$${priceWithPoint(priceDues)}*`;    
     pTFCont.innerText = `PTF$${priceWithPoint(priceTF)}*`;    
 };
 
@@ -166,7 +164,7 @@ function renderProducts() {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        h4ProductPrice.innerText = priceWithPoint((Math.ceil(dolarCot * product.price)));
+        h4ProductPrice.innerText = '$' + priceWithPoint((Math.ceil(dolarCot * product.price)));
 
         const divContainerPrincipal = document.querySelector('.grid-container-principal');
         divContainerPrincipal.appendChild(divProductContainer);
