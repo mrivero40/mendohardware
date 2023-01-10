@@ -77,69 +77,69 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
 
 class Products {
     constructor( image, name, price ) {
-        this.image = image;
+        this.image = urlImg + image;
         this.name = name;
         this.price = price;
     };
 };
 
 const product1 = new Products(
-    `${urlImg}epsonT544.png`,
+    'epsonT544.png',
     'Botella de Tinta Epson T544 original c/u',
     18,
 );
 const product2 = new Products(
-    `${urlImg}xiaomiRedmiLite3.png`,
+    'xiaomiRedmiLite3.png',
     'Auricular bluetooth Xiaomi Redmi Buds 3 Lite',
     29.23,
 );
 const product3 = new Products(
-    `${urlImg}xiaomiEarphonesBasic2.png`,
+    'xiaomiEarphonesBasic2.png',
     'Auricular bluetooth Xiaomi Earphones Basic 2',
     44.48,
 );
 const product4 = new Products(
-    `${urlImg}ssd480Gigabyte.png`,
+    'ssd480Gigabyte.png',
     'Disco Sólido SATA 480gb Gigabyte',
     70.55,
 );
 const product5 = new Products(
-    `${urlImg}auricularMsiGamer.png`,
+    'auricularMsiGamer.png',
     'Auricular gamer Msi Inmerse Gh30',
     55.68,
 );
 const product6 = new Products(
-    `${urlImg}kitGigabyte.png`,
+    'kitGigabyte.png',
     'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
     19.36,
 );
 const product7 = new Products(
-    `${urlImg}usbWifi300.png`,
+    'usbWifi300.png',
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
     9.8,
 );
 const product8 = new Products(
-    `${urlImg}mouseTrust.png`,
+    'mouseTrust.png',
     'Mouse inalámbrico Trust YVI ambidiestro',
     11.98,
 );
 const product9 = new Products(
-    `${urlImg}ssd240Gigabyte.png`,
+    'ssd240Gigabyte.png',
     'Disco Sólido SATA 240gb Gigabyte',
     44.21,
 );
 const product10 = new Products(
-    `${urlImg}parlanteGeniusHF280.png`,
+    'parlanteGeniusHF280.png',
     'Parlantes 2.0 USB Genius 6w SP-HF280',
     18.49,
 );
 const product11 = new Products(
-    `${urlImg}ssd120Gigabyte.png`,
+    'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
     35.42,
 );
 const product12 = new Products(
-    `${urlImg}decoM5TpLink.png`,
+    'decoM5TpLink.png',
     'Sistema WIFI Deco M5 AC1300 Mesh',
     112.4,
 );
