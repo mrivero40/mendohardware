@@ -3,6 +3,10 @@ const dolarCot = 188;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 const urlImg = 'https://mendohardware.com.ar/img/';
 
+window.addEventListener('load', renderProducts);
+
+    // fn priceWithPoint -> Compatible hasta $999.999
+
 function priceWithPoint(price) {
     const priceToString = price.toString();
     let pricePoint = '';
@@ -20,8 +24,6 @@ function priceWithPoint(price) {
     return pricePoint;
 };
 
-window.addEventListener('load', renderProducts);
-
 
 // ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH (no implementado)
 
@@ -30,15 +32,15 @@ window.addEventListener('hashchange', navigation, false);
 
 function navigation() {
     if (location.hash.startsWith('#home')) {
-        console.log('home');        
+        //console.log('home');        
     } else if (location.hash.startsWith('#promos')) {
-        console.log('promos');        
+        //console.log('promos');        
     } else if (location.hash.startsWith('#servicios')) {
-        console.log('servicios');
+        //console.log('servicios');
     } else if (location.hash.startsWith('#contacto')) {
-        console.log('contacto');
+        //console.log('contacto');
     } else {
-        console.log('home2');
+        //console.log('home2');
     };
 };
 
@@ -64,10 +66,10 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
     const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
     const priceTF = (pricePayment * 1.5).toFixed(0);
-
+    
     priceCont.innerText = `$${priceWithPoint(pricePayment)}`;    
     duesCont.innerText = `$${priceWithPoint(priceDues)}*`;    
-    pTFCont.innerText = `PTF$${priceWithPoint(priceTF)}*`;    
+    pTFCont.innerText = `PTF$${priceWithPoint(priceTF)}*`;
 };
 
 
