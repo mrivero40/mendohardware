@@ -147,7 +147,7 @@ const product12 = new Products(
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB
 
-const productsPromo = [product12, product11, product1, product2, product3, product5, product7, product8, product10, product6,];
+const productsPromo = [product12, product11, product1, product3, product5, product7, product8, product10, product6,];
 
 function renderProducts() {
     productsPromo.forEach(product => {
