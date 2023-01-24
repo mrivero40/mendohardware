@@ -1,6 +1,6 @@
 // UTIL GENERALES
-const dolarCot = 188;
-const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO. Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
+const dolarCot = 192;
+const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 const urlImg = 'https://mendohardware.com.ar/img/';
 
 window.addEventListener('load', renderProducts);
@@ -83,71 +83,77 @@ class Products {
     };
 };
 
-const product1 = new Products(
+const epsonT544 = new Products(
     'epsonT544.png',
     'Botella de Tinta Epson T544 original c/u',
     18,
 );
-const product2 = new Products(
+const xiaomiLite3 = new Products(
     'xiaomiRedmiLite3.png',
     'Auricular bluetooth Xiaomi Redmi Buds 3 Lite',
     29.23,
 );
-const product3 = new Products(
+const xiaomiEarBasic2 = new Products(
     'xiaomiEarphonesBasic2.png',
     'Auricular bluetooth Xiaomi Earphones Basic 2',
     44.48,
 );
-const product4 = new Products(
+const gigabyte480 = new Products(
     'ssd480Gigabyte.png',
     'Disco Sólido SATA 480gb Gigabyte',
     70.55,
 );
-const product5 = new Products(
+const msiGh30 = new Products(
     'auricularMsiGamer.png',
     'Auricular gamer Msi Inmerse Gh30',
     55.68,
 );
-const product6 = new Products(
+const gigabyteKm6300 = new Products(
     'kitGigabyte.png',
     'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
     19.36,
 );
-const product7 = new Products(
+const perfonmanceWifi = new Products(
     'usbWifi300.png',
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
     9.8,
 );
-const product8 = new Products(
+const trustYvi = new Products(
     'mouseTrust.png',
     'Mouse inalámbrico Trust YVI ambidiestro',
     11.98,
 );
-const product9 = new Products(
+const gigabyte240 = new Products(
     'ssd240Gigabyte.png',
     'Disco Sólido SATA 240gb Gigabyte',
     44.21,
 );
-const product10 = new Products(
+const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
     'Parlantes 2.0 USB Genius 6w SP-HF280',
     18.49,
 );
-const product11 = new Products(
+const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
     35.42,
 );
-const product12 = new Products(
-    'decoM5TpLink.png',
+const tpLinkDecoM5 = new Products(
+    'decoM5.jpg',
     'Sistema WIFI Deco M5 AC1300 Mesh',
     112.4,
 );
+const geniusHsM900Bt = new Products(
+    'hsM900BT.jpg',
+    'Auricular bluetooth Genius HS-M900BT',
+    19.5,
+);
+
 
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB
 
-const productsPromo = [product12, product11, product1, product3, product5, product7, product8, product10, product6,];
+const productsPromo = [geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300,];
 
 function renderProducts() {
     productsPromo.forEach(product => {
@@ -186,4 +192,3 @@ function renderProducts() {
 
     sectionHotProducts.appendChild(divTerminos);
 };
-

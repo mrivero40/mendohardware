@@ -328,6 +328,10 @@ header .nav-right {
 
 /* FOOTER PIE DE PAGINA */
 
+footer .pTime {
+  font-size: var(--fontStandard);
+}
+
 .footer {
   width: 100%;
   background-color: var(--grayBackground);
