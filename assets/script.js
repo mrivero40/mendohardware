@@ -1,11 +1,11 @@
 // UTIL GENERALES
-const dolarCot = 192;
+const dolarCot = 193;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 const urlImg = 'https://mendohardware.com.ar/img/';
 
 window.addEventListener('load', renderProducts);
 
-    // fn priceWithPoint -> Compatible hasta $999.999
+// fn priceWithPoint -> Compatible hasta $999.999
 
 function priceWithPoint(price) {
     const priceToString = price.toString();
