@@ -1,5 +1,5 @@
 // UTIL GENERALES
-const dolarCot = 193;
+const dolarCot = 200;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 const urlImg = 'https://mendohardware.com.ar/img/';
 
@@ -23,7 +23,6 @@ function priceWithPoint(price) {
     };    
     return pricePoint;
 };
-
 
 // ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH (no implementado)
 
@@ -60,7 +59,7 @@ renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 950.8); // Not 14
 const spanPriceRight = document.querySelector('#spanPriceRight');
 const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
-renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1464.77); // Not 15.6 Lenovo T-Book i5-11va
+renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1506.25); // Not 15.6 Lenovo T-Book i5-11va
 
 function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
@@ -86,7 +85,7 @@ class Products {
 const epsonT544 = new Products(
     'epsonT544.png',
     'Botella de Tinta Epson T544 original c/u',
-    18,
+    18.9,
 );
 const xiaomiLite3 = new Products(
     'xiaomiRedmiLite3.png',
@@ -96,7 +95,7 @@ const xiaomiLite3 = new Products(
 const xiaomiEarBasic2 = new Products(
     'xiaomiEarphonesBasic2.png',
     'Auricular bluetooth Xiaomi Earphones Basic 2',
-    44.48,
+    41.12,
 );
 const gigabyte480 = new Products(
     'ssd480Gigabyte.png',
@@ -106,7 +105,7 @@ const gigabyte480 = new Products(
 const msiGh30 = new Products(
     'auricularMsiGamer.png',
     'Auricular gamer Msi Inmerse Gh30',
-    55.68,
+    57.91,
 );
 const gigabyteKm6300 = new Products(
     'kitGigabyte.png',
@@ -116,12 +115,12 @@ const gigabyteKm6300 = new Products(
 const perfonmanceWifi = new Products(
     'usbWifi300.png',
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
-    9.8,
+    10.78,
 );
 const trustYvi = new Products(
     'mouseTrust.png',
     'Mouse inalámbrico Trust YVI ambidiestro',
-    11.98,
+    13.18,
 );
 const gigabyte240 = new Products(
     'ssd240Gigabyte.png',
@@ -131,12 +130,12 @@ const gigabyte240 = new Products(
 const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
     'Parlantes 2.0 USB Genius 6w SP-HF280',
-    18.49,
+    20.34,
 );
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
-    35.42,
+    35.91,
 );
 const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
