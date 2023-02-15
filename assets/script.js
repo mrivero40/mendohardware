@@ -1,12 +1,16 @@
+import productsPromo from './products.js';
+
 // UTIL GENERALES
 const dolarCot = 200;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
-const urlImg = 'https://mendohardware.com.ar/img/';
+// const urlImg = 'https://mendohardware.com.ar/img/';
 
 window.addEventListener('load', renderProducts);
 
-// fn priceWithPoint -> Compatible hasta $999.999
 
+// FUNCTION priceWithPoint -> COMPATIBLE HASTA $999.999
+
+/*
 function priceWithPoint(price) {
     const priceToString = price.toString();
     let pricePoint = '';
@@ -23,6 +27,16 @@ function priceWithPoint(price) {
     };    
     return pricePoint;
 };
+*/
+
+
+// FUNCTION CORRECTA PARA EL PUNTO EN LOS PRECIOS -> TODOS LOS DIAS SE APRENDE ALGO NUEVO
+
+const formatPrice = (price) => {
+    const newPrice = new window.Intl.NumberFormat('es-AR').format(price);
+    return newPrice;
+};
+
 
 // ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH (no implementado)
 
@@ -66,13 +80,13 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
     const priceTF = (pricePayment * 1.5).toFixed(0);
     
-    priceCont.innerText = `$${priceWithPoint(pricePayment)}`;    
-    duesCont.innerText = `$${priceWithPoint(priceDues)}*`;    
-    pTFCont.innerText = `PTF$${priceWithPoint(priceTF)}*`;
+    priceCont.innerText = `$${formatPrice(pricePayment)}`;    
+    duesCont.innerText = `$${formatPrice(priceDues)}*`;    
+    pTFCont.innerText = `PTF$${formatPrice(priceTF)}*`;
 };
 
-
-// IMPLEMENTACION DE PRODUCTOS EN OBJETOS
+/*
+// IMPLEMENTACION DE PRODUCTOS EN OBJETOS (lógica separada en products.js) Sin borrar hasta verificar que no haya ningún comportamiento no deseado.
 
 class Products {
     constructor( image, name, price ) {
@@ -153,6 +167,7 @@ const geniusHsM900Bt = new Products(
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB
 
 const productsPromo = [geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300,];
+*/
 
 function renderProducts() {
     productsPromo.forEach(product => {
@@ -171,15 +186,15 @@ function renderProducts() {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        h4ProductPrice.innerText = '$' + priceWithPoint((Math.ceil(dolarCot * product.price)));
+        h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
 
         const divContainerPrincipal = document.querySelector('.grid-container-principal');
         divContainerPrincipal.appendChild(divProductContainer);
-        divProductContainer.appendChild(figureImgContainer);
+        //divProductContainer.appendChild(figureImgContainer);
         figureImgContainer.appendChild(imgProductImage);
-        divProductContainer.appendChild(paragraphProductName);
-        divProductContainer.appendChild(h4ProductPrice);
-        
+        //divProductContainer.appendChild(paragraphProductName);
+        //divProductContainer.appendChild(h4ProductPrice);
+        divProductContainer.append(figureImgContainer, paragraphProductName, h4ProductPrice);
     });
     const sectionHotProducts = document.querySelector('.section-hot-products');
 
