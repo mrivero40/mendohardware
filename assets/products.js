@@ -2,6 +2,7 @@ const urlImg = 'https://mendohardware.com.ar/img/';
 
 // IMPLEMENTACION DE PRODUCTOS EN OBJETOS
 
+
 class Products {
     constructor( image, name, price ) {
         this.image = urlImg + image;
@@ -53,7 +54,7 @@ const trustYvi = new Products(
 const gigabyte240 = new Products(
     'ssd240Gigabyte.png',
     'Disco Sólido SATA 240gb Gigabyte',
-    44.21,
+    50.58,
 );
 const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
@@ -80,6 +81,6 @@ const geniusHsM900Bt = new Products(
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB
 
-const productsPromo = [geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300,];
+const productsPromo = [gigabyte240, geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300,];
 
 export default productsPromo;

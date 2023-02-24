@@ -1,4 +1,6 @@
 import productsPromo from './products.js';
+import { registerImg } from './lazy.js';
+
 
 // UTIL GENERALES
 const dolarCot = 200;
@@ -168,19 +170,21 @@ const geniusHsM900Bt = new Products(
 
 const productsPromo = [geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300,];
 */
-
 function renderProducts() {
     productsPromo.forEach(product => {
+        
         const divProductContainer = document.createElement('div');
         divProductContainer.classList.add('grid-container-product');
 
         const figureImgContainer = document.createElement('figure');
         figureImgContainer.classList.add('grid-container-img');
+        //figureImgContainer.classList.add('loading-skeletor');
 
         const imgProductImage = document.createElement('img');
-        imgProductImage.setAttribute('src', product.image);
+        imgProductImage.setAttribute('data-src', product.image);
         imgProductImage.setAttribute('title', product.name);
         imgProductImage.setAttribute('alt', product.name);
+        registerImg(imgProductImage);
 
         const paragraphProductName = document.createElement('p');
         paragraphProductName.innerText = product.name;
@@ -195,6 +199,7 @@ function renderProducts() {
         //divProductContainer.appendChild(paragraphProductName);
         //divProductContainer.appendChild(h4ProductPrice);
         divProductContainer.append(figureImgContainer, paragraphProductName, h4ProductPrice);
+        
     });
     const sectionHotProducts = document.querySelector('.section-hot-products');
 
