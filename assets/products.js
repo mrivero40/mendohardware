@@ -2,7 +2,6 @@ const urlImg = 'https://mendohardware.com.ar/img/';
 
 // IMPLEMENTACION DE PRODUCTOS EN OBJETOS
 
-
 class Products {
     constructor( image, name, price ) {
         this.image = urlImg + image;
@@ -76,7 +75,6 @@ const geniusHsM900Bt = new Products(
     'Auricular bluetooth Genius HS-M900BT',
     19.5,
 );
-
 
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB

@@ -219,24 +219,32 @@ header .nav-right {
   margin-block-end: 4rem;
 }
 
-/*.loading-skeletor {
+.grid-container-img {
   background-color: var(--grayPrimary);
   width: 25.8rem;
   height: 25.8rem;
-  animation: 2s skeletor infinite ease-in-out;
+  border-radius: 2rem;
+  text-align: center;  
 }
 
-@keyframes skeletor {
+.loading-skeleton {
+  background-color: var(--grayPrimary);
+  width: 25.8rem;
+  height: 25.8rem;
+  animation: 4s skeleton infinite ease-in-out;
+}
+
+@keyframes skeleton {
   0% {
     opacity: 1;
   }
   50% {
-    opacity: 0.2;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
-}*/
+}
 
 .grid-container-img img {
   width: 100%;
