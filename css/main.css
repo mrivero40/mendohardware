@@ -376,6 +376,7 @@ footer .pTime {
 
 footer p {
   padding-block: 2rem;
+  padding-inline: 2rem;
   font-size: var(--fontSmall);
   text-align: center;
 } 
@@ -490,10 +491,6 @@ footer p {
     width: 4rem;
     margin-block: 3rem;
     margin-inline: 1rem;
-  }
-
-  .footer p {
-    padding-block: 2rem;
   }
 
 }

@@ -8,7 +8,7 @@ import { registerImg } from './lazy.js';
 
 
 // UTIL GENERALES
-const dolarCot = 200;
+const dolarCot = 205;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 // const urlImg = 'https://mendohardware.com.ar/img/';
 
