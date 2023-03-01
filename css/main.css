@@ -179,11 +179,35 @@ header .nav-right {
 
 .container-home .text-phrase {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   text-align: center;
   font-style: italic;
   color: var(--grayPrimary);
   font-size: var(--fontStandard);
+}
+
+.warranty-container {
+  width: 90%;
+  margin: 0 auto ;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.warranty-element {
+  width: 25%;
+  height: 6rem;
+  font-size: var(--fontStandard);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: .5rem solid var(--orangeSecondary);
+  border-end-end-radius: 1rem;
+  background-color: var(--grayBackground);
+  color: var(--grayPrimary);
+}
+
+.warranty-element span img {
+  margin-inline-end: 2rem;
 }
 
 
@@ -443,6 +467,18 @@ footer p {
     width: 90%;
   }
 
+  .warranty-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .warranty-element {
+    width: 100%;
+    max-width: 40rem;
+    margin-block-end: 3rem;
+  } 
+
 
  /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY */
 
@@ -491,6 +527,10 @@ footer p {
     width: 4rem;
     margin-block: 3rem;
     margin-inline: 1rem;
+  }
+
+  footer .pCredits {
+    margin-inline: 2rem;
   }
 
 }
