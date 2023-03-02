@@ -75,7 +75,7 @@ const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
     35.91,
-    true,
+    false,
 );
 const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
