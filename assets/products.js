@@ -63,7 +63,7 @@ const gigabyte240 = new Products(
     'ssd240Gigabyte.png',
     'Disco Sólido SATA 240gb Gigabyte',
     50.58,
-    true,
+    false,
 );
 const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
@@ -93,7 +93,7 @@ const ssd480kingston = new Products(
     'ssdA400480gb.jpg',
     'Disco Sólido SATA 480gb Kingston',
     74.8,
-    true,
+    false,
 );
 
 
