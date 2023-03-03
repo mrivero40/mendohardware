@@ -75,7 +75,7 @@ const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
     35.91,
-    false,
+    true,
 );
 const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
@@ -95,13 +95,19 @@ const ssd480kingston = new Products(
     74.8,
     false,
 );
+const ssd240Msi = new Products(
+    'ssd240Msi.png',
+    'Disco Sólido SATA 240gb MSI',
+    54.65,
+    true,
+);
 
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS CON STOCK EN SECCION PROMOS WEB. LAS NUEVAS INSTANCIAS DE PRODUCTOS DEBEN SER AGREGADAS AL ARRAY productsTotal Y SERáN AGREGADAS AL ARRAY A RENDERIZAR SOLO SI TIENEN LA PROPIEDAD STOCK EN TRUE.
 
 const productsPromo = [];
 
-const productsTotal = [ gigabyte240, geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300, xiaomiLite3, gigabyte480, ssd480kingston];
+const productsTotal = [ gigabyte240, geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300, xiaomiLite3, gigabyte480, ssd480kingston, ssd240Msi];
 
 productsTotal.forEach( product => {
     if(product.stock === true) {
