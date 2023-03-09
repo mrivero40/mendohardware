@@ -8,7 +8,7 @@ import { registerImg } from './lazy.js';
 
 
 // UTIL GENERALES
-const dolarCot = 205;
+const dolarCot = 207;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 // const urlImg = 'https://mendohardware.com.ar/img/';
 
@@ -80,7 +80,7 @@ renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 950.8); // Not 14
 const spanPriceRight = document.querySelector('#spanPriceRight');
 const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
-renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1506.25); // Not 15.6 Lenovo T-Book i5-11va
+renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 962.35); // Not 15.6 Lenovo V15 I3-10ma
 
 function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
