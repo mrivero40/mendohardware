@@ -2,7 +2,8 @@
 
 @font-face {  
   font-family: 'Ubuntu';
-  src: url(../fonts/Ubuntu-Light.ttf);  
+  src: url(../fonts/Ubuntu-Light.ttf);
+  font-display: swap;
 }
 
 /* SETTING GLOBALES */
