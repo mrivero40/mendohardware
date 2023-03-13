@@ -1,12 +1,19 @@
+/* FONTS FAMILY */
+
+@font-face {  
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu-Light.ttf);  
+}
+
+/* SETTING GLOBALES */
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
-html {
-  font-size: 62.5%;
-}
+/* VARIABLES STYLES */
 
 :root {
   --orangeLogo:  #e86905;
@@ -16,17 +23,26 @@ html {
   --graySecondary: #4D4D4D;
   --grayBackground: #202020;
   --blackPrimary: #050505;
-  --blackBackground: #040404;
+  --blackBackground: #060607;
   --fontSmall: 1.3rem;
   --fontStandard: 1.6rem;
   --fontSecondary: 1.8rem;
   --fontPrimary: 2.6rem;
+  --fontWeightnormal: 300;  
 }
 
+/* USE REM FONTS -- 1REM = 10PX */
+
+html {
+  font-size: 62.5%;
+}
+
+/* PRIMARY ETIQUETAS HTML */
+
 body {
-  font-family: 'Ubuntu', sans-serif;
-  background: #060607;
+  font-family: 'Ubuntu', sans-serif;  
   color: var(--whitePrimary);
+  background: var(--blackBackground);
 }
 
 h1 {
@@ -37,12 +53,11 @@ h1 {
 
 h2 {
   font-size: var(--fontSecondary);
+  font-weight: var(--fontWeightnormal);
   text-align: center;
-  font-weight: normal;
   color: var(--whitePrimary);
   line-height: 3rem;
 }
-
 
 
 /* HEADER NAV BARRA DE NAVEGACION */
