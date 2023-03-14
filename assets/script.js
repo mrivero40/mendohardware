@@ -8,7 +8,7 @@ import { registerImg } from './lazy.js';
 
 
 // UTIL GENERALES
-const dolarCot = 207;
+const dolarCot = 210;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 // const urlImg = 'https://mendohardware.com.ar/img/';
 
@@ -82,7 +82,7 @@ const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
 renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 962.35); // Not 15.6 Lenovo V15 I3-10ma
 
-function renderHomePrice(priceCont, duesCont, pTFCont, price) {
+/*function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
     const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
     const priceTF = (pricePayment * 1.5).toFixed(0);
@@ -90,7 +90,7 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     priceCont.innerText = `$${formatPrice(pricePayment)}`;    
     duesCont.innerText = `$${formatPrice(priceDues)}*`;    
     pTFCont.innerText = `PTF$${formatPrice(priceTF)}*`;
-};
+};*/
 
 /*
 
