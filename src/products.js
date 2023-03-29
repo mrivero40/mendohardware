@@ -14,7 +14,7 @@ class Products {
 const epsonT544 = new Products(
     'epsonT544.png',
     'Botella de Tinta Epson T544 original c/u',
-    18.9,
+    20.35,
     true,
 );
 const xiaomiLite3 = new Products(
@@ -38,25 +38,25 @@ const gigabyte480 = new Products(
 const msiGh30 = new Products(
     'auricularMsiGamer.png',
     'Auricular gamer Msi Inmerse Gh30',
-    57.91,
+    62.64,
     true,
 );
 const gigabyteKm6300 = new Products(
     'kitGigabyte.png',
     'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
-    19.36,
+    22.15,
     true,
 );
 const perfonmanceWifi = new Products(
     'usbWifi300.png',
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
-    10.78,
+    12.39,
     true,
 );
 const trustYvi = new Products(
     'mouseTrust.png',
     'Mouse inalámbrico Trust YVI ambidiestro',
-    13.18,
+    15.15,
     true,
 );
 const gigabyte240 = new Products(
@@ -68,25 +68,25 @@ const gigabyte240 = new Products(
 const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
     'Parlantes 2.0 USB Genius 6w SP-HF280',
-    20.34,
+    23.39,
     true,
 );
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
     35.91,
-    true,
+    false,
 );
 const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
     'Sistema WIFI Deco M5 AC1300 Mesh',
-    112.4,
+    123.67,
     true,
 );
 const geniusHsM900Bt = new Products(
     'hsM900BT.jpg',
     'Auricular bluetooth Genius HS-M900BT',
-    19.5,
+    21.35,
     true,
 );
 const ssd480kingston = new Products(
@@ -98,7 +98,7 @@ const ssd480kingston = new Products(
 const ssd240Msi = new Products(
     'ssd240Msi.png',
     'Disco Sólido SATA 240gb MSI',
-    54.65,
+    68.31,
     true,
 );
 
