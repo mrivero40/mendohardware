@@ -70,17 +70,17 @@ function navigation() {
 const spanPriceLeft = document.querySelector('#spanPriceLeft');
 const spanDuesLeft = document.querySelector('#spanDuesLeft');
 const spanTFLeft = document.querySelector('#spanTFLeft');
-renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1378.18); // Not 15.6 Dell 3511 i3-11va
+renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1503.46); // Not 15.6 Dell 3511 i3-11va
 
 const spanPriceCenter = document.querySelector('#spanPriceCenter');
 const spanDuesCenter = document.querySelector('#spanDuesCenter');
 const spanTFCenter = document.querySelector('#spanTFCenter');
-renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1117.95); // Not 14 Hp 240-g8 i3-10ma
+renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1207.10); // Not 14 Hp 240-g8 i3-10ma
 
 const spanPriceRight = document.querySelector('#spanPriceRight');
 const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
-renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1401.61); // Not 15.6 Lenovo V15 I3-10ma
+renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1509.28); // Not 15.6 Lenovo V15 I3-10ma
 
 function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
