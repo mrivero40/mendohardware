@@ -1,6 +1,8 @@
 const urlImg = 'https://mendohardware.com.ar/img/';
 
-// IMPLEMENTACION DE CLASES PARA PRODUCTOS A RENDERIZAR EN HTML SECTION PROMOS WEB
+// IMPLEMENTACION DE CLASES PARA PRODUCTOS A RENDERIZAR EN HTML SECTION PROMOS WEB A PARTIR DE ARRAY DE PRODUCTOS.
+
+const productsPromo = [];
 
 class Products {
     constructor( image, name, price, stock ) {
@@ -8,6 +10,10 @@ class Products {
         this.name = name;
         this.price = price;
         this.stock = stock;
+
+        if(this.stock === true) {
+            productsPromo.push(this);
+        };
     };    
 };
 
@@ -38,25 +44,25 @@ const gigabyte480 = new Products(
 const msiGh30 = new Products(
     'auricularMsiGamer.png',
     'Auricular gamer Msi Inmerse Gh30',
-    62.64,
+    67.38,
     true,
 );
 const gigabyteKm6300 = new Products(
     'kitGigabyte.png',
     'Kit Tec+Mou usb Gigabyte Km6300 (inglés)',
-    22.15,
+    24.18,
     true,
 );
 const perfonmanceWifi = new Products(
     'usbWifi300.png',
     'Wifi usb 300mbps Perfonmance 2.4Ghz Realtek 8192',
-    12.39,
+    13.39,
     true,
 );
 const trustYvi = new Products(
     'mouseTrust.png',
     'Mouse inalámbrico Trust YVI ambidiestro',
-    15.15,
+    16.15,
     true,
 );
 const gigabyte240 = new Products(
@@ -68,7 +74,7 @@ const gigabyte240 = new Products(
 const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
     'Parlantes 2.0 USB Genius 6w SP-HF280',
-    23.39,
+    25.39,
     true,
 );
 const gigabyte120 = new Products(
@@ -80,13 +86,13 @@ const gigabyte120 = new Products(
 const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
     'Sistema WIFI Deco M5 AC1300 Mesh',
-    123.67,
+    134.90,
     true,
 );
 const geniusHsM900Bt = new Products(
     'hsM900BT.jpg',
     'Auricular bluetooth Genius HS-M900BT',
-    21.35,
+    23.22,
     true,
 );
 const ssd480kingston = new Products(
@@ -98,21 +104,22 @@ const ssd480kingston = new Products(
 const ssd240Msi = new Products(
     'ssd240Msi.png',
     'Disco Sólido SATA 240gb MSI',
-    68.31,
+    72.88,
+    true,
+);
+const geniusEco = new Products(
+    'geniusEco8100.jpeg',
+    'Mouse Inalámbrico Eco-8100 recergable Genius',
+    24.23,
+    true,
+);
+const router841HP = new Products(
+    'tl-wr841hp.jpg',
+    'Router Inalámbrico TL-WR841HP 300Mbps Tp-Link',
+    80.21,
     true,
 );
 
-
-// RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS CON STOCK EN SECCION PROMOS WEB. LAS NUEVAS INSTANCIAS DE PRODUCTOS DEBEN SER AGREGADAS AL ARRAY productsTotal Y SERáN AGREGADAS AL ARRAY A RENDERIZAR SOLO SI TIENEN LA PROPIEDAD STOCK EN TRUE.
-
-const productsPromo = [];
-
-const productsTotal = [ gigabyte240, geniusHsM900Bt, tpLinkDecoM5, gigabyte120, epsonT544, xiaomiEarBasic2, msiGh30, perfonmanceWifi, trustYvi, geniusHf280, gigabyteKm6300, xiaomiLite3, gigabyte480, ssd480kingston, ssd240Msi];
-
-productsTotal.forEach( product => {
-    if(product.stock === true) {
-        productsPromo.push(product);
-    };
-});
+// RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS CON STOCK EN SECCION PROMOS WEB. LAS INSTANCIAS DE PRODUCTOS RENDERIZADAS SERáN UNICAMENTE LAS QUE TENGAN LA PROPIEDAD STOCK EN TRUE.
 
 export default productsPromo;
