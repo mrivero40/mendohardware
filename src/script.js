@@ -8,36 +8,14 @@ import { registerImg } from './lazy.js';
 
 
 // UTIL GENERALES
+
 const dolarCot = 218;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
-// const urlImg = 'https://mendohardware.com.ar/img/';
 
 window.addEventListener('load', renderProducts);
 
 
-// FUNCTION priceWithPoint -> COMPATIBLE HASTA $999.999 (me costo trabajo llegar a esta solución para colocar los puntos a los precios, hasta conocer la API de Internizalición, es por eso que no he podido borrarla aún).
-
-/*
-function priceWithPoint(price) {
-    const priceToString = price.toString();
-    let pricePoint = '';
-    for(index in priceToString) {
-        if(index > priceToString.length - 4) {
-            pricePoint += priceToString[index];
-        }
-        if (index == priceToString.length - 4) {
-            pricePoint += priceToString[index] + '.';
-        }
-        if (index < priceToString.length - 4) {
-            pricePoint += priceToString[index];
-        };
-    };    
-    return pricePoint;
-};
-*/
-
-
-// FUNCTION CORRECTA PARA EL PUNTO EN LOS PRECIOS -> TODOS LOS DIAS SE APRENDE ALGO NUEVO
+// FUNCTION PARA EL PUNTO EN LOS PRECIOS -> UTILIZANDO LA API DEL NAVEGADOR DE INTERNALIZACION.
 
 const formatPrice = (price) => {
     const newPrice = new window.Intl.NumberFormat('es-AR').format(price);
