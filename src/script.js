@@ -3,16 +3,18 @@
 
 // IMPORTACIONES DESDE OTROS ARCHIVOS
 
-import productsPromo from './products.js';
+import info from './products.js';
 import { registerImg } from './lazy.js';
 
 
 // UTIL GENERALES
 
-const dolarCot = 218;
+const dolarCot = 222;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 
-window.addEventListener('load', renderProducts);
+window.addEventListener('load', function() {
+    renderProducts(info.productsPromo);
+});
 
 
 // FUNCTION PARA EL PUNTO EN LOS PRECIOS -> UTILIZANDO LA API DEL NAVEGADOR DE INTERNALIZACION.
@@ -79,9 +81,12 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB (products.js)
 
+function renderProducts(productsList) {
 
-function renderProducts() {
-    productsPromo.forEach(product => {
+    const divContainerPrincipal = document.querySelector('.grid-container-principal');       
+    divContainerPrincipal.innerHTML = "";    
+
+    productsList.forEach(product => {
         
         const divProductContainer = document.createElement('div');
         divProductContainer.classList.add('grid-container-product');
@@ -101,20 +106,33 @@ function renderProducts() {
 
         const h4ProductPrice = document.createElement('h4');
         h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
-
-        const divContainerPrincipal = document.querySelector('.grid-container-principal');
+        
+        
         divContainerPrincipal.appendChild(divProductContainer);
         figureImgContainer.appendChild(imgProductImage);
-        divProductContainer.append(figureImgContainer, paragraphProductName, h4ProductPrice);
-        
+        divProductContainer.append(figureImgContainer, paragraphProductName, h4ProductPrice);        
     });
-    const sectionHotProducts = document.querySelector('.section-hot-products');
-
-    const divTerminos = document.createElement('div');
-    divTerminos.classList.add('terminos');
-    const pTerminos = document.createElement('p');
-    pTerminos.innerText = parrafoTerminos;
-    divTerminos.appendChild(pTerminos);
-
-    sectionHotProducts.appendChild(divTerminos);
 };
+
+
+// FUNCION PARA AGREGAR PRODUCTOS POR CATEGORÍAS AL ARRAY A RENDERIZAR, A PARTIR DE LOS BOTONES DE HTML CON LAS CATEGORÍAS.
+
+const buttonCategories = document.querySelectorAll('.button-categories');
+
+buttonCategories.forEach( button => {
+    button.addEventListener('click', function() {
+        removeSelect();
+        button.classList.add('button-select');
+        let category = button.outerText.toLowerCase();
+        renderProducts( info.searchCategory(category) );
+    });
+});
+
+function removeSelect() {
+    buttonCategories.forEach( button => button.classList.remove('button-select'));
+};
+
+const buttonHot = document.getElementById('buttonHot');
+buttonHot.addEventListener('click', function() {
+    renderProducts(info.productsPromo);
+});
