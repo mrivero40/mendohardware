@@ -14,7 +14,7 @@
     <title>Mendohardware Computación | Mendoza</title>
     <link rel="shortcut icon" href="https://mendohardware.com.ar/img/icono.ico" type="image/x-icon">
     <link rel="preload" href="./fonts/Ubuntu-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="./css/main.css?version=<%= Date.now() %>">
+    <!--<link id="stylesCss" rel="stylesheet" >-->
     <!--<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">-->
@@ -263,7 +263,21 @@
 
     </footer>
 
-    <script type="module" src="./src/script.js?version=<%= Date.now() %>"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        css.href = `./css/main.css?v=${new Date().getTime()}`;
+        document.head.appendChild(css);
+        const script = document.createElement("script");
+        script.type = "module";
+        script.src = `./src/script.js?v=${new Date().getTime()}`;
+        document.body.appendChild(script);
+      });
+    </script>
+
+    <!--<script id="script" type="module" src="./src/script.js?v="></script>    -->
 
   </body>
 </html>
