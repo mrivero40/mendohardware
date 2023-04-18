@@ -35,16 +35,7 @@ function searchCategory(category) {
 };
 
 
-// LISTA DE PRODUCTOS - PRODUCTS LIST (COPIAR EL PRIMER PRODUCTO Y PEGAR AL FINAL DE LISTADO PARA REEMPLAZAR POR LOS DATOS CORRESPONDIENTES).
-
-const epsonT544 = new Products(
-    'epsonT544.png', // nombre de la imagen
-    'Botella de Tinta Epson T544 original packX4', // titulo del producto
-    81.4, // precio de venta final en dolares
-    true, // si hay stock true sino false
-    'tintas', // categoria
-    true, // producto hot (destacado) true sino falta
-);
+// LISTA DE PRODUCTOS - PRODUCTS LIST
 
 // CATEGORIA AURICULARES
 const xiaomiLite3 = new Products(
@@ -208,47 +199,55 @@ const ssd240Msi = new Products(
     true,
 );
 
-// CATEGORIA PARLANTES
-const geniusHf280 = new Products(
-    'parlanteGeniusHF280.png',
-    'Parlantes 2.0 USB Genius 6w SP-HF280',
-    25.39,
+// CATEGORIA FUENTES
+const fuenteATX550WPerf = new Products(
+    'fuenteATX550WPerf.jpg',
+    'Fuente ATX 550W sataX4 Perfonmance',
+    37.53,
     true,
-    'parlantes',
+    'fuentes',
+    false,
+);
+const fuenteATX600WCX = new Products(
+    'fuenteATX600WCX.jpg',
+    'Fuente ATX 600W sataX4 CX',
+    40.49,
+    true,
+    'fuentes',
+    false,
+);
+const fuenteSlim600WCX = new Products(
+    'fuenteSlim600WCX.jpeg',
+    'Fuente Slim 600W sataX4 p/GabSlim CX',
+    45,
+    true,
+    'fuentes',
     false,
 );
 
-// CATEGORIA TECLADOS
-const gigabyteKm6300 = new Products(
-    'kitGigabyte.png',
-    'Tec+Mou Usb Inglés Gigabyte Km6300',
-    18.01,
+// CATEGORIA MEMORIAS FLASH
+const usbSandisk32UltraShift = new Products(
+    'usbSandisk32gbUltraShift.jpg',
+    'Pen Drive usb 32gb UltraShift Sandisk',
+    18.09,
     true,
-    'teclados',
-    true,
-);
-const tecladoGeniusKb117 = new Products(
-    'tecGeniusKb117.webp',
-    'Teclado Usb Español KB-117 Genius',
-    16.32,
-    true,
-    'teclados',
+    'memorias flash',
     false,
 );
-const tecladoGameMaxK207 = new Products(
-    'tecladoGameMaxK207.webp',
-    'Teclado Usb Español K207 GameMax',
-    27.05,
+const usbSandisk64UltraShift = new Products(
+    'usbSandisk64gbUltraShift.jpg',
+    'Pen Drive usb 64gb UltraShift Sandisk',
+    23.53,
     true,
-    'teclados',
-    true,
+    'memorias flash',
+    false,
 );
-const tecladoNumGenius110 = new Products(
-    'tecladoNumPadGenius110.jpg',
-    'Teclado Numeral Usb NumPad110 Genius',
-    17.88,
+const microSdSandisk32gb = new Products(
+    'microSd32gbSandisk.webp',
+    'Micro Sd 32gb c/adap clase10 Sandisk',
+    16.61,
     true,
-    'teclados',
+    'memorias flash',
     false,
 );
 
@@ -310,6 +309,169 @@ const mouGameMaxMg7 = new Products(
     false,
 );
 
+// CATEGORIA PARLANTES
+const geniusHf280 = new Products(
+    'parlanteGeniusHF280.png',
+    'Parlantes 2.0 USB Genius 6w SP-HF280',
+    25.39,
+    true,
+    'parlantes',
+    false,
+);
+
+// CATEGORIA TECLADOS
+const gigabyteKm6300 = new Products(
+    'kitGigabyte.png',
+    'Tec+Mou Usb Inglés Gigabyte Km6300',
+    18.01,
+    true,
+    'teclados',
+    true,
+);
+const tecladoGeniusKb117 = new Products(
+    'tecGeniusKb117.webp',
+    'Teclado Usb Español KB-117 Genius',
+    16.32,
+    true,
+    'teclados',
+    false,
+);
+const tecladoGameMaxK207 = new Products(
+    'tecladoGameMaxK207.webp',
+    'Teclado Usb Español K207 GameMax',
+    27.05,
+    true,
+    'teclados',
+    true,
+);
+const tecladoNumGenius110 = new Products(
+    'tecladoNumPadGenius110.jpg',
+    'Teclado Numeral Usb NumPad110 Genius',
+    17.88,
+    true,
+    'teclados',
+    false,
+);
+
+// CATEGORIA TINTAS
+const botellaEpsonT544 = new Products(
+    'epsonT544.png',
+    'Botellas de Tinta T544 Epson original packX4',
+    81.4,
+    true,
+    'tintas',
+    true,
+);
+const botellaBrotherBT5001 = new Products(
+    'botellaBrotherBT5001.webp',
+    'Botellas de Tinta BT5001 Brother original',
+    12.61,
+    true,
+    'tintas',
+    false,
+);
+const botellaBrother60BK = new Products(
+    'tintaBrother60BK.jpg',
+    'Botella de Tinta 60BK Brother original',
+    16.89,
+    true,
+    'tintas',
+    false,
+);
+const botellaBrotherBT6001 = new Products(
+    'tintaBrotherBT6001.jpg',
+    'Botella de Tinta BT6001 Brother original',
+    16.89,
+    true,
+    'tintas',
+    false,
+);
+const cartuchoEpsonT073 = new Products(
+    'cartuchoEpsonT073.webp',
+    'Cartucho de Tinta T073 Epson original',
+    13.96,
+    true,
+    'tintas',
+    false,
+);
+
+// CATEGORIA TONER
+const tonerAlterBrotherTn1060 = new Products(
+    'tonerAlterTn1060.jpg',
+    'Tóner Alternativo p/Brother TN1060 Tecnovibe',
+    15.94,
+    true,
+    'tóner',
+    false,
+);
+const tonerAlterBrotherTn660 = new Products(
+    'tonerAlterTn660.jpg',
+    'Tóner Alternativo p/Brother TN660/2340/2370 GTC',
+    20.27,
+    true,
+    'tóner',
+    false,
+);
+const tonerAlterBrotherTn580 = new Products(
+    'tonerAlterTn660.jpg',
+    'Tóner Alternativo p/Brother TN580/650 GTC',
+    20.27,
+    true,
+    'tóner',
+    false,
+);
+const tonerAlterHp279A = new Products(
+    'tonerAlterCF279A.avif',
+    'Tóner Alternativo p/HP CF279A GTC',
+    18.01,
+    true,
+    'tóner',
+    false,
+);
+const tonerAlterHp255A = new Products(
+    'tonerAlterCE255A.jpg',
+    'Tóner Alternativo p/HP CE255A Perfonmance',
+    22.52,
+    true,
+    'tóner',
+    false,
+);
+
+// CATEGORIA VARIOS
+const carryDiskAdata = new Products(
+    'carryDiskAdataAED600.jpg',
+    'Carry Disk 2.5" Sata AED600 Adata',
+    32.85,
+    true,
+    'varios',
+    false,
+);
+const powerBank2600TRV = new Products(
+    'powerBank2600mahTRV.jpg',
+    'Cargador Portátil 2600mah TRV',
+    13.51,
+    true,
+    'varios',
+    false,
+);
+const cargadorInalambricoT1000 = new Products(
+    'CargadorInalambricoPerformanceT1000.jpeg',
+    'Cargador Inalámbrico T1000 Perfonmance',
+    20.27,
+    true,
+    'varios',
+    false,
+);
+const cableDisplayPortNisuta = new Products(
+    'cableDisplayPortNisuta.webp',
+    'Cable DisplayPort a HDMI 1.8m NS-CADPHD Nisuta',
+    45,
+    true,
+    'varios',
+    false,
+);
+
+console.log({productsStock, productsPromo, productsCategory});
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS CON STOCK EN SECCION PROMOS WEB. LAS INSTANCIAS DE PRODUCTOS RENDERIZADAS SERáN UNICAMENTE LAS QUE TENGAN LA PROPIEDAD STOCK EN TRUE.
 
 export default { productsPromo, productsCategory, searchCategory };
