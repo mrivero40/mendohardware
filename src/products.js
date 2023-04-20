@@ -140,9 +140,9 @@ const routerC20 = new Products(
     'routerArcherC20.jpg',
     'Router Inalámbrico AC750 C20 Dual Band Tp-Link',
     55.82,
-    true,
+    false,
     'conectividad',
-    true,
+    false,
 );
 const router850n = new Products(
     'router850n.jpg',
@@ -357,7 +357,7 @@ const tecladoNumGenius110 = new Products(
 const botellaEpsonT544 = new Products(
     'epsonT544.png',
     'Botellas de Tinta T544 Epson original packX4',
-    81.4,
+    85.44,
     true,
     'tintas',
     true,
