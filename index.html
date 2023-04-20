@@ -14,7 +14,7 @@
     <title>Mendohardware Computación | Mendoza</title>
     <link rel="shortcut icon" href="https://mendohardware.com.ar/img/icono.ico" type="image/x-icon">
     <link rel="preload" href="./fonts/Ubuntu-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link id="stylesCss" rel="stylesheet" href="./css/main.css?v=" />
+    <link id="stylesCss" rel="stylesheet" href="./css/main.css" />
     <!--<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">-->
@@ -268,10 +268,7 @@
     </footer>
 
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const css = document.getElementById("stylesCss");        
-        css.href = `./css/main.css?v=${new Date().getTime()}`;
-        
+      document.addEventListener('DOMContentLoaded', () => {        
         const script = document.createElement("script");
         script.type = "module";
         script.src = `./src/script.js?v=${new Date().getTime()}`;
