@@ -3,7 +3,7 @@
 
 // IMPORTACIONES DESDE OTROS ARCHIVOS
 
-import info from './products.js';
+//import info from './products.js';
 import { registerImg } from './lazy.js';
 
 
@@ -13,7 +13,7 @@ const dolarCot = 225;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 
 window.addEventListener('load', function() {
-    renderProducts(info.productsPromo);
+    renderProducts(productsPromo);
 });
 
 
@@ -124,7 +124,7 @@ buttonCategories.forEach( button => {
         removeSelect();
         button.classList.add('button-select');
         let category = button.outerText.toLowerCase();
-        renderProducts( info.searchCategory(category) );
+        renderProducts( searchCategory(category) );
     });
 });
 
@@ -134,5 +134,5 @@ function removeSelect() {
 
 const buttonHot = document.getElementById('buttonHot');
 buttonHot.addEventListener('click', function() {
-    renderProducts(info.productsPromo);
+    renderProducts(productsPromo);
 });

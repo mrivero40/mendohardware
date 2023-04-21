@@ -475,4 +475,4 @@ const cableDisplayPortNisuta = new Products(
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS CON STOCK EN SECCION PROMOS WEB. LAS INSTANCIAS DE PRODUCTOS RENDERIZADAS SERáN UNICAMENTE LAS QUE TENGAN LA PROPIEDAD STOCK EN TRUE.
 
-export default { productsPromo, productsCategory, searchCategory };
+//export default { productsPromo, productsCategory, searchCategory };
