@@ -396,6 +396,15 @@ const cartuchoEpsonT073 = new Products(
     false,
 );
 
+const cartuchoKodak10 = new Products(
+    'cartuchoKodak10.jpg',
+    'Cartucho de Tinta 10 Kodak original',
+    11.11,
+    true,
+    'tintas',
+    false,
+);
+
 // CATEGORIA TONER
 const tonerAlterBrotherTn1060 = new Products(
     'tonerAlterTn1060.jpg',
