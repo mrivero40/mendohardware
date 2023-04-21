@@ -179,9 +179,10 @@ const gigabyte240 = new Products(
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
-    35.91,
-    false,
-    'discos sólidos',    
+    47.35,
+    true,
+    'discos sólidos',
+    true,
 );
 const ssd480kingston = new Products(
     'ssdA400480gb.jpg',
