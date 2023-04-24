@@ -60,7 +60,7 @@ renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1207.10); // Not 
 const spanPriceRight = document.querySelector('#spanPriceRight');
 const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
-renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1509.28); // Not 15.6 Lenovo V15 I3-10ma
+renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1588.71); // Not 15.6 Lenovo V15 I3-10ma
 
 function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
