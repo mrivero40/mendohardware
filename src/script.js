@@ -62,7 +62,7 @@ const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
 renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1588.71); // Not 15.6 Lenovo V15 I3-10ma
 
-function renderHomePrice(priceCont, duesCont, pTFCont, price) {
+/*function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
     const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
     const priceTF = (pricePayment * 1.5).toFixed(0);
@@ -70,7 +70,7 @@ function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     priceCont.innerText = `$${formatPrice(pricePayment)}`;    
     duesCont.innerText = `$${formatPrice(priceDues)}*`;    
     pTFCont.innerText = ` | PTF$${formatPrice(priceTF)}*`;
-};
+};*/
 
 /*
 
@@ -105,8 +105,8 @@ function renderProducts(productsList) {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
-        
+        // h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
+        h4ProductPrice.innerText = 'Consultar';
         
         divContainerPrincipal.appendChild(divProductContainer);
         figureImgContainer.appendChild(imgProductImage);
