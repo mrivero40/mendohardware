@@ -243,6 +243,14 @@ const usbSandisk64UltraShift = new Products(
     'memorias flash',
     false,
 );
+const usbKingston32gbC = new Products(
+    'kingstonDT7032Gb.jpg',
+    'Pen Drive usb-C 32gb DT70 Kingston',
+    11.94,
+    true,
+    'memorias flash',
+    false,
+);
 const microSdSandisk32gb = new Products(
     'microSd32gbSandisk.webp',
     'Micro Sd 32gb c/adap clase10 Sandisk',
@@ -363,6 +371,14 @@ const botellaEpsonT544 = new Products(
     'tintas',
     true,
 );
+const botellaEpsonT664 = new Products(
+    'EpsonT664.jpg',
+    'Botella de Tinta T664 Epson original c/u',
+    29.58,
+    true,
+    'tintas',
+    true,
+);
 const botellaBrotherBT5001 = new Products(
     'botellaBrotherBT5001.webp',
     'Botellas de Tinta BT5001 Brother original',
@@ -395,7 +411,6 @@ const cartuchoEpsonT073 = new Products(
     'tintas',
     false,
 );
-
 const cartuchoKodak10 = new Products(
     'cartuchoKodak10.jpg',
     'Cartucho de Tinta 10 Kodak original',
@@ -404,6 +419,15 @@ const cartuchoKodak10 = new Products(
     'tintas',
     false,
 );
+const cartuchoAlterHp56Y57 = new Products(
+    'alterGneissHP.jpg',
+    'Cartuchos Alternativos p/HP 56/57 Gneiss',
+    41.01,
+    true,
+    'tintas',
+    false,
+);
+
 
 // CATEGORIA TONER
 const tonerAlterBrotherTn1060 = new Products(
