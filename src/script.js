@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 228;
+const dolarCot = 238;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 
 window.addEventListener('load', function() {
@@ -50,27 +50,27 @@ function navigation() {
 const spanPriceLeft = document.querySelector('#spanPriceLeft');
 const spanDuesLeft = document.querySelector('#spanDuesLeft');
 const spanTFLeft = document.querySelector('#spanTFLeft');
-//renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1503.46); // Not 15.6 Dell 3511 i3-11va
+renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1693.91); // Not 15.6 Dell 3511 i3-11va
 
 const spanPriceCenter = document.querySelector('#spanPriceCenter');
 const spanDuesCenter = document.querySelector('#spanDuesCenter');
 const spanTFCenter = document.querySelector('#spanTFCenter');
-//renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1207.10); // Not 14 Hp 240-g8 i3-10ma
+renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1247.78); // Not 14 Hp 240-g8 i3-10ma
 
 const spanPriceRight = document.querySelector('#spanPriceRight');
 const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
-//renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1588.71); // Not 15.6 Lenovo V15 I3-10ma
+renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 2166.94); // Not 15.6 Lenovo V15 I5-1135ma
 
-/*function renderHomePrice(priceCont, duesCont, pTFCont, price) {
+function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
-    const priceDues = ((pricePayment * 1.5) / 12).toFixed(0);
-    const priceTF = (pricePayment * 1.5).toFixed(0);
+    const priceDues = ((pricePayment * 1.6) / 12).toFixed(0);
+    const priceTF = (pricePayment * 1.6).toFixed(0);
     
     priceCont.innerText = `$${formatPrice(pricePayment)}`;    
     duesCont.innerText = `$${formatPrice(priceDues)}*`;    
     pTFCont.innerText = ` | PTF$${formatPrice(priceTF)}*`;
-};*/
+};
 
 /*
 
@@ -105,8 +105,8 @@ function renderProducts(productsList) {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        // h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
-        h4ProductPrice.innerText = 'Consultar';
+        h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
+        //h4ProductPrice.innerText = 'Consultar';
         
         divContainerPrincipal.appendChild(divProductContainer);
         figureImgContainer.appendChild(imgProductImage);

@@ -57,7 +57,7 @@ const xiaomiEarBasic2 = new Products(
 const msiGh30 = new Products(
     'auricularMsiGamer.png',
     'Auricular c/mic Gamer Inmerse Gh30 Msi',
-    67.38,
+    76.83,
     true,
     'auriculares',
     true,
@@ -65,7 +65,7 @@ const msiGh30 = new Products(
 const auriGenius04S = new Products(
     'geniusHs04S.jpg',
     'Auricular c/mic HS-04S Genius (single jack)',
-    22.85,
+    30.06,
     true,
     'auriculares',
     false,
@@ -73,15 +73,15 @@ const auriGenius04S = new Products(
 const geniusHsM900Bt = new Products(
     'hsM900BT.jpg',
     'Auricular c/mic bluetooth HS-M900BT Genius',
-    26.78,
+    31.06,
     true,
     'auriculares',
     true,
 );
 const auriGeniusHs200c = new Products(
     'geniusHs200C.jpg',
-    'Auricular c/mic HS-200C Genius (PC)',
-    10.25,
+    'Auricular c/mic HS-200C Genius (PC-doble jack)',
+    13.5,
     true,
     'auriculares',
     false,
@@ -91,7 +91,7 @@ const auriGeniusHs200c = new Products(
 const usbWifiPerfonmance = new Products(
     'usbWifi300.png',
     'Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance',
-    13.39,
+    17,
     true,
     'conectividad',
     true,
@@ -107,7 +107,7 @@ const usbWifi823n = new Products(
 const usbWifi725n = new Products(
     'Wifi725nTpLink.jpg',
     'Wifi usb 150mbps 2.4Ghz 725n Tp-Link',
-    18.13,
+    24.39,
     true,
     'conectividad',
     false,
@@ -115,7 +115,7 @@ const usbWifi725n = new Products(
 const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
     'Sistema WIFI Deco M5 AC1300 Mesh Tp-Link',
-    134.90,
+    233.05,
     true,
     'conectividad',
     false,
@@ -123,7 +123,7 @@ const tpLinkDecoM5 = new Products(
 const router841HP = new Products(
     'tl-wr841hp.jpg',
     'Router Inalámbrico TL-WR841HP 300Mbps Tp-Link',
-    92.55,
+    107.98,
     true,
     'conectividad',
     false,
@@ -131,7 +131,7 @@ const router841HP = new Products(
 const router940n = new Products(
     'routerWR940N.jpg',
     'Router Inalámbrico TL-WR940N 450mbps Tp-Link',
-    59.84,
+    69.15,
     true,
     'conectividad',
     false,
@@ -179,7 +179,7 @@ const gigabyte240 = new Products(
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
-    47.35,
+    61.48,
     true,
     'discos sólidos',
     true,
@@ -194,7 +194,7 @@ const ssd480kingston = new Products(
 const ssd240Msi = new Products(
     'ssd240Msi.png',
     'Disco Sólido SATA 240gb MSI',
-    72.88,
+    81.9,
     true,
     'discos sólidos',
     true,
@@ -204,7 +204,7 @@ const ssd240Msi = new Products(
 const fuenteATX550WPerf = new Products(
     'fuenteATX550WPerf.jpg',
     'Fuente ATX 550W sataX4 Perfonmance',
-    37.53,
+    42.47,
     true,
     'fuentes',
     false,
@@ -212,7 +212,7 @@ const fuenteATX550WPerf = new Products(
 const fuenteATX600WCX = new Products(
     'fuenteATX600WCX.jpg',
     'Fuente ATX 600W sataX4 CX',
-    40.49,
+    48.49,
     true,
     'fuentes',
     false,
@@ -220,7 +220,7 @@ const fuenteATX600WCX = new Products(
 const fuenteSlim600WCX = new Products(
     'fuenteSlim600WCX.jpeg',
     'Fuente Slim 600W sataX4 p/GabSlim CX',
-    45,
+    53.09,
     true,
     'fuentes',
     false,
@@ -230,7 +230,7 @@ const fuenteSlim600WCX = new Products(
 const usbSandisk32UltraShift = new Products(
     'usbSandisk32gbUltraShift.jpg',
     'Pen Drive usb 32gb UltraShift Sandisk',
-    18.09,
+    20.25,
     true,
     'memorias flash',
     false,
@@ -238,7 +238,7 @@ const usbSandisk32UltraShift = new Products(
 const usbSandisk64UltraShift = new Products(
     'usbSandisk64gbUltraShift.jpg',
     'Pen Drive usb 64gb UltraShift Sandisk',
-    23.53,
+    28.8,
     true,
     'memorias flash',
     false,
@@ -246,7 +246,7 @@ const usbSandisk64UltraShift = new Products(
 const usbKingston32gbC = new Products(
     'kingstonDT7032Gb.jpg',
     'Pen Drive usb-C 32gb DT70 Kingston',
-    11.94,
+    18,
     true,
     'memorias flash',
     false,
@@ -254,7 +254,7 @@ const usbKingston32gbC = new Products(
 const microSdSandisk32gb = new Products(
     'microSd32gbSandisk.webp',
     'Micro Sd 32gb c/adap clase10 Sandisk',
-    16.61,
+    21.43,
     true,
     'memorias flash',
     false,
@@ -264,7 +264,7 @@ const microSdSandisk32gb = new Products(
 const trustYvi = new Products(
     'mouseTrust.png',
     'Mouse inalámbrico Trust YVI ambidiestro',
-    16.15,
+    18.64,
     true,
     'mouses',
     true,
@@ -272,7 +272,7 @@ const trustYvi = new Products(
 const geniusEco = new Products(
     'geniusEco8100.jpeg',
     'Mouse Inalámbrico Eco-8100 recergable Genius',
-    24.23,
+    32.62,
     true,
     'mouses',
     true,
@@ -280,7 +280,7 @@ const geniusEco = new Products(
 const mouGeniusScorpion = new Products(
     'mouseGeniusScorpion.jpg',
     'Mouse Gamer Scorpion M8-610 Genius',
-    30.76,
+    33.76,
     true,
     'mouses',
     false,
@@ -288,7 +288,7 @@ const mouGeniusScorpion = new Products(
 const mouGenius = new Products(
     'geniusDX110.jpg',
     'Mouse Usb óptico DX-120 Genius',
-    7.34,
+    9.88,
     true,
     'mouses',
     false,
@@ -296,7 +296,7 @@ const mouGenius = new Products(
 const mouGeniusMicro = new Products(
     'geniusMicro900s.jpg',
     'Mouse Inalámbrico MicroTraveler 900s Genius',
-    27.15,
+    36.49,
     true,
     'mouses',
     false,
@@ -304,7 +304,7 @@ const mouGeniusMicro = new Products(
 const mouGeniusMicroT = new Products(
     'geniusMicroTraveler.jpg',
     'Mouse Retráctil MicroTraveler Genius',
-    6.78,
+    8,
     true,
     'mouses',
     false,
@@ -312,7 +312,7 @@ const mouGeniusMicroT = new Products(
 const mouGameMaxMg7 = new Products(
     'mouseGameMaxMg7.png',
     'Mouse + Pad Gamer MG7 GameMax',
-    38.41,
+    40.93,
     true,
     'mouses',
     false,
@@ -322,7 +322,7 @@ const mouGameMaxMg7 = new Products(
 const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
     'Parlantes 2.0 USB Genius 6w SP-HF280',
-    25.39,
+    30.46,
     true,
     'parlantes',
     false,
@@ -340,7 +340,7 @@ const gigabyteKm6300 = new Products(
 const tecladoGeniusKb117 = new Products(
     'tecGeniusKb117.webp',
     'Teclado Usb Español KB-117 Genius',
-    16.32,
+    19.05,
     true,
     'teclados',
     false,
@@ -348,7 +348,7 @@ const tecladoGeniusKb117 = new Products(
 const tecladoGameMaxK207 = new Products(
     'tecladoGameMaxK207.webp',
     'Teclado Usb Español K207 GameMax',
-    27.05,
+    30.67,
     true,
     'teclados',
     true,
@@ -356,7 +356,7 @@ const tecladoGameMaxK207 = new Products(
 const tecladoNumGenius110 = new Products(
     'tecladoNumPadGenius110.jpg',
     'Teclado Numeral Usb NumPad110 Genius',
-    17.88,
+    20.86,
     true,
     'teclados',
     false,
@@ -366,7 +366,7 @@ const tecladoNumGenius110 = new Products(
 const botellaEpsonT544 = new Products(
     'epsonT544.png',
     'Botellas de Tinta T544 Epson original packX4',
-    98.59,
+    126.69,
     true,
     'tintas',
     true,
@@ -374,7 +374,7 @@ const botellaEpsonT544 = new Products(
 const botellaEpsonT664 = new Products(
     'EpsonT664.jpg',
     'Botella de Tinta T664 Epson original c/u',
-    29.58,
+    63.55,
     true,
     'tintas',
     true,
@@ -382,7 +382,7 @@ const botellaEpsonT664 = new Products(
 const botellaBrotherBT5001 = new Products(
     'botellaBrotherBT5001.webp',
     'Botellas de Tinta BT5001 Brother original',
-    12.61,
+    15.57,
     true,
     'tintas',
     false,
@@ -390,7 +390,7 @@ const botellaBrotherBT5001 = new Products(
 const botellaBrother60BK = new Products(
     'tintaBrother60BK.jpg',
     'Botella de Tinta 60BK Brother original',
-    16.89,
+    20.85,
     true,
     'tintas',
     false,
@@ -398,7 +398,7 @@ const botellaBrother60BK = new Products(
 const botellaBrotherBT6001 = new Products(
     'tintaBrotherBT6001.jpg',
     'Botella de Tinta BT6001 Brother original',
-    19.5,
+    20.85,
     true,
     'tintas',
     false,
@@ -406,23 +406,23 @@ const botellaBrotherBT6001 = new Products(
 const cartuchoEpsonT073 = new Products(
     'cartuchoEpsonT073.webp',
     'Cartucho de Tinta T073 Epson original',
-    13.96,
+    15,
     true,
     'tintas',
     false,
 );
 const cartuchoKodak10 = new Products(
     'cartuchoKodak10.jpg',
-    'Cartucho de Tinta 10 Kodak original',
-    11.11,
+    'Cartucho de Tinta 10 Kodak original c/u',
+    14.12,
     true,
     'tintas',
     false,
 );
 const cartuchoAlterHp56Y57 = new Products(
     'alterGneissHP.jpg',
-    'Cartuchos Alternativos p/HP 56/57 Gneiss',
-    41.01,
+    'Cartuchos Alternativos p/HP 56/57 Gneiss (02/2022)',
+    84.74,
     true,
     'tintas',
     false,
@@ -433,7 +433,7 @@ const cartuchoAlterHp56Y57 = new Products(
 const tonerAlterBrotherTn1060 = new Products(
     'tonerAlterTn1060.jpg',
     'Tóner Alternativo p/Brother TN1060 Tecnovibe',
-    15.94,
+    18.40,
     true,
     'tóner',
     false,
@@ -441,7 +441,7 @@ const tonerAlterBrotherTn1060 = new Products(
 const tonerAlterBrotherTn660 = new Products(
     'tonerAlterTn660.jpg',
     'Tóner Alternativo p/Brother TN660/2340/2370 GTC',
-    20.27,
+    22.38,
     true,
     'tóner',
     false,
@@ -449,7 +449,7 @@ const tonerAlterBrotherTn660 = new Products(
 const tonerAlterBrotherTn580 = new Products(
     'tonerAlterTn660.jpg',
     'Tóner Alternativo p/Brother TN580/650 GTC',
-    20.27,
+    22.38,
     true,
     'tóner',
     false,
@@ -457,7 +457,7 @@ const tonerAlterBrotherTn580 = new Products(
 const tonerAlterHp279A = new Products(
     'tonerAlterCF279A.avif',
     'Tóner Alternativo p/HP CF279A GTC',
-    18.01,
+    18.79,
     true,
     'tóner',
     false,
@@ -475,7 +475,7 @@ const tonerAlterHp255A = new Products(
 const carryDiskAdata = new Products(
     'carryDiskAdataAED600.jpg',
     'Carry Disk 2.5" Sata AED600 Adata',
-    32.85,
+    38.34,
     true,
     'varios',
     false,
@@ -483,7 +483,7 @@ const carryDiskAdata = new Products(
 const powerBank2600TRV = new Products(
     'powerBank2600mahTRV.jpg',
     'Cargador Portátil 2600mah TRV',
-    13.51,
+    16.94,
     true,
     'varios',
     false,
@@ -491,7 +491,7 @@ const powerBank2600TRV = new Products(
 const cargadorInalambricoT1000 = new Products(
     'CargadorInalambricoPerformanceT1000.jpeg',
     'Cargador Inalámbrico T1000 Perfonmance',
-    20.27,
+    22.27,
     true,
     'varios',
     false,
@@ -499,7 +499,7 @@ const cargadorInalambricoT1000 = new Products(
 const cableDisplayPortNisuta = new Products(
     'cableDisplayPortNisuta.webp',
     'Cable DisplayPort a HDMI 1.8m NS-CADPHD Nisuta',
-    45,
+    48.1,
     true,
     'varios',
     false,
