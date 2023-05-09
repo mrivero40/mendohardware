@@ -373,8 +373,8 @@ const botellaEpsonT544 = new Products(
 );
 const botellaEpsonT664 = new Products(
     'EpsonT664.jpg',
-    'Botella de Tinta T664 Epson original c/u',
-    63.55,
+    'Botella de Tinta T664 Epson original packX4',
+    147.68,
     true,
     'tintas',
     true,
@@ -434,7 +434,7 @@ const tonerAlterBrotherTn1060 = new Products(
     'tonerAlterTn1060.jpg',
     'Tóner Alternativo p/Brother TN1060 Tecnovibe',
     18.40,
-    true,
+    false,
     'tóner',
     false,
 );
@@ -476,7 +476,7 @@ const carryDiskAdata = new Products(
     'carryDiskAdataAED600.jpg',
     'Carry Disk 2.5" Sata AED600 Adata',
     38.34,
-    true,
+    false,
     'varios',
     false,
 );
