@@ -381,7 +381,7 @@ const botellaEpsonT664 = new Products(
 );
 const botellaBrotherBT5001 = new Products(
     'botellaBrotherBT5001.webp',
-    'Botellas de Tinta BT5001 Brother original',
+    'Botellas de Tinta BT5001 Brother original c/u',
     15.57,
     true,
     'tintas',
