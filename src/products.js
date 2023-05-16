@@ -398,7 +398,7 @@ const botellaBrother60BK = new Products(
 const botellaBrotherBT6001 = new Products(
     'tintaBrotherBT6001.jpg',
     'Botella de Tinta BT6001 Brother original',
-    20.85,
+    33.85,
     true,
     'tintas',
     false,
