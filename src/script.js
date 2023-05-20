@@ -50,22 +50,22 @@ function navigation() {
 const spanPriceLeft = document.querySelector('#spanPriceLeft');
 const spanDuesLeft = document.querySelector('#spanDuesLeft');
 const spanTFLeft = document.querySelector('#spanTFLeft');
-renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1693.91); // Not 15.6 Dell 3511 i3-11va
+renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1503.46); // Not 15.6 Dell 3511 i3-11va
 
 const spanPriceCenter = document.querySelector('#spanPriceCenter');
 const spanDuesCenter = document.querySelector('#spanDuesCenter');
 const spanTFCenter = document.querySelector('#spanTFCenter');
-renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1247.78); // Not 14 Hp 240-g8 i3-10ma
+renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1199.81); // Not 14 Hp 240-g8 i3-10ma
 
 const spanPriceRight = document.querySelector('#spanPriceRight');
 const spanDuesRight = document.querySelector('#spanDuesRight');
 const spanTFRight = document.querySelector('#spanTFRight');
-renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 2166.94); // Not 15.6 Lenovo V15 I5-1135ma
+renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1958); // Not 15.6 Lenovo V15 I5-1135ma
 
 function renderHomePrice(priceCont, duesCont, pTFCont, price) {
     const pricePayment = (dolarCot * price).toFixed(0);
-    const priceDues = ((pricePayment * 1.6) / 12).toFixed(0);
-    const priceTF = (pricePayment * 1.6).toFixed(0);
+    const priceDues = ((pricePayment * 1.55) / 12).toFixed(0);
+    const priceTF = (pricePayment * 1.55).toFixed(0);
     
     priceCont.innerText = `$${formatPrice(pricePayment)}`;    
     duesCont.innerText = `$${formatPrice(priceDues)}*`;    

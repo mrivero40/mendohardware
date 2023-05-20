@@ -17,7 +17,7 @@
 /* VARIABLES STYLES */
 
 :root {
-  --orangeLogo:  #e86905;
+  --orangeLogo: #EE880D;
   --orangeSecondary: #F5B041;
   --whitePrimary: #FAFAFA;
   --grayPrimary: #B3B3B3;
@@ -50,6 +50,10 @@ h1 {
   font-size: var(--fontPrimary);
   color: var(--orangeLogo);
   text-align: center;  
+}
+
+h1 span {
+  color: var(--grayPrimary);
 }
 
 h2 {
@@ -476,7 +480,7 @@ footer p {
     border-right: 1px solid var(--orangeSecondary);
   }
 
-  header .nav-right .nav-item:nth-child(3) {
+  header .nav-right .nav-item:nth-child(4) {
     border-right: none;
   }
 

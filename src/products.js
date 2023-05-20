@@ -427,7 +427,22 @@ const cartuchoAlterHp56Y57 = new Products(
     'tintas',
     false,
 );
-
+const botellaBrohter60bkBt5001 = new Products(    
+    'brother60bk-bt5001pack.jpg',
+    'Botellas de Tinta 60BK+BT5001 Brother original packX4',
+    61.68,
+    true,
+    'tintas',
+    false,
+);
+const botellaBrotherBt6001Bt5001 = new Products(
+    'bt6001-bt5001-x4.jpeg',
+    'Botellas de Tinta BT6001+BT5001 Brother original packX4',
+    83.29,
+    true,
+    'tintas',
+    false,
+);
 
 // CATEGORIA TONER
 const tonerAlterBrotherTn1060 = new Products(
