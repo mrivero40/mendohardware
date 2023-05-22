@@ -116,7 +116,7 @@ const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
     'Sistema WIFI Deco M5 AC1300 Mesh Tp-Link',
     167.36,
-    true,
+    false,
     'conectividad',
     false,
 );
