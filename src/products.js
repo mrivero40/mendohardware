@@ -115,8 +115,8 @@ const usbWifi725n = new Products(
 const tpLinkDecoM5 = new Products(
     'decoM5.jpg',
     'Sistema WIFI Deco M5 AC1300 Mesh Tp-Link',
-    167.36,
-    false,
+    222.27,
+    true,
     'conectividad',
     false,
 );
