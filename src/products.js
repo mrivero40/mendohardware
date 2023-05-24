@@ -132,7 +132,7 @@ const router940n = new Products(
     'routerWR940N.jpg',
     'Router Inalámbrico TL-WR940N 450mbps Tp-Link',
     69.15,
-    true,
+    false,
     'conectividad',
     false,
 );
@@ -175,6 +175,14 @@ const gigabyte240 = new Products(
     50.58,
     false,
     'discos sólidos',
+);
+const hikvision240 = new Products(
+    'ssd240gbHikvision.jpg',
+    'Disco Sólido SATA 240gb Hikvision',
+    56.4,
+    true,
+    'discos sólidos',
+    true,
 );
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
