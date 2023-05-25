@@ -325,6 +325,14 @@ const mouGameMaxMg7 = new Products(
     'mouses',
     false,
 );
+const mouLogitechM110 = new Products(
+    'mouseLogitechM110-red.webp',
+    'Mouse USB silencioso M110 Logitech',
+    20.22,
+    true,
+    'mouses',
+    false,
+);
 
 // CATEGORIA PARLANTES
 const geniusHf280 = new Products(
