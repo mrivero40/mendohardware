@@ -365,7 +365,7 @@ const tecladoGameMaxK207 = new Products(
     'tecladoGameMaxK207.webp',
     'Teclado Usb Español K207 GameMax',
     30.67,
-    true,
+    false,
     'teclados',
     true,
 );
@@ -423,14 +423,6 @@ const cartuchoEpsonT073 = new Products(
     'cartuchoEpsonT073.webp',
     'Cartucho de Tinta T073 Epson original',
     15,
-    true,
-    'tintas',
-    false,
-);
-const cartuchoKodak10 = new Products(
-    'cartuchoKodak10.jpg',
-    'Cartucho de Tinta 10 Kodak original c/u',
-    14.12,
     true,
     'tintas',
     false,
