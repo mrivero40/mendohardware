@@ -215,7 +215,7 @@ main .container-home .home-categories-container figure {
 }
 
 
-
+/* ESTILOS DE LAS 3 NOTEBOOK 
 .flex-container-inicio {
   width: 100%;
   height: auto;
@@ -231,9 +231,7 @@ main .container-home .home-categories-container figure {
   margin-inline: 1rem;
   text-align: center;
   border-radius: 2rem;
-  background: /*linear-gradient(0deg, rgba(6,6,7,1) 0%, rgba(250,250,250,1) 100%);*/
-              /*linear-gradient(90deg, rgba(132,226,247,1) 0%, rgba(250,250,250,1) 50%, rgba(132,226,247,1) 100%);*/
-              var(--whitePrimary);
+  background: var(--whitePrimary);
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 60% 40%;
@@ -276,6 +274,7 @@ main .container-home .home-categories-container figure {
   font-size: var(--fontSmall);
   color: var(--grayBackground);
 }
+*/
 
 
 .warranty-container {
@@ -308,7 +307,7 @@ main .container-home .home-categories-container figure {
   text-align: center;
   font-style: italic;
   color: var(--whitePrimary);
-  font-size: var(--fontSmall);
+  font-size: var(--fontStandard);
 }
 
 
@@ -364,11 +363,12 @@ main .container-home .home-categories-container figure {
 /* GRILLA DE PRODUCTOS WEB*/
 
 .grid-container-principal {
+  width: 88%;
+  margin: 0 auto 4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
+  grid-template-columns: repeat(auto-fit, 20rem);
   gap: 5rem 5rem;
   justify-content: center;
-  margin-block-end: 4rem;
 }
 
 .grid-container-img {
@@ -409,7 +409,7 @@ main .container-home .home-categories-container figure {
   border: 1px solid var(--graySecondary);
   border-radius: 2rem;
   padding: 2rem;
-  box-shadow: 0 0 2rem var(--graySecondary);
+  box-shadow: 0 0 1.6rem var(--graySecondary);
   will-change: transform;
   transform: scale(1);
   transition: transform 1.5s;
@@ -447,7 +447,7 @@ main .container-home .home-categories-container figure {
 /* ARTICLE SERVICIOS */
 
 .available-service {
-  width: 90%;
+  width: 88%;
   margin: 0 auto;
   margin-block-end: 8rem;
 }
@@ -460,16 +460,16 @@ main .container-home .home-categories-container figure {
 }
 
 .available-service .text-available-service {
-  width: 80%;
+  width: 88%;
   margin: 0 auto;
   text-align: center;
   font-size: var(--fontSecondary);
   margin-block-end: 4rem;
-  line-height: 3rem;
+  line-height: 2;
 }
 
 .available-service .text-tips-service {
-  width: 80%;
+  width: 88%;
   margin: 0 auto;
   text-align: center;
   font-style: italic;
@@ -486,7 +486,7 @@ main .container-home .home-categories-container figure {
 
 .flex-item-servicios {
   width: 15%;
-  height: 150px;
+  height: 15rem;
   text-align: center;
   font-size: var(--fontStandard);
   margin-inline: 2rem;
@@ -617,32 +617,70 @@ footer p {
     margin-block-end: 1rem;
   }*/
   
-  .container-home .text-phrase {
-    width: 90%;
+  main .container-home .home-categories-container figure {
+    width: auto;
+    text-align: center;
   }
 
+  main .container-home .home-categories-container figure img {
+    width: 56%;
+  }
+
+
   .warranty-container {
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
+    width: 92%;
+    justify-content: space-between;
+  }
+
+  .warranty-element {
+    width: 30%;
   }
   
-  .warranty-element {
+  .warranty-element h5 {
+    width: 72%;
+    text-align: center;
+  }
+
+  .warranty-element span {
+    width: 16%;
+  }
+
+  .warranty-element span img {
+    margin-inline-end: 0;
     width: 100%;
-    max-width: 40rem;
-    margin-block-end: 3rem;
-  } 
+  }
+
+  .container-home .text-phrase {
+    width: 92%;
+  }
 
 
  /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY */
 
   .section-hot-products {
-    width: 95%;
+    width: 98%;
   }
 
   .section-hot-products .text-hot-products {
     line-height: normal;
-    width: 90%;
+    width: 98%;
+  }
+
+  .grid-container-principal {
+    gap: 1.6rem;
+  }
+
+  .grid-container-product {
+    padding: .8rem;
+    border-radius: .8rem;
+  };
+
+  .grid-container-img {
+    border-radius: .8rem;
+  }
+
+  .grid-container-img img {
+    border-radius: .8rem;
   }
 
   .loading-skeleton {
@@ -653,80 +691,179 @@ footer p {
  /* ARTICLE SERVICIOS MEDIA QUERY*/
 
   .available-service {
-    width: 90%;
+    width: 92%;
   }
 
   .available-service .text-available-service {
-    width: 90%;
-    line-height: normal;
+    width: 92%;
+    line-height: 1.5;
   }
 
-  .flex-conteiner-servicios {
-    align-items: center;
+  .flex-container-servicios {
+    justify-content: space-evenly;
   }
 
   .flex-item-servicios {
-    width: 25rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
   }
 
   .available-service .text-tips-service {
-    width: 90%;
+    width: 92%;
   }
 
 
   /* FOOTER PIE DE PAGINA MEDIA QUERY */
 
   footer .pTime {
-    padding-inline: 2rem;
+    padding-inline: 2.4rem;
   }
 
   .footer .icon-redes a img {
     width: 4rem;
     margin-block: 3rem;
-    margin-inline: 1rem;
+    margin-inline: 1.6rem;
   }
 
   footer .pCredits {
-    margin-inline: 2rem;
+    padding-inline: 2.4rem;
   }
 
 }
 
 
-/* MEDIA QUERY DISPLAY BREAKPOINT 524PX hacer a los 800px*/
+/* 2DO MEDIA QUERY DISPLAY BREAKPOINT 768px*/
 
 @media (max-width: 768px) {
+
+  /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY */
+
+  header .nav-left, header .nav-center, header .nav-right {
+    width: 100%;
+    justify-content: center;
+    margin-block: 1.6rem;
+    margin-inline: 0;
+  }
+
+  header .nav-right .nav-item:nth-child(4) {
+    padding-inline-end: 1.6rem;
+  }
+
+  
+  /* MAIN INICIO FLEX CONTEINER (PANTALLA INICIAL) MEDIA QUERY */
+
+  main .container-home-h1 div {
+    flex-direction: column-reverse;
+  }
+
+  main .container-home-h1 div figure a img {
+    margin: .8rem;
+  }
+
+  main .container-home .home-categories-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  main .container-home .home-categories-container figure {
+    width: 16rem;
+    height: 8.8rem;
+    margin-block: 3rem;
+  }
+
+  main .container-home .home-categories-container figure img {
+    width: 8.8rem;
+  }
+
+
   /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY */
 
   .section-hot-products {
     width: 100%;
   }
 
-  .section-hot-products .text-hot-products {
-    line-height: normal;
-    width: 95%;
-  }
+  /*.section-hot-products .text-hot-products {
+  }*/
 
   .section-hot-products .terminos {
-    width: 95%;
+    width: 88%;
     margin: 0 auto;
   }
 
   .grid-container-principal {
-    grid-template-columns: repeat(auto-fit, minmax(30%, 45%));
-    gap: 3rem 1rem;
+    gap: 2.4rem .8rem;
   }
 
   .loading-skeleton {
     height: 55%;
   }
+
+  
+  /* ARTICLE SERVICIOS MEDIA QUERY*/
+
+  .available-service {
+    width: 96%;
+  }
+
+  .flex-container-servicios {
+    justify-content: center;
+    width: 96%;
+  }
+
+  .flex-item-servicios {
+    margin-block-end: 4.8rem;
+  }
+  
+  .available-service .text-tips-service {
+    width: 96%;
+  }
 }
 
 
-/* MEDIA QUERY DISPLAY BREAKPOINT 400PX*/
+/* 3ER MEDIA QUERY DISPLAY BREAKPOINT 480PX*/
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+
+  /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY */
+
+  header .nav-left, header .nav-center, header .nav-right {
+    margin-block: .8rem;
+  }
+
+  header .nav-right .nav-item {
+    padding-inline: .8rem;
+  }
+
+  header .nav-important-news p {
+    width: 98%;
+  }
+
+  main .container-home .container-home-h1 {
+    flex-direction: column;
+    width: 98%;
+  }
+
+  main .container-home .container-home-h1 h1 {
+    text-align: center;
+  }
+
+  main .container-home .container-home-h1 div {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main .container-home .warranty-container {
+    flex-direction: column;
+    width: 98%;
+    align-items: center;
+  }
+
+  main .container-home .warranty-element {
+    width: 90%;
+    margin-block-end: 1.6rem;
+  }
+
 
   /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY */
 
@@ -735,22 +872,22 @@ footer p {
   }
 
   .section-hot-products .text-hot-products {
-    line-height: normal;
-    width: 95%;
+    line-height: 1.4;
+    width: 98%;
   }
 
   .section-hot-products .terminos {
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
   }
 
   .grid-container-principal {
-    grid-template-columns: 90%;
-    gap: 3rem 0rem;
+    grid-template-columns: 50% 50%;
+    gap: 2.4rem 2.4rem;
   }
 
   .loading-skeleton {
-    width: 233px;
-    height: 233px;
+    width: 23.3rem;
+    height: 23.3rem;
   }
 }
