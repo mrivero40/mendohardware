@@ -187,7 +187,7 @@ const hikvision240 = new Products(
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
-    61.48,
+    56,
     true,
     'discos sólidos',
     true,
@@ -202,7 +202,7 @@ const ssd480kingston = new Products(
 const ssd240Msi = new Products(
     'ssd240Msi.png',
     'Disco Sólido SATA 240gb MSI',
-    81.9,
+    72.86,
     true,
     'discos sólidos',
     true,
@@ -382,7 +382,7 @@ const tecladoNumGenius110 = new Products(
 const botellaEpsonT544 = new Products(
     'epsonT544.png',
     'Botellas de Tinta T544 Epson original packX4',
-    126.69,
+    133.09,
     true,
     'tintas',
     true,
@@ -390,7 +390,7 @@ const botellaEpsonT544 = new Products(
 const botellaEpsonT664 = new Products(
     'EpsonT664.jpg',
     'Botella de Tinta T664 Epson original packX4',
-    147.68,
+    140.65,
     true,
     'tintas',
     true,
@@ -421,7 +421,7 @@ const botellaBrotherBT6001 = new Products(
 );
 const cartuchoEpsonT073 = new Products(
     'cartuchoEpsonT073.webp',
-    'Cartucho de Tinta T073 Epson original',
+    'Cartucho de Tinta T073 Epson original c/u',
     15,
     true,
     'tintas',
