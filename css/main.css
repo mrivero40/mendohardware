@@ -214,69 +214,6 @@ main .container-home .home-categories-container figure {
   font-size: var(--fontStandard);
 }
 
-
-/* ESTILOS DE LAS 3 NOTEBOOK 
-.flex-container-inicio {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  margin-block-end: 4rem;
-}
-
-.flex-item {
-  width: 35rem;
-  height: 40rem;
-  margin-inline: 1rem;
-  text-align: center;
-  border-radius: 2rem;
-  background: var(--whitePrimary);
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 60% 40%;
-  padding-block: 1rem;
-  padding-inline: 1rem;
-  will-change: transform;  
-}
-
-.flex-item figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  opacity: .9;
-  transition: transform 3s;
-}
-
-.flex-item figure img:hover {
-  transform: scale(1.1);
-  transition: transform 1.5s;
-  opacity: 1;
-}
-
-.flex-item div h4 {
-  font-size: var(--fontPrimary);
-  color: var(--blackPrimary);
-}
-
-.flex-item div span {
-  color: var(--orangeLogo);
-}
-
-.flex-item div .text-description {
-  font-size: var(--fontStandard);
-  font-weight: bold;
-  padding-block: 1rem;
-  color: var(--blackPrimary);
-}
-
-.flex-item div .text-detail, .flex-item div .text-detail span {
-  font-size: var(--fontSmall);
-  color: var(--grayBackground);
-}
-*/
-
-
 .warranty-container {
   width: 88%;
   margin: 0 auto 3rem;
@@ -311,6 +248,99 @@ main .container-home .home-categories-container figure {
 }
 
 
+/* SECTION HOT NOTEBOOKS - FLEX CONTAINER NOTEBOOK - FLEX-ITEM (ESTILOS DE LAS 3 NOTEBOOK) */
+
+main .section-hot-notebooks {
+  margin-block-end: 8rem;
+}
+
+main .section-hot-notebooks h3 {
+  font-size: var(--fontPrimary);
+  color: var(--orangeLogo);
+  text-align: center;
+  margin-block-end: 2.4rem;
+}
+
+main .section-hot-notebooks .flex-container-notebooks {
+  background-color: var(--grayBackground);
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4.8rem 2.4rem;
+  margin-block-end: 2.4rem;
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item {
+  width: 32rem;
+  height: auto;
+  margin-inline: 1.6rem;
+  text-align: center;
+  border-radius: 1.6rem;
+  background: var(--graySecondary);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 45% 55%;  
+  will-change: transform;  
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item figure {
+  background-color: var(--whitePrimary);
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item figure img {  
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: .9;
+  transition: transform 3s;
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item figure img:hover {
+  transform: scale(1.05);
+  transition: transform 1.5s;
+  opacity: 1;
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.6rem .8rem;
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-description {
+  font-size: var(--fontStandard);
+  font-weight: bold;
+  color: var(--orangeSecondary);
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-detail, main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-detail span {
+  font-size: var(--fontSmall);
+  color: var(--whitePrimary);
+  line-height: 1.4;
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item div h4 {
+  font-size: 2.2rem;
+  color: var(--grayPrimary);
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item div span {
+  color: var(--orangeSecondary);
+}
+
+main .section-hot-notebooks .flex-container-notebooks .flex-item div p span {
+  font-size: var(--fontSmall);
+  color: var(--grayPrimary);
+}
+
+main .section-hot-notebooks p {
+  text-align: center;
+  font-size: var(--fontStandard);
+}
 
 
 /* ARTICLE GRID PRINCIPAL PROMOCIONES */
@@ -325,7 +355,7 @@ main .container-home .home-categories-container figure {
   font-size: var(--fontPrimary);
   color: var(--orangeLogo);
   text-align: center;
-  margin-block-end: 2rem;  
+  margin-block-end: 2.4rem;  
 }
 
 .text-hot-products {

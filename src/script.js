@@ -47,30 +47,39 @@ function navigation() {
 
 // IMPLEMENTACION DE PRECIOS CALCULADOS PARA PROMOS PRINCIPALES DEL HOME
 
-const spanPriceLeft = document.querySelector('#spanPriceLeft');
-const spanDuesLeft = document.querySelector('#spanDuesLeft');
-const spanTFLeft = document.querySelector('#spanTFLeft');
-//renderHomePrice(spanPriceLeft, spanDuesLeft, spanTFLeft, 1503.46); // Not 15.6 Dell 3511 i3-11va
+//const spanPriceLeft = document.querySelector('#spanPriceLeft');
+//const spanDuesLeft = document.querySelector('#spanDuesLeft');
+//const spanTFLeft = document.querySelector('#spanTFLeft');
+renderHomePrice({
+    priceCont: spanPriceLeft,
+    priceDues12: spanDuesLeft,
+    priceDues24: spanDuesLeft24,    
+    priceUSD: 1503,
+    pricesTF: spanPricesLeftTF,
+}); // Not 15.6 Dell 4gb 3511 i3-11va
 
-const spanPriceCenter = document.querySelector('#spanPriceCenter');
-const spanDuesCenter = document.querySelector('#spanDuesCenter');
-const spanTFCenter = document.querySelector('#spanTFCenter');
-//renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1199.81); // Not 14 Hp 240-g8 i3-10ma
+//const spanPriceCenter = document.querySelector('#spanPriceCenter');
+//const spanDuesCenter = document.querySelector('#spanDuesCenter');
+//const spanTFCenter = document.querySelector('#spanTFCenter');
+//renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1268); // Not 14 Hp 8gb 240-g8 i3-10ma
 
-const spanPriceRight = document.querySelector('#spanPriceRight');
-const spanDuesRight = document.querySelector('#spanDuesRight');
-const spanTFRight = document.querySelector('#spanTFRight');
-//renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1958); // Not 15.6 Lenovo V15 I5-1135ma
+//const spanPriceRight = document.querySelector('#spanPriceRight');
+//const spanDuesRight = document.querySelector('#spanDuesRight');
+//const spanTFRight = document.querySelector('#spanTFRight');
+//renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1958); // Not 15.6 Lenovo 8gb V15 I5-1135ma
 
-/*function renderHomePrice(priceCont, duesCont, pTFCont, price) {
-    const pricePayment = (dolarCot * price).toFixed(0);
-    const priceDues = ((pricePayment * 1.55) / 12).toFixed(0);
-    const priceTF = (pricePayment * 1.55).toFixed(0);
+function renderHomePrice({priceCont, priceDues12, priceDues24,  priceUSD, pricesTF}) {
+    const pricePayment = (dolarCot * priceUSD).toFixed(0);
+    const price12 = ((pricePayment * 1.55) / 12).toFixed(0);
+    const price24 = ((pricePayment * 2.11) / 24).toFixed(0);
+    const priceTF12 = (pricePayment * 1.55).toFixed(0);
+    const priceTF24 = (pricePayment * 2.11).toFixed(0);
     
     priceCont.innerText = `$${formatPrice(pricePayment)}`;    
-    duesCont.innerText = `$${formatPrice(priceDues)}*`;    
-    pTFCont.innerText = ` | PTF$${formatPrice(priceTF)}*`;
-};*/
+    priceDues12.innerText = `$${formatPrice(price12)}*`;    
+    priceDues24.innerText = `$${formatPrice(price24)}*`;
+    pricesTF.innerText = `12 cuotas PTF:$${formatPrice(priceTF12)} | 24 cuotas PTF:$${formatPrice(priceTF24)}`;
+};
 
 /*
 
