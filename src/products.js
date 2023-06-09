@@ -112,14 +112,6 @@ const usbWifi725n = new Products(
     'conectividad',
     false,
 );
-const tpLinkDecoM5 = new Products(
-    'decoM5.jpg',
-    'Sistema WIFI Deco M5 AC1300 Mesh Tp-Link',
-    222.27,
-    true,
-    'conectividad',
-    false,
-);
 const router841HP = new Products(
     'tl-wr841hp.jpg',
     'Router Inalámbrico TL-WR841HP 300Mbps Tp-Link',
@@ -148,14 +140,6 @@ const router850n = new Products(
     'router850n.jpg',
     'Router Inalámbrico TL-WR850N 300mbps Tp-Link',
     46.24,
-    true,
-    'conectividad',
-    false,
-);
-const routerAdsl = new Products(
-    'routerAdslW8961N.jpg',
-    'Router ADSL Inalámbrico TD-W8961N 300mbps Tp-Link',
-    40,
     true,
     'conectividad',
     false,
@@ -457,7 +441,7 @@ const tonerAlterBrotherTn1060 = new Products(
     'tonerAlterTn1060.jpg',
     'Tóner Alternativo p/Brother TN1060 Tecnovibe',
     18.40,
-    false,
+    true,
     'tóner',
     false,
 );
