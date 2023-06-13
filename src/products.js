@@ -38,22 +38,7 @@ function searchCategory(category) {
 // LISTA DE PRODUCTOS - PRODUCTS LIST
 
 // CATEGORIA AURICULARES
-const xiaomiLite3 = new Products(
-    'xiaomiRedmiLite3.png',
-    'Auricular bluetooth Xiaomi Redmi Buds 3 Lite',
-    29.23,
-    false,
-    'auriculares',
-    false,
-);
-const xiaomiEarBasic2 = new Products(
-    'xiaomiEarphonesBasic2.png',
-    'Auricular bluetooth Xiaomi Earphones Basic 2',
-    41.12,
-    false,
-    'auriculares',
-    false,
-);
+
 const msiGh30 = new Products(
     'auricularMsiGamer.png',
     'Auricular c/mic Gamer Inmerse Gh30 Msi',
@@ -96,14 +81,6 @@ const usbWifiPerfonmance = new Products(
     'conectividad',
     true,
 );
-const usbWifi823n = new Products(
-    'wifi823N.webp',
-    'Wifi usb 300mbps 2.4Ghz 823n Tp-Link',
-    21.15,
-    false,
-    'conectividad',
-    false,
-);
 const usbWifi725n = new Products(
     'Wifi725nTpLink.jpg',
     'Wifi usb 150mbps 2.4Ghz 725n Tp-Link',
@@ -120,22 +97,6 @@ const router841HP = new Products(
     'conectividad',
     false,
 );
-const router940n = new Products(
-    'routerWR940N.jpg',
-    'Router Inalámbrico TL-WR940N 450mbps Tp-Link',
-    69.15,
-    false,
-    'conectividad',
-    false,
-);
-const routerC20 = new Products(
-    'routerArcherC20.jpg',
-    'Router Inalámbrico AC750 C20 Dual Band Tp-Link',
-    55.82,
-    false,
-    'conectividad',
-    false,
-);
 const router850n = new Products(
     'router850n.jpg',
     'Router Inalámbrico TL-WR850N 300mbps Tp-Link',
@@ -146,20 +107,7 @@ const router850n = new Products(
 );
 
 // CATEGORIA DISCOS SOLIDOS
-const gigabyte480 = new Products(
-    'ssd480Gigabyte.png',
-    'Disco Sólido SATA 480gb Gigabyte',
-    70.55,
-    false,
-    'discos sólidos'
-);
-const gigabyte240 = new Products(
-    'ssd240Gigabyte.png',
-    'Disco Sólido SATA 240gb Gigabyte',
-    50.58,
-    false,
-    'discos sólidos',
-);
+
 const hikvision240 = new Products(
     'ssd240gbHikvision.jpg',
     'Disco Sólido SATA 240gb Hikvision',
@@ -175,13 +123,6 @@ const gigabyte120 = new Products(
     true,
     'discos sólidos',
     true,
-);
-const ssd480kingston = new Products(
-    'ssdA400480gb.jpg',
-    'Disco Sólido SATA 480gb Kingston',
-    74.8,
-    false,
-    'discos sólidos',
 );
 const ssd240Msi = new Products(
     'ssd240Msi.png',
@@ -366,7 +307,7 @@ const tecladoNumGenius110 = new Products(
 const botellaEpsonT544 = new Products(
     'epsonT544.png',
     'Botellas de Tinta T544 Epson original packX4',
-    133.09,
+    155.03,
     true,
     'tintas',
     true,
@@ -374,7 +315,7 @@ const botellaEpsonT544 = new Products(
 const botellaEpsonT664 = new Products(
     'EpsonT664.jpg',
     'Botella de Tinta T664 Epson original packX4',
-    140.65,
+    155.03,
     true,
     'tintas',
     true,
@@ -398,7 +339,7 @@ const botellaBrother60BK = new Products(
 const botellaBrotherBT6001 = new Products(
     'tintaBrotherBT6001.jpg',
     'Botella de Tinta BT6001 Brother original',
-    33.85,
+    24.96,
     true,
     'tintas',
     false,
@@ -430,7 +371,7 @@ const botellaBrohter60bkBt5001 = new Products(
 const botellaBrotherBt6001Bt5001 = new Products(
     'bt6001-bt5001-x4.jpeg',
     'Botellas de Tinta BT6001+BT5001 Brother original packX4',
-    83.29,
+    79,
     true,
     'tintas',
     false,
@@ -479,14 +420,7 @@ const tonerAlterHp255A = new Products(
 );
 
 // CATEGORIA VARIOS
-const carryDiskAdata = new Products(
-    'carryDiskAdataAED600.jpg',
-    'Carry Disk 2.5" Sata AED600 Adata',
-    38.34,
-    false,
-    'varios',
-    false,
-);
+
 const powerBank2600TRV = new Products(
     'powerBank2600mahTRV.jpg',
     'Cargador Portátil 2600mah TRV',

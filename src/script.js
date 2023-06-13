@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 256;
+const dolarCot = 258;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 
 window.addEventListener('load', function() {
@@ -47,9 +47,6 @@ function navigation() {
 
 // IMPLEMENTACION DE PRECIOS CALCULADOS PARA PROMOS PRINCIPALES DEL HOME
 
-//const spanPriceLeft = document.querySelector('#spanPriceLeft');
-//const spanDuesLeft = document.querySelector('#spanDuesLeft');
-//const spanTFLeft = document.querySelector('#spanTFLeft');
 renderHomePrice({
     priceCont: spanPriceLeft,
     priceDues12: spanDuesLeft,
@@ -58,15 +55,29 @@ renderHomePrice({
     pricesTF: spanPricesLeftTF,
 }); // Not 15.6 Dell 4gb 3511 i3-11va
 
-//const spanPriceCenter = document.querySelector('#spanPriceCenter');
-//const spanDuesCenter = document.querySelector('#spanDuesCenter');
-//const spanTFCenter = document.querySelector('#spanTFCenter');
-//renderHomePrice(spanPriceCenter, spanDuesCenter, spanTFCenter, 1268); // Not 14 Hp 8gb 240-g8 i3-10ma
+renderHomePrice({
+    priceCont: spanPriceCenter,
+    priceDues12: spanDuesCenter,
+    priceDues24: spanDuesCenter24,
+    priceUSD: 1200,
+    pricesTF: spanPricesCenterTF,
+}); // Not 14 Hp 8gb 240-g8 i3-10ma
 
-//const spanPriceRight = document.querySelector('#spanPriceRight');
-//const spanDuesRight = document.querySelector('#spanDuesRight');
-//const spanTFRight = document.querySelector('#spanTFRight');
-//renderHomePrice(spanPriceRight, spanDuesRight, spanTFRight, 1958); // Not 15.6 Lenovo 8gb V15 I5-1135ma
+renderHomePrice({
+    priceCont: spanPriceRight,
+    priceDues12: spanDuesRight,
+    priceDues24: spanDuesRight24,
+    priceUSD: 1958,
+    pricesTF: spanPricesRightTF,
+}); // Not 15.6 Lenovo 8gb V15 I5-1135ma
+
+renderHomePrice({
+    priceCont: spanPriceCX,
+    priceDues12: spanDuesCX,
+    priceDues24: spanDuesCX24,
+    priceUSD: 1702,
+    pricesTF: spanPricesCXTF,
+}); // Not 15.6 CX 8gb I5-1135g7
 
 function renderHomePrice({priceCont, priceDues12, priceDues24,  priceUSD, pricesTF}) {
     const pricePayment = (dolarCot * priceUSD).toFixed(0);

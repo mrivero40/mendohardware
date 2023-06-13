@@ -346,10 +346,12 @@ main .section-hot-notebooks .flex-container-notebooks .flex-item div span {
 main .section-hot-notebooks .flex-container-notebooks .flex-item div p span {
   font-size: var(--fontSmall);
   color: var(--grayPrimary);
+  text-align: start;
 }
 
-main .section-hot-notebooks p {
+main .section-hot-notebooks .text-conditions {
   font-size: var(--fontStandard);
+  text-align: center;
 }
 
 
@@ -580,12 +582,14 @@ footer p {
 } 
 
 
+/*///////////////////////////////////////////////////////////////////*/
+
 
 /* 1ER MEDIA QUERY DISPLAY BREAKPOINT 1024PX*/
 
 @media (max-width: 1024px) {
   
- /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY */
+ /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY 1024PX */
 
   header .nav-container {
     flex-wrap: wrap;
@@ -629,7 +633,7 @@ footer p {
   }
 
 
- /* MAIN INICIO FLEX CONTEINER (PANTALLA INICIAL) MEDIA QUERY */
+ /* MAIN INICIO FLEX CONTEINER (PANTALLA INICIAL) MEDIA QUERY 1024PX */
 
   main .container-home {
     width: 100%;
@@ -695,7 +699,26 @@ footer p {
   }
 
 
- /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY */
+  /* SECTION HOT NOTEBOOKS - FLEX CONTAINER NOTEBOOK - FLEX-ITEM (ESTILOS DE LAS 3 NOTEBOOK) MEDIA QUERY 1024PX */
+
+  main .section-hot-notebooks .flex-container-notebooks {
+    justify-content: center;
+  }
+
+  main .section-hot-notebooks .flex-container-notebooks .flex-item {
+    width: 28rem;
+    height: 40rem;
+    margin-inline: 3.2rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 32% 68%;
+  }
+
+  main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-description {
+    text-align: center;
+  }
+
+
+ /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY 1024PX */
 
   .section-hot-products {
     width: 98%;
@@ -728,7 +751,7 @@ footer p {
   }
 
 
- /* ARTICLE SERVICIOS MEDIA QUERY*/
+ /* ARTICLE SERVICIOS MEDIA QUERY 1024PX */
 
   .available-service {
     width: 92%;
@@ -753,7 +776,7 @@ footer p {
   }
 
 
-  /* FOOTER PIE DE PAGINA MEDIA QUERY */
+  /* FOOTER PIE DE PAGINA MEDIA QUERY 1024PX */
 
   footer .pTime {
     padding-inline: 2.4rem;
@@ -776,7 +799,7 @@ footer p {
 
 @media (max-width: 768px) {
 
-  /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY */
+  /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY 768px */
 
   header .nav-left, header .nav-center, header .nav-right {
     width: 100%;
@@ -790,7 +813,7 @@ footer p {
   }
 
   
-  /* MAIN INICIO FLEX CONTEINER (PANTALLA INICIAL) MEDIA QUERY */
+  /* MAIN INICIO FLEX CONTEINER (PANTALLA INICIAL) MEDIA QUERY 768px */
 
   main .container-home-h1 div {
     flex-direction: column-reverse;
@@ -817,7 +840,22 @@ footer p {
   }
 
 
-  /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY */
+  /* SECTION HOT NOTEBOOKS - FLEX CONTAINER NOTEBOOK - FLEX-ITEM (ESTILOS DE LAS 3 NOTEBOOK) MEDIA QUERY 768PX */
+
+  main .section-hot-notebooks .flex-container-notebooks .flex-item {
+    width: 100%;
+    height: 24rem;
+    margin-inline: 0;
+    grid-template-columns: 32% 68%;
+    grid-template-rows: 100%;
+  }  
+
+  main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-description {
+    text-align: start;
+  }
+
+
+  /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY 768px */
 
   .section-hot-products {
     width: 100%;
@@ -840,7 +878,7 @@ footer p {
   }
 
   
-  /* ARTICLE SERVICIOS MEDIA QUERY*/
+  /* ARTICLE SERVICIOS MEDIA QUERY 768px */
 
   .available-service {
     width: 96%;
@@ -865,7 +903,7 @@ footer p {
 
 @media (max-width: 480px) {
 
-  /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY */
+  /* HEADER NAV BARRA DE NAVEGACION MEDIA QUERY 480PX */
 
   header .nav-left, header .nav-center, header .nav-right {
     margin-block: .8rem;
@@ -905,7 +943,26 @@ footer p {
   }
 
 
-  /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY */
+  /* SECTION HOT NOTEBOOKS - FLEX CONTAINER NOTEBOOK - FLEX-ITEM (ESTILOS DE LAS 3 NOTEBOOK) MEDIA QUERY 480PX */
+
+  main .section-hot-notebooks .flex-container-notebooks .flex-item {
+    width: 96%;
+    height: 52rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 48% 52%;
+  }  
+
+  main .section-hot-notebooks .flex-container-notebooks .flex-item div {
+    text-align: center;
+    padding: 1.6rem .8rem;
+  }
+
+  main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-description, main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-detail {
+    text-align: center;
+  }
+
+
+  /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY 480PX */
 
   .section-hot-products {
     width: 100%;
