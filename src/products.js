@@ -89,14 +89,6 @@ const usbWifi725n = new Products(
     'conectividad',
     false,
 );
-const router841HP = new Products(
-    'tl-wr841hp.jpg',
-    'Router Inalámbrico TL-WR841HP 300Mbps Tp-Link',
-    107.98,
-    true,
-    'conectividad',
-    false,
-);
 const router850n = new Products(
     'router850n.jpg',
     'Router Inalámbrico TL-WR850N 300mbps Tp-Link',
@@ -278,19 +270,11 @@ const gigabyteKm6300 = new Products(
     'teclados',
     true,
 );
-const tecladoGeniusKb117 = new Products(
-    'tecGeniusKb117.webp',
-    'Teclado Usb Español KB-117 Genius',
-    19.05,
-    true,
-    'teclados',
-    false,
-);
 const tecladoGameMaxK207 = new Products(
     'tecladoGameMaxK207.webp',
     'Teclado Usb Español K207 GameMax',
-    30.67,
-    false,
+    27.05,
+    true,
     'teclados',
     true,
 );
