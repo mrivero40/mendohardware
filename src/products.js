@@ -81,14 +81,6 @@ const usbWifiPerfonmance = new Products(
     'conectividad',
     true,
 );
-const usbWifi725n = new Products(
-    'Wifi725nTpLink.jpg',
-    'Wifi usb 150mbps 2.4Ghz 725n Tp-Link',
-    24.39,
-    true,
-    'conectividad',
-    false,
-);
 const router850n = new Products(
     'router850n.jpg',
     'Router Inalámbrico TL-WR850N 300mbps Tp-Link',
