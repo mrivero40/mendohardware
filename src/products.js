@@ -103,7 +103,7 @@ const hikvision240 = new Products(
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
     'Disco Sólido SATA 120gb Gigabyte',
-    56,
+    52,
     true,
     'discos sólidos',
     true,
@@ -111,7 +111,7 @@ const gigabyte120 = new Products(
 const ssd240Msi = new Products(
     'ssd240Msi.png',
     'Disco Sólido SATA 240gb MSI',
-    72.86,
+    56.4,
     true,
     'discos sólidos',
     true,
@@ -316,14 +316,6 @@ const botellaBrotherBT6001 = new Products(
     'tintaBrotherBT6001.jpg',
     'Botella de Tinta BT6001 Brother original',
     18.07,
-    true,
-    'tintas',
-    false,
-);
-const cartuchoEpsonT073 = new Products(
-    'cartuchoEpsonT073.webp',
-    'Cartucho de Tinta T073 Epson original c/u',
-    15,
     true,
     'tintas',
     false,
