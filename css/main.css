@@ -203,15 +203,29 @@ main .container-home .home-categories-container {
   text-align: center;
 }
 
-main .container-home .home-categories-container figure img {
-  width: 10rem;
-  border-radius: 50%;
-  border: .2rem solid var(--grayPrimary);
-  margin-block-end: .5rem;
+main .container-home .home-categories-container figure {
+  text-align: center;
 }
 
-main .container-home .home-categories-container figure {
-  font-size: var(--fontStandard);
+main .container-home .home-categories-container figure img {
+  width: 10rem;
+  border-radius: 50%;  
+}
+
+main .container-home .home-categories-container figure div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.6rem;
+  height: 10.6rem;
+  background-color: var(--grayPrimary);
+  border-radius: 50%;
+  animation: 4s skeleton infinite ease-in-out;
+  margin: 1rem auto;
+}
+
+main .container-home .home-categories-container figure figcaption {
+  font-size: var(--fontStandard);  
 }
 
 .warranty-container {
@@ -434,7 +448,7 @@ main .section-hot-notebooks .text-conditions {
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
@@ -638,38 +652,20 @@ footer p {
   main .container-home {
     width: 100%;
   }
-
-  /*.container-home h1 {
-    width: 90%;
-  }
-
-  .container-home h2 {
-    width: 90%;
-    line-height: normal;
-  }
-
-  .container-home .flex-container-inicio {
-    flex-wrap: wrap;
-  }
-
-  .flex-container-inicio .flex-item {
-    width: 32rem;    
-    margin-block: 1rem;
-  }
-
-  .flex-item .text-detail {
-    margin-block-end: 1rem;
-  }*/
   
-  main .container-home .home-categories-container figure {
-    width: auto;
-    text-align: center;
+  main .container-home .home-categories-container figure div {
+    width: 8.6rem;
+    height: 8.6rem;
   }
 
   main .container-home .home-categories-container figure img {
-    width: 56%;
+    width: 8rem;
+    height: 8rem;
   }
 
+  main .container-home .home-categories-container figure figcaption {
+    font-size: var(--fontSmall);  
+  }
 
   .warranty-container {
     width: 92%;
@@ -830,13 +826,18 @@ footer p {
   }
 
   main .container-home .home-categories-container figure {
-    width: 16rem;
-    height: 8.8rem;
-    margin-block: 3rem;
+    margin-inline: 3.2rem;
+    margin-block: 2.4rem;
   }
 
   main .container-home .home-categories-container figure img {
     width: 8.8rem;
+    height: 8.8rem;
+  }
+
+  main .container-home .home-categories-container figure div {
+    width: 9.2rem;
+    height: 9.2rem;
   }
 
 
@@ -940,6 +941,10 @@ footer p {
   main .container-home .warranty-element {
     width: 90%;
     margin-block-end: 1.6rem;
+  }
+
+  main .container-home .warranty-element span {
+    padding: .8rem;
   }
 
 
