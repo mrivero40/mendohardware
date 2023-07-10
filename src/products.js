@@ -93,7 +93,7 @@ const router850n = new Products(
 // CATEGORIA DISCOS SOLIDOS
 
 const hikvision240 = new Products(
-    'ssd240gbHikvision.jpg',
+    'ssd240gbHikvision.png',
     'Disco Sólido SATA 240gb Hikvision',
     56.4,
     true,
@@ -188,7 +188,7 @@ const trustYvi = new Products(
 );
 const geniusEco = new Products(
     'geniusEco8100.jpeg',
-    'Mouse Inalámbrico Eco-8100 recergable Genius',
+    'Mouse Inalámbrico Eco-8100 recargable Genius',
     32.62,
     true,
     'mouses',
