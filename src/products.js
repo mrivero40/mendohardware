@@ -122,7 +122,7 @@ const ssd240Msi = new Products(
     56.4,
     true,
     'discos sólidos',
-    true,
+    false,
 );
 
 // CATEGORIA FUENTES
@@ -263,7 +263,7 @@ const geniusHf280 = new Products(
 
 // CATEGORIA TECLADOS
 const gigabyteKm6300 = new Products(
-    'kitGigabyte.png',
+    'kitGigabyte.webp',
     'Tec+Mou Usb Inglés Gigabyte Km6300',
     18.01,
     true,
@@ -276,7 +276,7 @@ const tecladoGameMaxK207 = new Products(
     27.05,
     true,
     'teclados',
-    true,
+    false,
 );
 const tecladoNumGenius110 = new Products(
     'tecladoNumPadGenius110.jpg',
@@ -302,7 +302,7 @@ const botellaEpsonT664 = new Products(
     164.23,
     true,
     'tintas',
-    true,
+    false,
 );
 const botellaBrotherBT5001 = new Products(
     'botellaBrotherBT5001.webp',
