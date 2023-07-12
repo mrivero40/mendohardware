@@ -429,8 +429,8 @@ main .section-hot-notebooks .text-conditions {
 
 .grid-container-img {
   background-color: var(--grayPrimary);
-  width: 95%;
-  height: auto;
+  width: 15rem;
+  height: 15rem;
   border-radius: 2rem;
   margin: 0 auto;  
   text-align: center;
@@ -438,8 +438,8 @@ main .section-hot-notebooks .text-conditions {
 
 .loading-skeleton {
   background-color: var(--grayPrimary);
-  width: 95%;
-  height: 65%;
+  width: 15rem;
+  height: 15rem;
   animation: 4s skeleton infinite ease-in-out;
 }
 
@@ -742,9 +742,9 @@ footer p {
     border-radius: .8rem;
   }
 
-  .loading-skeleton {
+  /*.loading-skeleton {
     height: 70%;
-  }
+  }*/
 
 
  /* ARTICLE SERVICIOS MEDIA QUERY 1024PX */
@@ -874,9 +874,9 @@ footer p {
     gap: 2.4rem .8rem;
   }
 
-  .loading-skeleton {
+  /*.loading-skeleton {
     height: 55%;
-  }
+  }*/
 
   
   /* ARTICLE SERVICIOS MEDIA QUERY 768px */
@@ -985,11 +985,16 @@ footer p {
 
   .grid-container-principal {
     grid-template-columns: 50% 50%;
-    gap: 2.4rem 2.4rem;
+    gap: 1.2rem 1.2rem;
+  }
+
+  .grid-container-img {
+    width: 10rem;
+    height: 10rem;
   }
 
   .loading-skeleton {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }

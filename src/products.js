@@ -89,13 +89,21 @@ const router850n = new Products(
     'conectividad',
     false,
 );
+const usbWifiTenda300 = new Products(
+    'usbWifi300Tenda.webp',
+    'Wifi usb 300mbps U3 11n 2.4ghz Tenda',
+    14,
+    true,
+    'conectividad',
+    true,
+);
 
 // CATEGORIA DISCOS SOLIDOS
 
 const hikvision240 = new Products(
     'ssd240gbHikvision.png',
     'Disco Sólido SATA 240gb Hikvision',
-    56.4,
+    46,
     true,
     'discos sólidos',
     true,
@@ -171,7 +179,7 @@ const usbKingston32gbC = new Products(
 const microSdSandisk32gb = new Products(
     'microSd32gbSandisk.webp',
     'Micro Sd 32gb c/adap clase10 Sandisk',
-    21.43,
+    17,
     true,
     'memorias flash',
     false,
@@ -299,7 +307,7 @@ const botellaEpsonT664 = new Products(
 const botellaBrotherBT5001 = new Products(
     'botellaBrotherBT5001.webp',
     'Botellas de Tinta BT5001 Brother original c/u',
-    13.5,
+    14,
     true,
     'tintas',
     false,
