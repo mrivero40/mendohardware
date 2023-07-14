@@ -76,7 +76,7 @@ const auriGeniusHs200c = new Products(
 const usbWifiPerfonmance = new Products(
     'usbWifi300.png',
     'Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance',
-    17,
+    15,
     true,
     'conectividad',
     true,

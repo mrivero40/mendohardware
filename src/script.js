@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 276;
+const dolarCot = 278;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 
 window.addEventListener('load', function() {
@@ -51,7 +51,7 @@ renderHomePrice({
     priceCont: spanPriceLeft,
     priceDues12: spanDuesLeft,
     priceDues24: spanDuesLeft24,    
-    priceUSD: 1503,
+    priceUSD: 1328,
     pricesTF: spanPricesLeftTF,
 }); // Not 15.6 Dell 4gb 3511 i3-11va
 
@@ -59,7 +59,7 @@ renderHomePrice({
     priceCont: spanPriceCenter,
     priceDues12: spanDuesCenter,
     priceDues24: spanDuesCenter24,
-    priceUSD: 1200,
+    priceUSD: 1218,
     pricesTF: spanPricesCenterTF,
 }); // Not 14 Hp 8gb 240-g8 i3-10ma
 
@@ -67,7 +67,7 @@ renderHomePrice({
     priceCont: spanPriceRight,
     priceDues12: spanDuesRight,
     priceDues24: spanDuesRight24,
-    priceUSD: 1958,
+    priceUSD: 2036,
     pricesTF: spanPricesRightTF,
 }); // Not 15.6 Lenovo 8gb V15 I5-1135ma
 
@@ -75,15 +75,15 @@ renderHomePrice({
     priceCont: spanPriceCX,
     priceDues12: spanDuesCX,
     priceDues24: spanDuesCX24,
-    priceUSD: 1702,
+    priceUSD: 1520,
     pricesTF: spanPricesCXTF,
-}); // Not 15.6 CX 8gb I5-1135g7
+}); // Not 15.6 CX 16gb I5-1135g7
 
 function renderHomePrice({priceCont, priceDues12, priceDues24,  priceUSD, pricesTF}) {
     const pricePayment = (dolarCot * priceUSD).toFixed(0);
-    const price12 = ((pricePayment * 1.55) / 12).toFixed(0);
+    const price12 = ((pricePayment * 1.60) / 12).toFixed(0);
     const price24 = ((pricePayment * 2.11) / 24).toFixed(0);
-    const priceTF12 = (pricePayment * 1.55).toFixed(0);
+    const priceTF12 = (pricePayment * 1.60).toFixed(0);
     const priceTF24 = (pricePayment * 2.11).toFixed(0);
     
     priceCont.innerText = `$${formatPrice(pricePayment)}`;    
