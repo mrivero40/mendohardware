@@ -291,7 +291,7 @@ const tecladoNumGenius110 = new Products(
 const botellaEpsonT544 = new Products(
     'epsonT544.png',
     'Botellas de Tinta T544 Epson original packX4',
-    164.23,
+    187.5,
     true,
     'tintas',
     true,
@@ -299,7 +299,7 @@ const botellaEpsonT544 = new Products(
 const botellaEpsonT664 = new Products(
     'EpsonT664.jpg',
     'Botella de Tinta T664 Epson original packX4',
-    164.23,
+    187.5,
     true,
     'tintas',
     false,
