@@ -47,6 +47,7 @@ function navigation() {
 
 // IMPLEMENTACION DE PRECIOS CALCULADOS PARA PROMOS PRINCIPALES DEL HOME
 
+/*
 renderHomePrice({
     priceCont: spanPriceLeft,
     priceDues12: spanDuesLeft,
@@ -78,8 +79,9 @@ renderHomePrice({
     priceUSD: 1520,
     pricesTF: spanPricesCXTF,
 }); // Not 15.6 CX 16gb I5-1135g7
+*/
 
-function renderHomePrice({priceCont, priceDues12, priceDues24,  priceUSD, pricesTF}) {
+/*function renderHomePrice({priceCont, priceDues12, priceDues24,  priceUSD, pricesTF}) {
     const pricePayment = (dolarCot * priceUSD).toFixed(0);
     const price12 = ((pricePayment * 1.60) / 12).toFixed(0);
     const price24 = ((pricePayment * 2.11) / 24).toFixed(0);
@@ -90,7 +92,7 @@ function renderHomePrice({priceCont, priceDues12, priceDues24,  priceUSD, prices
     priceDues12.innerText = `$${formatPrice(price12)}*`;    
     priceDues24.innerText = `$${formatPrice(price24)}*`;
     pricesTF.innerText = `12 cuotas PTF:$${formatPrice(priceTF12)} | 24 cuotas PTF:$${formatPrice(priceTF24)}`;
-};
+};*/
 
 /*
 
@@ -125,8 +127,8 @@ function renderProducts(productsList) {
         paragraphProductName.innerText = product.name;
 
         const h4ProductPrice = document.createElement('h4');
-        h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
-        //h4ProductPrice.innerText = 'Consultar';
+        //h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
+        h4ProductPrice.innerText = 'Consultar';
         
         divContainerPrincipal.appendChild(divProductContainer);
         figureImgContainer.appendChild(imgProductImage);
