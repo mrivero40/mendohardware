@@ -421,6 +421,14 @@ const cableDisplayPortNisuta = new Products(
     'varios',
     false,
 );
+const zapatillaTRV5x220 = new Products (
+    'prolongadorTRV5x220.webp',
+    'Prolongador Múltiple TRV 5x220v 1.5mts switch',
+    18,
+    true,
+    'varios',
+    false,
+)
 
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS CON STOCK EN SECCION PROMOS WEB. LAS INSTANCIAS DE PRODUCTOS RENDERIZADAS SERáN UNICAMENTE LAS QUE TENGAN LA PROPIEDAD STOCK EN TRUE.
