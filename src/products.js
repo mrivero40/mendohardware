@@ -81,14 +81,6 @@ const usbWifiPerfonmance = new Products(
     'conectividad',
     true,
 );
-const router850n = new Products(
-    'router850n.jpg',
-    'Router Inalámbrico TL-WR850N 300mbps Tp-Link',
-    46.24,
-    true,
-    'conectividad',
-    false,
-);
 const usbWifiTenda300 = new Products(
     'usbWifi300Tenda.webp',
     'Wifi usb 300mbps U3 11n 2.4ghz Tenda',
