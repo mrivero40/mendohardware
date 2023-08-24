@@ -130,12 +130,16 @@ function renderProducts(productsList) {
         //h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
         //h4ProductPrice.innerText = 'Consultar';
 
+        const linkProducts = document.createElement('a');
+        linkProducts.setAttribute('href', product.url);
+        linkProducts.setAttribute('target', '_blank');
         const buttonProducts = document.createElement('button');
         buttonProducts.innerText = 'Ver más';
+        linkProducts.appendChild(buttonProducts); 
         
         divContainerPrincipal.appendChild(divProductContainer);
         figureImgContainer.appendChild(imgProductImage);
-        divProductContainer.append(figureImgContainer, paragraphProductName, buttonProducts);        
+        divProductContainer.append(figureImgContainer, paragraphProductName, linkProducts);        
     });
 };
 

@@ -7,13 +7,14 @@ const productsPromo = []; // solo los productos que esten como hoy
 let productsCategory = []; // productos por categoria
 
 class Products {
-    constructor( image, name, price, stock, categories, hot ) {
+    constructor( image, name, price, stock, categories, hot, url ) {
         this.image = urlImg + image;
         this.name = name;
         this.price = price;
         this.stock = stock;
         this.categories = categories;
         this.hot = hot;
+        this.url = url;
 
         if(this.stock === true && this.hot === true) {
             productsPromo.push(this);
@@ -46,6 +47,7 @@ const msiGh30 = new Products(
     true,
     'auriculares',
     true,
+    'https://mendohardware.com.ar/tienda/product/auricular-c-mic-gamer-inmerse-gh30-msi/',
 );
 const auriGenius04S = new Products(
     'geniusHs04S.jpg',
@@ -54,6 +56,7 @@ const auriGenius04S = new Products(
     true,
     'auriculares',
     false,
+    'https://mendohardware.com.ar/tienda/product/auricular-c-mic-hs-04s-genius-single-jack/',
 );
 const geniusHsM900Bt = new Products(
     'hsM900BT.jpg',
@@ -62,6 +65,7 @@ const geniusHsM900Bt = new Products(
     true,
     'auriculares',
     true,
+    'https://mendohardware.com.ar/tienda/product/auricular-c-mic-bluetooth-hs-m900bt-genius/',
 );
 const auriGeniusHs200c = new Products(
     'geniusHs200C.jpg',
@@ -70,6 +74,7 @@ const auriGeniusHs200c = new Products(
     true,
     'auriculares',
     false,
+    'https://mendohardware.com.ar/tienda/product/auricular-c-mic-hs-200c-genius-pc-doble-jack/',
 );
 
 // CATEGORIA CONECTIVIDAD
@@ -80,6 +85,7 @@ const usbWifiPerfonmance = new Products(
     true,
     'conectividad',
     true,
+    'https://mendohardware.com.ar/tienda/product/wifi-usb-300mbps-2-4ghz-realtek8192-perfonmance/',
 );
 const usbWifiTenda300 = new Products(
     'usbWifi300Tenda.webp',
@@ -88,6 +94,7 @@ const usbWifiTenda300 = new Products(
     true,
     'conectividad',
     true,
+    'https://mendohardware.com.ar/tienda/product/wifi-usb-300mbps-u3-11n-2-4ghz-tenda/',
 );
 
 // CATEGORIA DISCOS SOLIDOS
@@ -99,6 +106,7 @@ const hikvision240 = new Products(
     true,
     'discos sólidos',
     true,
+    'https://mendohardware.com.ar/tienda/product/disco-solido-sata-240gb-hikvision/',
 );
 const gigabyte120 = new Products(
     'ssd120Gigabyte.png',
@@ -107,6 +115,7 @@ const gigabyte120 = new Products(
     true,
     'discos sólidos',
     true,
+    'https://mendohardware.com.ar/tienda/product/disco-solido-sata-120gb-gigabyte/',
 );
 const ssd240Msi = new Products(
     'ssd240Msi.png',
@@ -115,6 +124,7 @@ const ssd240Msi = new Products(
     true,
     'discos sólidos',
     false,
+    'https://mendohardware.com.ar/tienda/product/disco-solido-sata-240gb-msi/',
 );
 
 // CATEGORIA FUENTES
@@ -125,6 +135,7 @@ const fuenteATX550WPerf = new Products(
     true,
     'fuentes',
     false,
+    'https://mendohardware.com.ar/tienda/product/fuente-atx-550w-satax4-perfonmance/',
 );
 const fuenteATX600WCX = new Products(
     'fuenteATX600WCX.jpg',
@@ -133,6 +144,7 @@ const fuenteATX600WCX = new Products(
     true,
     'fuentes',
     false,
+    'https://mendohardware.com.ar/tienda/product/fuente-atx-600w-satax4-cx/',
 );
 const fuenteSlim600WCX = new Products(
     'fuenteSlim600WCX.jpeg',
@@ -141,6 +153,7 @@ const fuenteSlim600WCX = new Products(
     true,
     'fuentes',
     false,
+    'https://mendohardware.com.ar/tienda/product/fuente-slim-600w-satax4-p-gabslim-cx/',
 );
 
 // CATEGORIA MEMORIAS FLASH
@@ -151,6 +164,7 @@ const usbSandisk32UltraShift = new Products(
     true,
     'memorias flash',
     false,
+    'https://mendohardware.com.ar/tienda/product/pen-drive-usb-32gb-ultrashift-sandisk/',
 );
 const usbSandisk64UltraShift = new Products(
     'usbSandisk64gbUltraShift.jpg',
@@ -159,6 +173,7 @@ const usbSandisk64UltraShift = new Products(
     true,
     'memorias flash',
     false,
+    'https://mendohardware.com.ar/tienda/product/pen-drive-usb-64gb-ultrashift-sandisk/',
 );
 const usbKingston32gbC = new Products(
     'kingstonDT7032Gb.jpg',
@@ -167,6 +182,7 @@ const usbKingston32gbC = new Products(
     true,
     'memorias flash',
     false,
+    'https://mendohardware.com.ar/tienda/product/pen-drive-usb-c-32gb-dt70-kingston/',
 );
 const microSdSandisk32gb = new Products(
     'microSd32gbSandisk.webp',
@@ -175,6 +191,7 @@ const microSdSandisk32gb = new Products(
     true,
     'memorias flash',
     false,
+    'https://mendohardware.com.ar/tienda/product/micro-sd-32gb-c-adap-clase10-sandisk/',
 );
 
 // CATEGORIA MOUSES
@@ -185,6 +202,7 @@ const trustYvi = new Products(
     true,
     'mouses',
     true,
+    'https://mendohardware.com.ar/tienda/product/mouse-inalambrico-trust-yvi-ambidiestro/',
 );
 const geniusEco = new Products(
     'geniusEco8100.jpeg',
@@ -193,6 +211,7 @@ const geniusEco = new Products(
     true,
     'mouses',
     true,
+    'https://mendohardware.com.ar/tienda/product/mouse-inalambrico-eco-8100-recargable-genius/',
 );
 const mouGeniusScorpion = new Products(
     'mouseGeniusScorpion.jpg',
@@ -201,6 +220,7 @@ const mouGeniusScorpion = new Products(
     true,
     'mouses',
     false,
+    'https://mendohardware.com.ar/tienda/product/mouse-gamer-scorpion-m8-610-genius/',
 );
 const mouGenius = new Products(
     'geniusDX110.jpg',
@@ -209,6 +229,7 @@ const mouGenius = new Products(
     true,
     'mouses',
     false,
+    'https://mendohardware.com.ar/tienda/product/mouse-usb-optico-dx-120-genius/',
 );
 const mouGeniusMicro = new Products(
     'geniusMicro900s.jpg',
@@ -217,6 +238,7 @@ const mouGeniusMicro = new Products(
     true,
     'mouses',
     false,
+    'https://mendohardware.com.ar/tienda/product/mouse-inalambrico-microtraveler-900s-genius/',
 );
 const mouGeniusMicroT = new Products(
     'geniusMicroTraveler.jpg',
@@ -225,6 +247,7 @@ const mouGeniusMicroT = new Products(
     true,
     'mouses',
     false,
+    'https://mendohardware.com.ar/tienda/product/mouse-retractil-microtraveler-genius/',
 );
 const mouGameMaxMg7 = new Products(
     'mouseGameMaxMg7.png',
@@ -233,6 +256,7 @@ const mouGameMaxMg7 = new Products(
     true,
     'mouses',
     false,
+    'https://mendohardware.com.ar/tienda/product/mouse-pad-gamer-mg7-gamemax/',
 );
 const mouLogitechM110 = new Products(
     'mouseLogitechM110-red.webp',
@@ -241,6 +265,7 @@ const mouLogitechM110 = new Products(
     true,
     'mouses',
     false,
+    'https://mendohardware.com.ar/tienda/product/mouse-usb-silencioso-m110-logitech-rojo/',
 );
 
 // CATEGORIA PARLANTES
@@ -251,6 +276,7 @@ const geniusHf280 = new Products(
     true,
     'parlantes',
     false,
+    'https://mendohardware.com.ar/tienda/product/parlantes-2-0-usb-genius-6w-sp-hf280/',
 );
 
 // CATEGORIA TECLADOS
@@ -261,6 +287,7 @@ const gigabyteKm6300 = new Products(
     true,
     'teclados',
     true,
+    'https://mendohardware.com.ar/tienda/product/tecmou-usb-ingles-gigabyte-km6300/',
 );
 const tecladoGameMaxK207 = new Products(
     'tecladoGameMaxK207.webp',
@@ -269,6 +296,7 @@ const tecladoGameMaxK207 = new Products(
     true,
     'teclados',
     false,
+    'https://mendohardware.com.ar/tienda/product/teclado-usb-espanol-k207-gamemax/',
 );
 const tecladoNumGenius110 = new Products(
     'tecladoNumPadGenius110.jpg',
@@ -277,6 +305,7 @@ const tecladoNumGenius110 = new Products(
     true,
     'teclados',
     false,
+    'https://mendohardware.com.ar/tienda/product/teclado-numeral-usb-numpad110-genius/',
 );
 
 // CATEGORIA TINTAS
@@ -287,6 +316,7 @@ const botellaEpsonT544 = new Products(
     true,
     'tintas',
     true,
+    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-t544-epson-original-packx4/',
 );
 const botellaEpsonT664 = new Products(
     'EpsonT664.jpg',
@@ -303,6 +333,7 @@ const botellaBrotherBT5001 = new Products(
     true,
     'tintas',
     false,
+    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-bt5001-brother-original-c-u/',
 );
 const botellaBrother60BK = new Products(
     'tintaBrother60BK.jpg',
@@ -311,6 +342,7 @@ const botellaBrother60BK = new Products(
     true,
     'tintas',
     false,
+    'https://mendohardware.com.ar/tienda/product/botella-de-tinta-btd-60bk-brother-original/',
 );
 const botellaBrotherBT6001 = new Products(
     'tintaBrotherBT6001.webp',
@@ -319,6 +351,7 @@ const botellaBrotherBT6001 = new Products(
     true,
     'tintas',
     false,
+    'https://mendohardware.com.ar/tienda/product/botella-de-tinta-bt6001-brother-original/',
 );
 const cartuchoAlterHp56Y57 = new Products(
     'alterGneissHP.jpg',
@@ -327,6 +360,7 @@ const cartuchoAlterHp56Y57 = new Products(
     true,
     'tintas',
     false,
+    '',
 );
 const botellaBrohter60bkBt5001 = new Products(    
     'brother60bk-bt5001pack.jpg',
@@ -335,6 +369,7 @@ const botellaBrohter60bkBt5001 = new Products(
     true,
     'tintas',
     false,
+    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-60bkbt5001-brother-original-packx4/',
 );
 const botellaBrotherBt6001Bt5001 = new Products(
     'bt6001-bt5001-x4.jpeg',
@@ -343,6 +378,7 @@ const botellaBrotherBt6001Bt5001 = new Products(
     true,
     'tintas',
     false,
+    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-bt6001bt5001-brother-original-packx4/',
 );
 
 // CATEGORIA TONER
@@ -353,6 +389,7 @@ const tonerAlterBrotherTn1060 = new Products(
     true,
     'tóner',
     false,
+    'https://mendohardware.com.ar/tienda/product/toner-alternativo-p-brother-tn1060-tecnovibe/',
 );
 const tonerAlterBrotherTn660 = new Products(
     'tonerAlterTn660.jpg',
@@ -361,6 +398,7 @@ const tonerAlterBrotherTn660 = new Products(
     true,
     'tóner',
     false,
+    'https://mendohardware.com.ar/tienda/product/toner-alternativo-p-brother-tn660-2340-2370-gtc/',
 );
 const tonerAlterBrotherTn580 = new Products(
     'tonerAlterTn660.jpg',
@@ -369,6 +407,7 @@ const tonerAlterBrotherTn580 = new Products(
     true,
     'tóner',
     false,
+    'https://mendohardware.com.ar/tienda/product/toner-alternativo-p-brother-tn580-650-gtc/',
 );
 const tonerAlterHp255A = new Products(
     'tonerAlterCE255A.jpg',
@@ -377,6 +416,7 @@ const tonerAlterHp255A = new Products(
     true,
     'tóner',
     false,
+    '',
 );
 
 // CATEGORIA VARIOS
@@ -388,6 +428,7 @@ const powerBank2600TRV = new Products(
     true,
     'varios',
     false,
+    'https://mendohardware.com.ar/tienda/product/cargador-portatil-2600mah-trv/',
 );
 const cargadorInalambricoT1000 = new Products(
     'CargadorInalambricoPerformanceT1000.jpeg',
@@ -396,6 +437,7 @@ const cargadorInalambricoT1000 = new Products(
     true,
     'varios',
     false,
+    'https://mendohardware.com.ar/tienda/product/cargador-inalambrico-t1000-perfonmance/',
 );
 const cableDisplayPortNisuta = new Products(
     'cableDisplayPortNisuta.webp',
@@ -404,6 +446,7 @@ const cableDisplayPortNisuta = new Products(
     true,
     'varios',
     false,
+    '',
 );
 const zapatillaTRV5x220 = new Products (
     'prolongadorTRV5x220.webp',
@@ -412,6 +455,7 @@ const zapatillaTRV5x220 = new Products (
     true,
     'varios',
     false,
+    'https://mendohardware.com.ar/tienda/product/prolongador-multiple-trv-5x220v-1-5mts-switch/',
 )
 
 

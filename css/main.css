@@ -506,7 +506,7 @@ main .section-hot-notebooks .text-conditions {
 }
 
 .grid-container-product button:hover {
-  background-color: var(--orangeSecondary);  
+  background-color: var(--orangeSecondary);
 }
 
 .grid-container-product button:focus {
@@ -1010,8 +1010,8 @@ footer p {
   }
 
   .grid-container-img {
-    width: 10rem;
-    height: 10rem;
+    width: 90%;
+    height: auto;
   }
 
   .loading-skeleton {
