@@ -75,7 +75,7 @@ const auriGeniusHs200c = new Products(
 // CATEGORIA CONECTIVIDAD
 const usbWifiPerfonmance = new Products(
     'usbWifi300.png',
-    'Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance',
+    'Wifi usb 300mbps 2.4Ghz Realtek 8192 Perfonmance',
     15,
     true,
     'conectividad',
@@ -313,7 +313,7 @@ const botellaBrother60BK = new Products(
     false,
 );
 const botellaBrotherBT6001 = new Products(
-    'tintaBrotherBT6001.jpg',
+    'tintaBrotherBT6001.webp',
     'Botella de Tinta BT6001 Brother original',
     18.07,
     true,
@@ -366,14 +366,6 @@ const tonerAlterBrotherTn580 = new Products(
     'tonerAlterTn660.jpg',
     'Tóner Alternativo p/Brother TN580/650 GTC',
     22.38,
-    true,
-    'tóner',
-    false,
-);
-const tonerAlterHp279A = new Products(
-    'tonerAlterCF279A.avif',
-    'Tóner Alternativo p/HP CF279A GTC',
-    18.79,
     true,
     'tóner',
     false,

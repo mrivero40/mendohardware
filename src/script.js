@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 285;
+const dolarCot = 365.5;
 const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
 
 window.addEventListener('load', function() {
@@ -126,13 +126,16 @@ function renderProducts(productsList) {
         const paragraphProductName = document.createElement('p');
         paragraphProductName.innerText = product.name;
 
-        const h4ProductPrice = document.createElement('h4');
+        //const h4ProductPrice = document.createElement('h4');
         //h4ProductPrice.innerText = '$' + formatPrice((Math.ceil(dolarCot * product.price)));
-        h4ProductPrice.innerText = 'Consultar';
+        //h4ProductPrice.innerText = 'Consultar';
+
+        const buttonProducts = document.createElement('button');
+        buttonProducts.innerText = 'Ver más';
         
         divContainerPrincipal.appendChild(divProductContainer);
         figureImgContainer.appendChild(imgProductImage);
-        divProductContainer.append(figureImgContainer, paragraphProductName, h4ProductPrice);        
+        divProductContainer.append(figureImgContainer, paragraphProductName, buttonProducts);        
     });
 };
 

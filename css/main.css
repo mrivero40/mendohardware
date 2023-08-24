@@ -462,6 +462,8 @@ main .section-hot-notebooks .text-conditions {
 }
 
 .grid-container-product {
+  height: 32rem;
+  position: relative;
   border: 1px solid var(--graySecondary);
   border-radius: 2rem;
   padding: 2rem;
@@ -486,10 +488,29 @@ main .section-hot-notebooks .text-conditions {
   padding-inline: 1rem;
 }
 
-.grid-container-product h4 {
+/*.grid-container-product h4 {
   text-align: center;
   color: var(--orangeSecondary);
   font-size: var(--fontPrimary);
+}*/
+
+.grid-container-product button {
+  padding: .8rem 1.6rem;
+  position: absolute;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translate(-50%);
+  border: none;
+  border-radius: .8rem;
+  background-color: var(--grayPrimary);
+}
+
+.grid-container-product button:hover {
+  background-color: var(--orangeSecondary);  
+}
+
+.grid-container-product button:focus {
+  outline-color: var(--grayPrimary);
 }
 
 .section-hot-products .terminos {
