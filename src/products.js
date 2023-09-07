@@ -417,7 +417,7 @@ const tonerAlterHp255A = new Products(
     true,
     'tóner',
     false,
-    '',
+    'https://mendohardware.com.ar/tienda/product/toner-alternativo-p-hp-ce255a-perfonmance/',
 );
 
 // CATEGORIA VARIOS
