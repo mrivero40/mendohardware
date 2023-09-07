@@ -325,6 +325,7 @@ const botellaEpsonT664 = new Products(
     true,
     'tintas',
     false,
+    'https://mendohardware.com.ar/tienda'
 );
 const botellaBrotherBT5001 = new Products(
     'botellaBrotherBT5001.webp',
@@ -360,7 +361,7 @@ const cartuchoAlterHp56Y57 = new Products(
     true,
     'tintas',
     false,
-    '',
+    'https://mendohardware.com.ar/tienda',
 );
 const botellaBrohter60bkBt5001 = new Products(    
     'brother60bk-bt5001pack.jpg',
@@ -446,7 +447,7 @@ const cableDisplayPortNisuta = new Products(
     true,
     'varios',
     false,
-    '',
+    'https://mendohardware.com.ar/tienda',
 );
 const zapatillaTRV5x220 = new Products (
     'prolongadorTRV5x220.webp',
