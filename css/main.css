@@ -165,16 +165,17 @@ main .container-home .container-home-h1 h1 {
 }
 
 main .container-home .container-home-h1 div {
-  width: 20rem;
+  width: 24rem;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   padding: .25rem;
 }
 
 main .container-home .container-home-h1 div p {
   text-align: end;
-  font-size: var(--fontSmall);
+  font-size: var(--fontStandard);
+  margin-block-end: 0;
 }
 
 main .container-home .container-home-h1 div figure a img {
@@ -184,12 +185,17 @@ main .container-home .container-home-h1 div figure a img {
 main .container-home h2 {
   width: 88%;
   margin: 0 auto;
-  margin-block-end: 4.8rem;
-}
-
-main .container-home h2 span {
+  margin-block-end: 1.6rem;
   font-size: var(--fontPrimary);
   color: var(--orangeSecondary);
+}
+
+main .container-home p {
+  width: 88%;
+  margin: 0 auto;
+  margin-block-end: 1.6rem;
+  font-size: var(--fontSecondary);
+  color: var(--grayPrimary);
 }
 
 main .container-home .home-categories-container {
@@ -238,7 +244,7 @@ main .container-home .home-categories-container figure figcaption {
 .warranty-element {
   width: 25%;
   height: 6rem;
-  font-size: var(--fontStandard);
+  font-size: var(--fontSmall);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -697,7 +703,7 @@ footer p {
     width: 30%;
   }
   
-  .warranty-element h5 {
+  .warranty-element h3 {
     width: 72%;
     text-align: center;
   }
@@ -832,12 +838,13 @@ footer p {
   
   /* MAIN INICIO FLEX CONTEINER (PANTALLA INICIAL) MEDIA QUERY 768px */
 
-  main .container-home-h1 div {
-    flex-direction: column-reverse;
+  main .container-home .container-home-h1 div {
+    flex-direction: column-reverse;  
+    align-items: end;  
   }
 
-  main .container-home-h1 div figure a img {
-    margin: .8rem;
+  main .container-home .container-home-h1 div figure a img {
+    margin: 1.2rem;    
   }
 
   main .container-home .home-categories-container {
@@ -946,11 +953,13 @@ footer p {
 
   main .container-home .container-home-h1 h1 {
     text-align: center;
+    margin-block-end: 2.4rem;
   }
 
   main .container-home .container-home-h1 div {
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    width: 16rem;
   }
 
   main .container-home .warranty-container {
