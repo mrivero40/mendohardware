@@ -22,18 +22,19 @@
     <title>Mendohardware Computación | Mendoza</title>
     <link rel="shortcut icon" href="https://mendohardware.com.ar/img/icono.ico" type="image/x-icon">
     <link rel="preload" href="../fonts/Ubuntu-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link id="stylesCss" rel="stylesheet" href="./css/main.css?=1" />
+    <link id="stylesCss" rel="stylesheet" href="./css/main.css?=1" />  
     <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">-->
-
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">-->
+      
   </head>
-
-  <body id="home">
+  
+  
+  <body id="home">    
 
     <section class="home-section-container">
 
-      <img src="https://mendohardware.com.ar/img/backgroundHome.webp" class="img-home-background" alt="">
+      <img src="https://mendohardware.com.ar/img/backgroundHome.webp" class="img-home-background" alt="de fondo">
 
       <header>
         <nav class ="nav-container">
@@ -75,7 +76,7 @@
         
         <div class="nav-important-news" tabindex="0" >
           <p class="nav-important-text" >
-            <b>Lunes 23/10 CERRADO.</b> IMPORTANTE! Debido al contexto macroeconómico algunos precios pueden variar sin previo aviso y diferir de los publicados.          
+            IMPORTANTE! Debido al contexto macroeconómico algunos precios pueden variar sin previo aviso y diferir de los publicados.          
           </p>
         </div>
       </header>
@@ -428,23 +429,21 @@
 
       <p class="pCredits">© Copyrigth derechos reservados a Mendohardware Computación 2023 | Dev @mrivero40 (Github - Matias Ezequiel Rivero)</p>
 
-    </footer>
+    </footer>    
 
     <script id="scriptProducts"></script>
 
     <script>
-      stylesCss.href = `./css/main.css?v=${new Date().getTime()}`;
-
-      document.addEventListener('DOMContentLoaded', () => {        
+      document.addEventListener('DOMContentLoaded', () => {       
+        //stylesCss.href = `./css/main.css?v=${new Date().getTime()}`;
         const script = document.createElement("script");
         script.type = "module";
         script.src = `./src/script.js?v=${new Date().getTime()}`;
         document.body.appendChild(script);
+        scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
       });
 
-      scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
-
-    </script>
+    </script>    
 
   </body>
 </html>
