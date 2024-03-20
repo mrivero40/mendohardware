@@ -137,7 +137,7 @@ const fuenteATX550WPerf = new Products(
     false,
     'https://mendohardware.com.ar/tienda/product/fuente-atx-550w-satax4-perfonmance/',
 );
-const fuenteATX600WCX = new Products(
+/*const fuenteATX600WCX = new Products(
     'fuenteATX600WCX.jpg',
     'Fuente ATX 600W sataX4 CX',
     48.49,
@@ -145,7 +145,7 @@ const fuenteATX600WCX = new Products(
     'fuentes',
     false,
     'https://mendohardware.com.ar/tienda/product/fuente-atx-600w-satax4-cx/',
-);
+);*/
 const fuenteSlim600WCX = new Products(
     'fuenteSlim600WCX.jpeg',
     'Fuente Slim 600W sataX4 p/GabSlim CX',
