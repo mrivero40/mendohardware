@@ -9,8 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 365.5;
-const parrafoTerminos = 'Promociones válidas modalidad de pago CONTADO (tarj. débito, transf. bancaria o mercadopago, efectivo). Sujeto a disponibilidad de stock, cambios en las politicas arancelarias y tipo de cambio.';
+const dolarCot = 895;
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);
@@ -26,7 +25,7 @@ const formatPrice = (price) => {
 
 
 // ESCUCHADOR HASCHANGE PARA FUTURA NAVEGACION POR HASH (no implementado)
-
+/*
 window.addEventListener('DOMContentLoaded', navigation, false);
 window.addEventListener('hashchange', navigation, false);
 
@@ -43,63 +42,43 @@ function navigation() {
         //console.log('home2');
     };
 };
-
+*/
 
 // IMPLEMENTACION DE PRECIOS CALCULADOS PARA PROMOS PRINCIPALES DEL HOME
 
-/*
+// NOTEBOOK 15.6" LENOVO TBOOK I5-12VA GENERACION
 renderHomePrice({
-    priceCont: spanPriceLeft,
-    priceDues12: spanDuesLeft,
-    priceDues24: spanDuesLeft24,    
-    priceUSD: 1328,
-    pricesTF: spanPricesLeftTF,
-}); // Not 15.6 Dell 4gb 3511 i3-11va
+    pricesCont: spanPriceLenovoI5,
+    pricesDues6: spanDuesLenovoI5,
+    pricesUSD: 1117.305,
+    pricesTF: spanPricesTFLenovoI5,
+});
 
+
+// NOTEBOOK 15.6" HP G250 G9 Intel I3-12VA GENERACION
 renderHomePrice({
-    priceCont: spanPriceCenter,
-    priceDues12: spanDuesCenter,
-    priceDues24: spanDuesCenter24,
-    priceUSD: 1218,
-    pricesTF: spanPricesCenterTF,
-}); // Not 14 Hp 8gb 240-g8 i3-10ma
+    pricesCont: spanPriceHP250,
+    pricesDues6: spanDuesHP250,
+    pricesUSD: 949.71,
+    pricesTF: spanPricesTFHP250,
+});
 
-renderHomePrice({
-    priceCont: spanPriceRight,
-    priceDues12: spanDuesRight,
-    priceDues24: spanDuesRight24,
-    priceUSD: 2036,
-    pricesTF: spanPricesRightTF,
-}); // Not 15.6 Lenovo 8gb V15 I5-1135ma
-
-renderHomePrice({
-    priceCont: spanPriceCX,
-    priceDues12: spanDuesCX,
-    priceDues24: spanDuesCX24,
-    priceUSD: 1520,
-    pricesTF: spanPricesCXTF,
-}); // Not 15.6 CX 16gb I5-1135g7
-*/
-
-/*function renderHomePrice({priceCont, priceDues12, priceDues24,  priceUSD, pricesTF}) {
-    const pricePayment = (dolarCot * priceUSD).toFixed(0);
-    const price12 = ((pricePayment * 1.60) / 12).toFixed(0);
-    const price24 = ((pricePayment * 2.11) / 24).toFixed(0);
-    const priceTF12 = (pricePayment * 1.60).toFixed(0);
-    const priceTF24 = (pricePayment * 2.11).toFixed(0);
+// PARAMETROS DONDE SE RENDERIZA EN HTML LOS PRECIOS CALCULADOS
+function renderHomePrice({pricesCont, pricesDues6, pricesUSD, pricesTF}) {
+    const pricePayment = (dolarCot * pricesUSD).toFixed(0);
+    const price6 = ((pricePayment * 1.25) / 6).toFixed(0);
+    const priceTF = (pricePayment * 1.25).toFixed(0);
     
-    priceCont.innerText = `$${formatPrice(pricePayment)}`;    
-    priceDues12.innerText = `$${formatPrice(price12)}*`;    
-    priceDues24.innerText = `$${formatPrice(price24)}*`;
-    pricesTF.innerText = `12 cuotas PTF:$${formatPrice(priceTF12)} | 24 cuotas PTF:$${formatPrice(priceTF24)}`;
-};*/
+    pricesCont.innerText = `$${formatPrice(pricePayment)}`;    
+    pricesDues6.innerText = `$${formatPrice(price6)}*`;    
+    pricesTF.innerText = `$${formatPrice(priceTF)}`;
+};
 
 /*
 
 // IMPLEMENTACION DE PRODUCTOS EN OBJETOS (lógica separada en products.js).
 
 */
-
 
 // RENDERIZADO EN HTML A PARTIR DE ARRAY DE PRODUCTOS SECCION PROMOS WEB (products.js)
 

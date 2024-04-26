@@ -270,7 +270,7 @@ main .container-home .home-categories-container figure figcaption {
 }
 
 
-/* SECTION HOT NOTEBOOKS - FLEX CONTAINER NOTEBOOK - FLEX-ITEM (ESTILOS DE LAS 3 NOTEBOOK) */
+/* SECTION HOT NOTEBOOKS - FLEX CONTAINER NOTEBOOK - FLEX-ITEM (ESTILOS DE LAS 2 NOTEBOOK) */
 
 main .section-hot-notebooks {
   margin-block-end: 8rem;
@@ -284,9 +284,7 @@ main .section-hot-notebooks h3 {
 }
 
 main .section-hot-notebooks .flex-container-notebooks {
-  /*background-image: linear-gradient(0deg, var(--grayPrimary) 0%, var(--grayBackground) 100%);*/
   background-color: var(--grayBackground);
-
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -330,7 +328,7 @@ main .section-hot-notebooks .flex-container-notebooks .flex-item figure img {
 }
 
 main .section-hot-notebooks .flex-container-notebooks .flex-item figure img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
   transition: transform 1.5s;
   opacity: 1;
 }
@@ -356,12 +354,13 @@ main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-detai
   text-align: start;
 }
 
-main .section-hot-notebooks .flex-container-notebooks .flex-item div h4 {
+main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-price {
   font-size: 2.2rem;
-  color: var(--grayPrimary);  
+  color: var(--grayPrimary);
 }
 
-main .section-hot-notebooks .flex-container-notebooks .flex-item div span {
+main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-price span {
+  font-size: 2.2rem;
   color: var(--orangeSecondary);
 }
 
@@ -1000,6 +999,10 @@ footer p {
 
 
   /* ARTICLE GRID PRINCIPAL PROMOCIONES MEDIA QUERY 480PX */
+
+  .home-section-container .img-home-background {
+    height: 100vh;
+  }
 
   .section-hot-products {
     width: 100%;
