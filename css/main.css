@@ -23,21 +23,20 @@
   --whitePrimary: #FAFAFA;
   --grayPrimary: #B3B3B3;
   --graySecondary: #4D4D4D;
-  --grayBackground: #202020;
+  --grayBackground: #151515;
   --blackPrimary: #050505;
   --blackBackground: #060607;
-  --fontSmall: 1.3rem;
+  --fontSmall: 1.4rem;
   --fontStandard: 1.6rem;
   --fontSecondary: 1.8rem;
   --fontPrimary: 2.8rem;
   --fontWeightnormal: 300;  
 }
 
-/* USE REM FONTS -- 1REM = 10PX */
+/* USE REM -- 1REM = 10PX */
 
 html {
-  font-size: 62.5%;
-  
+  font-size: 62.5%;  
 }
 
 /* PRIMARY ETIQUETAS HTML */
@@ -47,7 +46,8 @@ body {
   color: var(--whitePrimary);
   background: var(--blackBackground);
   overflow-x: hidden;
-  
+  max-width: 160rem;
+  margin: auto;
 }
 
 h1 {
@@ -74,9 +74,7 @@ h2 {
 
 header .nav-container {
   width: 100%;
-  max-width: 160rem;
-  height: 5.6rem;
-  margin: auto;
+  height: 5.6rem;  
   background-color: var(--grayBackground);
   display: flex;
   justify-content: center;  
@@ -257,20 +255,25 @@ main .container-home .home-categories-container figure figcaption {
 }
 
 .warranty-element {
-  width: 25%;
+  width: auto;
   height: 6rem;
+  padding: 1.6rem 2rem;
   font-size: var(--fontSmall);
   display: flex;
   align-items: center;
   justify-content: center;
   border-left: .5rem solid var(--orangeSecondary);
-  border-end-end-radius: 1rem;
+  border-end-end-radius: 1.2rem;
   background-color: var(--grayBackground);
   color: var(--grayPrimary);
 }
 
-.warranty-element span img {
-  margin-inline-end: 2rem;
+.warranty-element span {
+  margin-inline-end: .8rem
+}
+
+.warranty-element h3 {
+  text-align: center;
 }
 
 .container-home .text-phrase {
@@ -484,6 +487,7 @@ main .section-hot-notebooks .text-conditions {
 }
 
 .grid-container-product {
+  background-color: var(--grayBackground);
   height: 32rem;
   position: relative;
   border: 1px solid var(--graySecondary);

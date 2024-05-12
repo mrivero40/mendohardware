@@ -231,33 +231,6 @@ const mouGenius = new Products(
     false,
     'https://mendohardware.com.ar/tienda/product/mouse-usb-optico-dx-120-genius/',
 );
-const mouGeniusMicro = new Products(
-    'geniusMicro900s.jpg',
-    'Mouse Inalámbrico MicroTraveler 900s Genius',
-    36.49,
-    true,
-    'mouses',
-    false,
-    'https://mendohardware.com.ar/tienda/product/mouse-inalambrico-microtraveler-900s-genius/',
-);
-const mouGeniusMicroT = new Products(
-    'geniusMicroTraveler.jpg',
-    'Mouse Retráctil MicroTraveler Genius',
-    8,
-    true,
-    'mouses',
-    false,
-    'https://mendohardware.com.ar/tienda/product/mouse-retractil-microtraveler-genius/',
-);
-const mouGameMaxMg7 = new Products(
-    'mouseGameMaxMg7.png',
-    'Mouse + Pad Gamer MG7 GameMax',
-    40.93,
-    true,
-    'mouses',
-    false,
-    'https://mendohardware.com.ar/tienda/product/mouse-pad-gamer-mg7-gamemax/',
-);
 const mouLogitechM110 = new Products(
     'mouseLogitechM110-red.webp',
     'Mouse USB silencioso M110 Logitech',
@@ -353,15 +326,6 @@ const botellaBrotherBT6001 = new Products(
     'tintas',
     false,
     'https://mendohardware.com.ar/tienda/product/botella-de-tinta-bt6001-brother-original/',
-);
-const cartuchoAlterHp56Y57 = new Products(
-    'alterGneissHP.jpg',
-    'Cartuchos Alternativos p/HP 56/57 Gneiss (02/2022)',
-    84.74,
-    true,
-    'tintas',
-    false,
-    'https://mendohardware.com.ar/tienda',
 );
 const botellaBrohter60bkBt5001 = new Products(    
     'brother60bk-bt5001pack.jpg',
