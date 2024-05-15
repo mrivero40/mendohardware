@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 895;
+const dolarCot = 905;
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);
@@ -66,8 +66,8 @@ renderHomePrice({
 // PARAMETROS DONDE SE RENDERIZA EN HTML LOS PRECIOS CALCULADOS
 function renderHomePrice({pricesCont, pricesDues6, pricesUSD, pricesTF}) {
     const pricePayment = (dolarCot * pricesUSD).toFixed(0);
-    const price6 = ((pricePayment * 1.25) / 6).toFixed(0);
-    const priceTF = (pricePayment * 1.25).toFixed(0);
+    const price6 = ((pricePayment * 1.2) / 6).toFixed(0);
+    const priceTF = (pricePayment * 1.2).toFixed(0);
     
     pricesCont.innerText = `$${formatPrice(pricePayment)}`;    
     pricesDues6.innerText = `$${formatPrice(price6)}*`;    
