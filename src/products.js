@@ -309,24 +309,6 @@ const botellaBrotherBT5001 = new Products(
     false,
     'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-bt5001-brother-original-c-u/',
 );
-const botellaBrother60BK = new Products(
-    'tintaBrother60BK.jpg',
-    'Botella de Tinta 60BK Brother original',
-    18.07,
-    true,
-    'tintas',
-    false,
-    'https://mendohardware.com.ar/tienda/product/botella-de-tinta-btd-60bk-brother-original/',
-);
-const botellaBrotherBT6001 = new Products(
-    'tintaBrotherBT6001.webp',
-    'Botella de Tinta BT6001 Brother original',
-    18.07,
-    true,
-    'tintas',
-    false,
-    'https://mendohardware.com.ar/tienda/product/botella-de-tinta-bt6001-brother-original/',
-);
 const botellaBrohter60bkBt5001 = new Products(    
     'brother60bk-bt5001pack.jpg',
     'Botellas de Tinta 60BK+BT5001 Brother original packX4',
