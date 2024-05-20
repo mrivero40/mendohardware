@@ -4,7 +4,6 @@
   font-family: 'Ubuntu';
   src: url(../fonts/Ubuntu-Light.ttf) format('truetype');
   font-display: swap;
-  font-weight: 400;
 }
 
 /* SETTING GLOBALES */
@@ -51,6 +50,7 @@ body {
 }
 
 h1 {
+  font-weight: 500;
   font-size: var(--fontPrimary);
   color: var(--orangeLogo);
   text-align: start;
@@ -128,7 +128,6 @@ header .nav-important-news {
   margin: auto;
   height: auto;
   background-color: rgba(245, 176, 65, .8);
-  margin-block-end: 1.6rem;
 }
 
 header .nav-important-text {
@@ -148,29 +147,23 @@ main .container-home {
   max-height: 78rem;
   margin: auto;
   margin-block-end: 8rem;
+  background: url(https://mendohardware.com.ar/img/backgroundHome.webp) no-repeat fixed center center;  
+  background-size: cover;
 }
 
-main .container-home .img-home-background {
-  position: absolute;
-  object-fit: fill;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+main .container-filter {
   width: 100%;
-  max-width: 160rem;
   height: 100%;
-  max-height: 78rem;
-  opacity: .2;
-  z-index: -10;
+  background-color: rgba(0, 0, 0, .6);
 }
 
 main .container-home .container-home-h1 {
   width: 88%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-block-end: 2.4rem;
+  padding-block: 2.4rem;
 }
 
 main .container-home .container-home-h1 h1 {
@@ -279,6 +272,7 @@ main .container-home .home-categories-container figure figcaption {
 .container-home .text-phrase {
   width: 100%;
   height: auto;
+  padding-block-end: .8rem;
   display: flex;
   justify-content: center;
   text-align: center;
