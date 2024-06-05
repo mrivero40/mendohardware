@@ -143,7 +143,7 @@ header .nav-important-text {
 main .container-home {
   width: 100vw;
   max-width: 160rem;
-  height: calc(100vh - 9.8rem);
+  /*height: calc(100vh - 9.8rem);*/
   max-height: 78rem;
   margin: auto;
   margin-block-end: 8rem;

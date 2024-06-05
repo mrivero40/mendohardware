@@ -108,24 +108,6 @@ const hikvision240 = new Products(
     true,
     'https://mendohardware.com.ar/tienda/product/disco-solido-sata-240gb-hikvision/',
 );
-const gigabyte120 = new Products(
-    'ssd120Gigabyte.png',
-    'Disco Sólido SATA 120gb Gigabyte',
-    52,
-    true,
-    'discos sólidos',
-    true,
-    'https://mendohardware.com.ar/tienda/product/disco-solido-sata-120gb-gigabyte/',
-);
-const ssd240Msi = new Products(
-    'ssd240Msi.png',
-    'Disco Sólido SATA 240gb MSI',
-    56.4,
-    true,
-    'discos sólidos',
-    false,
-    'https://mendohardware.com.ar/tienda/product/disco-solido-sata-240gb-msi/',
-);
 
 // CATEGORIA FUENTES
 const fuenteATX550WPerf = new Products(
@@ -297,8 +279,8 @@ const botellaEpsonT664 = new Products(
     187.5,
     true,
     'tintas',
-    false,
-    'https://mendohardware.com.ar/tienda'
+    true,
+    'https://mendohardware.com.ar/tienda/producto/botellas-de-tinta-t664-epson-original-packx4-2/'
 );
 const botellaBrotherBT5001 = new Products(
     'botellaBrotherBT5001.webp',
