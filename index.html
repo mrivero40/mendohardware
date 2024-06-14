@@ -29,8 +29,18 @@
     <link id="stylesCss" rel="stylesheet" href="./css/main.css?=1" />
 
     <meta name="theme-color" content="#F5B041">
-  </head>
-  
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {       
+        stylesCss.href = `./css/main.css?v=${new Date().getTime()}`;
+        const script = document.createElement("script");
+        script.type = "module";
+        script.src = `./src/script.js?v=${new Date().getTime()}`;
+        document.body.appendChild(script);
+        scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
+      });
+    </script>
+  </head>  
   
   <body id="home">      
 
@@ -46,10 +56,10 @@
           </ul>
 
           <ul class="nav-center">
-            <li class="nav-item-img" tabindex="1">
+            <li class="nav-item-img">
               <figure>
-                <a href="https://mrivero40.github.io/mhgame/" target="_blank" rel="noopener noreferrer" alt="Ir a un juego en una nueva ventana" title="Juego MH game (Github Pages)">
-                  <img src="https://mendohardware.com.ar/img/logoMhLargo.png" alt="logo Mendohardware Computación" title="Mendohardware Computación">
+                <a href="https://mrivero40.github.io/mhgame/" target="_blank" rel="noopener noreferrer" alt="Ir a un juego en una nueva ventana" title="Juego MH game (Github Pages)" tabindex="1">
+                  <img src="https://mendohardware.com.ar/img/logoMhLargo.png" alt="logo Mendohardware Computación" title="Mendohardware Computación" tabindex="1">
                 </a>
               </figure>
             </li>          
@@ -71,12 +81,23 @@
           </ul>
 
         </nav>
-        
+        <!--
         <div class="nav-important-news" tabindex="0" >
           <p class="nav-important-text" >
             Lunes a viernes 10.30 a 18.30hs. WhatsApp solo mensajes.
           </p>
         </div>
+        -->
+        <dialog open>
+          <div class="nav-important-news">
+            <p class="nav-important-text" >
+              "¡Feliz Día del Padre! Que la felicidad se multiplique como bits en una computadora. Les desea Mendohardware"
+            </p>
+            <form method="dialog">
+              <button>Cerrar</button>
+            </form>
+          </div>
+        </dialog>
       </header>
 
       <main>
@@ -89,11 +110,11 @@
 
               <h1 tabindex="0">Mendohardware <span>Informática Virtual</span></h1>
 
-              <div>
-                <p tabindex="0">Online lunes</br>a viernes de</br>10.30 a 18.30hs</p>
+              <div tabindex="0">
+                <p>Online lunes</br>a viernes de</br>10.30 a 18.30hs</p>
                 <figure class="icon-redes">
-                  <a href="https://wa.me/+542615538661?text=¡Hola%20Mendohardware!%20vengo%20desde%20la%20web%20oficial.%20Quisiera%20consultar:%20" target="_blank" aria-label="Enlace para enviar un mensaje de WhatsApp a Mendohardware" tabindex="0">
-                    <img src="https://mendohardware.com.ar/img/whatsApp.png" alt="Logo Whatsapp" title="Logo Whatsapp" tabindex="0">
+                  <a href="https://wa.me/+542615538661?text=¡Hola%20Mendohardware!%20vengo%20desde%20la%20web%20oficial.%20Quisiera%20consultar:%20" target="_blank" >
+                    <img src="https://mendohardware.com.ar/img/whatsApp.png" alt="Logo Whatsapp" title="Logo Whatsapp">
                   </a>
                 </figure>
               </div>
@@ -183,7 +204,6 @@
               “Si tú no trabajas por tus sueños, alguien te contratará para que trabajes por los suyos” Steve Jobs
             </p>
 
-          </div>
         </section>
       
     
@@ -371,19 +391,7 @@
 
     </footer>    
 
-    <script id="scriptProducts"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {       
-        stylesCss.href = `./css/main.css?v=${new Date().getTime()}`;
-        const script = document.createElement("script");
-        script.type = "module";
-        script.src = `./src/script.js?v=${new Date().getTime()}`;
-        document.body.appendChild(script);
-        scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
-      });
-
-    </script>    
+    <script id="scriptProducts"></script>  
 
   </body>
 </html>
