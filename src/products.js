@@ -99,14 +99,14 @@ const usbWifiTenda300 = new Products(
 
 // CATEGORIA DISCOS SOLIDOS
 
-const hikvision240 = new Products(
-    'ssd240gbHikvision.png',
-    'Disco Sólido SATA 240gb Hikvision',
-    46,
+const kinstong240 = new Products(
+    'ssd240a400Kingston.jpg',
+    'Disco Sólido SATA 240gb Kingston',
+    48.17,
     true,
     'discos sólidos',
     true,
-    'https://mendohardware.com.ar/tienda/product/disco-solido-sata-240gb-hikvision/',
+    'https://mendohardware.com.ar/tienda/producto/disco-solido-sata-240gb-a400-kingston/',
 );
 
 // CATEGORIA FUENTES

@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 922;
+const dolarCot = 934;
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);

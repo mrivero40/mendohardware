@@ -19,12 +19,12 @@
 :root {
   --orangeLogo: #EE880D;
   --orangeSecondary: #F5B041;
-  --whitePrimary: #FAFAFA;
+  --whitePrimary: #FBFBFB;
   --grayPrimary: #B3B3B3;
   --graySecondary: #4D4D4D;
   --grayBackground: #151515;
   --blackPrimary: #050505;
-  --blackBackground: #060607;
+  --blackBackground: #101010;
   --fontSmall: 1.4rem;
   --fontStandard: 1.6rem;
   --fontSecondary: 1.8rem;
@@ -35,7 +35,8 @@
 /* USE REM -- 1REM = 10PX */
 
 html {
-  font-size: 62.5%;  
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /* PRIMARY ETIQUETAS HTML */
@@ -46,7 +47,7 @@ body {
   background: var(--blackBackground);
   overflow-x: hidden;
   max-width: 192rem;
-  margin: auto;
+  margin: auto;  
 }
 
 h1 {
@@ -178,7 +179,7 @@ main .container-home {
 main .container-filter {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .7);
 }
 
 main .container-home .container-home-h1 {
@@ -192,6 +193,10 @@ main .container-home .container-home-h1 {
 
 main .container-home .container-home-h1 h1 {
   padding: .25rem;
+}
+
+main .container-home .container-home-h1 h1 strong {
+  color: var(--grayPrimary);
 }
 
 main .container-home .container-home-h1 div {
@@ -466,7 +471,7 @@ main .section-hot-notebooks .text-conditions {
   margin: 0 auto 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
-  gap: 5rem 5rem;
+  gap: 5rem;
   justify-content: center;
 }
 
@@ -475,8 +480,10 @@ main .section-hot-notebooks .text-conditions {
   width: 15rem;
   height: 15rem;
   border-radius: 2rem;
-  margin: 0 auto;  
+  /*margin: 0 auto;*/
   text-align: center;
+  color:var(--blackPrimary);
+  font-size: var(--fontSecondary);
 }
 
 .loading-skeleton {

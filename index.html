@@ -30,16 +30,6 @@
 
     <meta name="theme-color" content="#F5B041">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {       
-        stylesCss.href = `./css/main.css?v=${new Date().getTime()}`;
-        const script = document.createElement("script");
-        script.type = "module";
-        script.src = `./src/script.js?v=${new Date().getTime()}`;
-        document.body.appendChild(script);
-        scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
-      });
-    </script>
   </head>  
   
   <body id="home">      
@@ -81,17 +71,11 @@
           </ul>
 
         </nav>
-        <!--
-        <div class="nav-important-news" tabindex="0" >
-          <p class="nav-important-text" >
-            Lunes a viernes 10.30 a 18.30hs. WhatsApp solo mensajes.
-          </p>
-        </div>
-        -->
+        
         <dialog open>
           <div class="nav-important-news">
             <p class="nav-important-text" >
-              "¡Feliz Día del Padre! Que la felicidad se multiplique como bits en una computadora. Les desea Mendohardware"
+              "Felices Vacaciones de Invierno 2024" ¡Visita nuestra Tienda!
             </p>
             <form method="dialog">
               <button>Cerrar</button>
@@ -108,7 +92,9 @@
 
             <div class="container-home-h1">
 
-              <h1 tabindex="0">Mendohardware <span>Informática Virtual</span></h1>
+              <h1 tabindex="0">
+                Mendohardware <strong>Informática Virtual</strong>
+              </h1>
 
               <div tabindex="0">
                 <p>Online lunes</br>a viernes de</br>10.30 a 18.30hs</p>
@@ -290,8 +276,16 @@
 
           <div class="grid-container-principal">
 
-            <!--
-            <div class="grid-container-product"><figure class="grid-container-img"><img title="Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance" alt="Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance" src="https://mendohardware.com.ar/img/usbWifi300.png"></figure><p>Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance</p><button>Ver más</button></div>
+            <!-- ESTRUCTURA RENDERIZADA DESDE JS --
+            <div class="grid-container-product">
+              <figure class="grid-container-img">
+                <img title="Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance" alt="Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance" src="https://mendohardware.com.ar/img/usbWifi300.png">
+              </figure>
+              <p>
+                Wifi usb 300mbps 2.4Ghz Realtek8192 Perfonmance
+              </p>
+              <button>Ver más</button>
+            </div>
             -->
 
           </div>
@@ -389,7 +383,18 @@
 
       <p class="pCredits">© Copyrigth derechos reservados a Mendohardware Computación 2024 | Dev @mrivero40 (Github - Matias Ezequiel Rivero)</p>
 
-    </footer>    
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {       
+        stylesCss.href = `./css/main.css?v=${new Date().getTime()}`;
+        const script = document.createElement("script");
+        script.type = "module";
+        script.src = `./src/script.js?v=${new Date().getTime()}`;
+        document.body.appendChild(script);
+        scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
+      });
+    </script>
 
     <script id="scriptProducts"></script>  
 
