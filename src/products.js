@@ -186,15 +186,6 @@ const trustYvi = new Products(
     true,
     'https://mendohardware.com.ar/tienda/product/mouse-inalambrico-trust-yvi-ambidiestro/',
 );
-const geniusEco = new Products(
-    'geniusEco8100.jpeg',
-    'Mouse Inalámbrico Eco-8100 recargable Genius',
-    32.62,
-    true,
-    'mouses',
-    true,
-    'https://mendohardware.com.ar/tienda/product/mouse-inalambrico-eco-8100-recargable-genius/',
-);
 const mouGeniusScorpion = new Products(
     'mouseGeniusScorpion.jpg',
     'Mouse Gamer Scorpion M8-610 Genius',
