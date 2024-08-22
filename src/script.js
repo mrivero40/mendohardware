@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 958;
+const dolarCot = 965;
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);
@@ -59,7 +59,7 @@ renderHomePrice({
 renderHomePrice({
     pricesCont: spanPriceHP250,
     pricesDues6: spanDuesHP250,
-    pricesUSD: 949.71,
+    pricesUSD: 1036.16,
     pricesTF: spanPricesTFHP250,
 });
 

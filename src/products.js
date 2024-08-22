@@ -3,7 +3,7 @@ const urlImg = 'https://mendohardware.com.ar/img/';
 // IMPLEMENTACION DE CLASES PARA PRODUCTOS A RENDERIZAR EN HTML SECTION PROMOS WEB A PARTIR DE ARRAY DE PRODUCTOS. FILTRADO POR COTEGORIAS A PARTIR DE ARRAY.
 
 const productsStock = []; // para implementar toda la lista de productos
-const productsPromo = []; // solo los productos que esten como hoy
+const productsPromo = []; // solo los productos que esten como hot
 let productsCategory = []; // productos por categoria
 
 class Products {
@@ -87,15 +87,6 @@ const usbWifiPerfonmance = new Products(
     true,
     'https://mendohardware.com.ar/tienda/product/wifi-usb-300mbps-2-4ghz-realtek8192-perfonmance/',
 );
-const usbWifiTenda300 = new Products(
-    'usbWifi300Tenda.webp',
-    'Wifi usb 300mbps U3 11n 2.4ghz Tenda',
-    14,
-    true,
-    'conectividad',
-    true,
-    'https://mendohardware.com.ar/tienda/product/wifi-usb-300mbps-u3-11n-2-4ghz-tenda/',
-);
 
 // CATEGORIA DISCOS SOLIDOS
 
@@ -172,7 +163,7 @@ const microSdSandisk32gb = new Products(
     17,
     true,
     'memorias flash',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/micro-sd-32gb-c-adap-clase10-sandisk/',
 );
 
@@ -308,7 +299,7 @@ const tonerAlterBrotherTn1060 = new Products(
     18.40,
     true,
     'tóner',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/toner-alternativo-p-brother-tn1060-tecnovibe/',
 );
 const tonerAlterBrotherTn660 = new Products(
