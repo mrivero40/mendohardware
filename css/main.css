@@ -139,7 +139,8 @@ header .nav-important-news {
 
 header .nav-important-text {
   font-size: var(--fontStandard);
-  color: var(--whitePrimary);
+  color: var(--blackPrimary);
+  font-weight: bold;
   padding: .8rem 6.4rem;
   text-align: center;
 }

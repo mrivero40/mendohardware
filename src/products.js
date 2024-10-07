@@ -58,7 +58,7 @@ const auriGenius04S = new Products(
     false,
     'https://mendohardware.com.ar/tienda/product/auricular-c-mic-hs-04s-genius-single-jack/',
 );
-const geniusHsM900Bt = new Products(
+/*const geniusHsM900Bt = new Products(
     'hsM900BT.jpg',
     'Auricular c/mic bluetooth HS-M900BT Genius',
     31.06,
@@ -66,7 +66,7 @@ const geniusHsM900Bt = new Products(
     'auriculares',
     true,
     'https://mendohardware.com.ar/tienda/product/auricular-c-mic-bluetooth-hs-m900bt-genius/',
-);
+);*/
 const auriGeniusHs200c = new Products(
     'geniusHs200C.jpg',
     'Auricular c/mic HS-200C Genius (PC-doble jack)',
@@ -206,7 +206,7 @@ const mouLogitechM110 = new Products(
 );
 
 // CATEGORIA PARLANTES
-const geniusHf280 = new Products(
+/*const geniusHf280 = new Products(
     'parlanteGeniusHF280.png',
     'Parlantes 2.0 USB Genius 6w SP-HF280',
     30.46,
@@ -214,7 +214,7 @@ const geniusHf280 = new Products(
     'parlantes',
     false,
     'https://mendohardware.com.ar/tienda/product/parlantes-2-0-usb-genius-6w-sp-hf280/',
-);
+);*/
 
 // CATEGORIA TECLADOS
 const gigabyteKm6300 = new Products(
@@ -226,7 +226,7 @@ const gigabyteKm6300 = new Products(
     true,
     'https://mendohardware.com.ar/tienda/product/tecmou-usb-ingles-gigabyte-km6300/',
 );
-const tecladoGameMaxK207 = new Products(
+/*const tecladoGameMaxK207 = new Products(
     'tecladoGameMaxK207.webp',
     'Teclado Usb Español K207 GameMax',
     27.05,
@@ -234,7 +234,7 @@ const tecladoGameMaxK207 = new Products(
     'teclados',
     false,
     'https://mendohardware.com.ar/tienda/product/teclado-usb-espanol-k207-gamemax/',
-);
+);*/
 const tecladoNumGenius110 = new Products(
     'tecladoNumPadGenius110.jpg',
     'Teclado Numeral Usb NumPad110 Genius',
