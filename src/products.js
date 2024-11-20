@@ -39,7 +39,6 @@ function searchCategory(category) {
 // LISTA DE PRODUCTOS - PRODUCTS LIST
 
 // CATEGORIA AURICULARES
-
 const msiGh30 = new Products(
     'auricularMsiGamer.png',
     'Auricular c/mic Gamer Inmerse Gh30 Msi',
@@ -58,15 +57,6 @@ const auriGenius04S = new Products(
     false,
     'https://mendohardware.com.ar/tienda/product/auricular-c-mic-hs-04s-genius-single-jack/',
 );
-/*const geniusHsM900Bt = new Products(
-    'hsM900BT.jpg',
-    'Auricular c/mic bluetooth HS-M900BT Genius',
-    31.06,
-    true,
-    'auriculares',
-    true,
-    'https://mendohardware.com.ar/tienda/product/auricular-c-mic-bluetooth-hs-m900bt-genius/',
-);*/
 const auriGeniusHs200c = new Products(
     'geniusHs200C.jpg',
     'Auricular c/mic HS-200C Genius (PC-doble jack)',
@@ -110,15 +100,6 @@ const fuenteATX550WPerf = new Products(
     false,
     'https://mendohardware.com.ar/tienda/product/fuente-atx-550w-satax4-perfonmance/',
 );
-/*const fuenteATX600WCX = new Products(
-    'fuenteATX600WCX.jpg',
-    'Fuente ATX 600W sataX4 CX',
-    48.49,
-    true,
-    'fuentes',
-    false,
-    'https://mendohardware.com.ar/tienda/product/fuente-atx-600w-satax4-cx/',
-);*/
 const fuenteSlim600WCX = new Products(
     'fuenteSlim600WCX.jpeg',
     'Fuente Slim 600W sataX4 p/GabSlim CX',
@@ -205,17 +186,6 @@ const mouLogitechM110 = new Products(
     'https://mendohardware.com.ar/tienda/product/mouse-usb-silencioso-m110-logitech-rojo/',
 );
 
-// CATEGORIA PARLANTES
-/*const geniusHf280 = new Products(
-    'parlanteGeniusHF280.png',
-    'Parlantes 2.0 USB Genius 6w SP-HF280',
-    30.46,
-    true,
-    'parlantes',
-    false,
-    'https://mendohardware.com.ar/tienda/product/parlantes-2-0-usb-genius-6w-sp-hf280/',
-);*/
-
 // CATEGORIA TECLADOS
 const gigabyteKm6300 = new Products(
     'kitGigabyte.webp',
@@ -226,15 +196,6 @@ const gigabyteKm6300 = new Products(
     true,
     'https://mendohardware.com.ar/tienda/product/tecmou-usb-ingles-gigabyte-km6300/',
 );
-/*const tecladoGameMaxK207 = new Products(
-    'tecladoGameMaxK207.webp',
-    'Teclado Usb Español K207 GameMax',
-    27.05,
-    true,
-    'teclados',
-    false,
-    'https://mendohardware.com.ar/tienda/product/teclado-usb-espanol-k207-gamemax/',
-);*/
 const tecladoNumGenius110 = new Products(
     'tecladoNumPadGenius110.jpg',
     'Teclado Numeral Usb NumPad110 Genius',
