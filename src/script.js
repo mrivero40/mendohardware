@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 1025;
+const dolarCot = 1055;
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);
@@ -46,28 +46,28 @@ function navigation() {
 
 // IMPLEMENTACION DE PRECIOS CALCULADOS PARA PROMOS PRINCIPALES DEL HOME
 
-// NOTEBOOK 15.6" LENOVO TBOOK I5-12VA GENERACION
+// Notebook 15.6" Asus X515 I3-11VA Generación
 renderHomePrice({
-    pricesCont: spanPriceLenovoI5,
-    pricesDues6: spanDuesLenovoI5,
-    pricesUSD: 1117.305,
-    pricesTF: spanPricesTFLenovoI5,
+    pricesCont: spanPriceNotLeft,
+    pricesDues6: spanDuesNotLeft,
+    pricesUSD: 631.18,
+    pricesTF: spanPriceTotalNotLeft,
 });
 
 
 // NOTEBOOK 15.6" HP G250 G9 Intel I3-12VA GENERACION
 renderHomePrice({
-    pricesCont: spanPriceHP250,
-    pricesDues6: spanDuesHP250,
-    pricesUSD: 1036.16,
-    pricesTF: spanPricesTFHP250,
+    pricesCont: spanPriceNotRight,
+    pricesDues6: spanDuesNotRight,
+    pricesUSD: 809.38,
+    pricesTF: spanPricesTotalNotRight,
 });
 
 // PARAMETROS DONDE SE RENDERIZA EN HTML LOS PRECIOS CALCULADOS
 function renderHomePrice({pricesCont, pricesDues6, pricesUSD, pricesTF}) {
     const pricePayment = (dolarCot * pricesUSD).toFixed(0);
-    const price6 = ((pricePayment * 1.2) / 6).toFixed(0);
-    const priceTF = (pricePayment * 1.2).toFixed(0);
+    const price6 = ((pricePayment * 1.25) / 6).toFixed(0);
+    const priceTF = price6 * 6;
     
     pricesCont.innerText = `$${formatPrice(pricePayment)}`;    
     pricesDues6.innerText = `$${formatPrice(price6)}*`;    

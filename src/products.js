@@ -111,24 +111,6 @@ const fuenteSlim600WCX = new Products(
 );
 
 // CATEGORIA MEMORIAS FLASH
-const usbSandisk32UltraShift = new Products(
-    'usbSandisk32gbUltraShift.jpg',
-    'Pen Drive usb 32gb UltraShift Sandisk',
-    20.25,
-    true,
-    'memorias flash',
-    false,
-    'https://mendohardware.com.ar/tienda/product/pen-drive-usb-32gb-ultrashift-sandisk/',
-);
-const usbSandisk64UltraShift = new Products(
-    'usbSandisk64gbUltraShift.jpg',
-    'Pen Drive usb 64gb UltraShift Sandisk',
-    28.8,
-    true,
-    'memorias flash',
-    false,
-    'https://mendohardware.com.ar/tienda/product/pen-drive-usb-64gb-ultrashift-sandisk/',
-);
 const usbKingston32gbC = new Products(
     'kingstonDT7032Gb.jpg',
     'Pen Drive usb-C 32gb DT70 Kingston',
@@ -137,15 +119,6 @@ const usbKingston32gbC = new Products(
     'memorias flash',
     false,
     'https://mendohardware.com.ar/tienda/product/pen-drive-usb-c-32gb-dt70-kingston/',
-);
-const microSdSandisk32gb = new Products(
-    'microSd32gbSandisk.webp',
-    'Micro Sd 32gb c/adap clase10 Sandisk',
-    17,
-    true,
-    'memorias flash',
-    true,
-    'https://mendohardware.com.ar/tienda/product/micro-sd-32gb-c-adap-clase10-sandisk/',
 );
 
 // CATEGORIA MOUSES
@@ -164,7 +137,7 @@ const mouGeniusScorpion = new Products(
     33.76,
     true,
     'mouses',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/mouse-gamer-scorpion-m8-610-genius/',
 );
 const mouGenius = new Products(
@@ -240,7 +213,7 @@ const botellaBrohter60bkBt5001 = new Products(
     58.56,
     true,
     'tintas',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-60bkbt5001-brother-original-packx4/',
 );
 const botellaBrotherBt6001Bt5001 = new Products(
@@ -249,20 +222,11 @@ const botellaBrotherBt6001Bt5001 = new Products(
     58.56,
     true,
     'tintas',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-bt6001bt5001-brother-original-packx4/',
 );
 
 // CATEGORIA TONER
-const tonerAlterBrotherTn1060 = new Products(
-    'tonerAlterTn1060.jpg',
-    'Tóner Alternativo p/Brother TN1060 Tecnovibe',
-    18.40,
-    true,
-    'tóner',
-    true,
-    'https://mendohardware.com.ar/tienda/product/toner-alternativo-p-brother-tn1060-tecnovibe/',
-);
 const tonerAlterBrotherTn660 = new Products(
     'tonerAlterTn660.jpg',
     'Tóner Alternativo p/Brother TN660/2340/2370 GTC',
