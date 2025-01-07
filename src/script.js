@@ -3,7 +3,7 @@
 
 // IMPORTACIONES DESDE OTROS ARCHIVOS
 
-//import info from './products.js';
+import { productsPromo, productsCategory, searchCategory } from './products.js';
 import { registerImg } from './lazy.js';
 
 
