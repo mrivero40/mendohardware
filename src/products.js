@@ -39,15 +39,6 @@ function searchCategory(category) {
 // LISTA DE PRODUCTOS - PRODUCTS LIST
 
 // CATEGORIA AURICULARES
-const msiGh30 = new Products(
-    'auricularMsiGamer.png',
-    'Auricular c/mic Gamer Inmerse Gh30 Msi',
-    76.83,
-    true,
-    'auriculares',
-    true,
-    'https://mendohardware.com.ar/tienda/product/auricular-c-mic-gamer-inmerse-gh30-msi/',
-);
 const auriGenius04S = new Products(
     'geniusHs04S.jpg',
     'Auricular c/mic HS-04S Genius (single jack)',
@@ -79,7 +70,6 @@ const usbWifiPerfonmance = new Products(
 );
 
 // CATEGORIA DISCOS SOLIDOS
-
 const kinstong240 = new Products(
     'ssd240a400Kingston.jpg',
     'Disco Sólido SATA 240gb Kingston',
@@ -91,15 +81,6 @@ const kinstong240 = new Products(
 );
 
 // CATEGORIA FUENTES
-const fuenteATX550WPerf = new Products(
-    'fuenteATX550WPerf.jpg',
-    'Fuente ATX 550W sataX4 Perfonmance',
-    42.47,
-    true,
-    'fuentes',
-    false,
-    'https://mendohardware.com.ar/tienda/product/fuente-atx-550w-satax4-perfonmance/',
-);
 const fuenteSlim600WCX = new Products(
     'fuenteSlim600WCX.jpeg',
     'Fuente Slim 600W sataX4 p/GabSlim CX',
@@ -155,7 +136,7 @@ const mouLogitechM110 = new Products(
     20.22,
     true,
     'mouses',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/mouse-usb-silencioso-m110-logitech-rojo/',
 );
 
@@ -227,15 +208,6 @@ const botellaBrotherBt6001Bt5001 = new Products(
 );
 
 // CATEGORIA TONER
-const tonerAlterBrotherTn660 = new Products(
-    'tonerAlterTn660.jpg',
-    'Tóner Alternativo p/Brother TN660/2340/2370 GTC',
-    22.38,
-    true,
-    'tóner',
-    false,
-    'https://mendohardware.com.ar/tienda/product/toner-alternativo-p-brother-tn660-2340-2370-gtc/',
-);
 const tonerAlterBrotherTn580 = new Products(
     'tonerAlterTn660.jpg',
     'Tóner Alternativo p/Brother TN580/650 GTC',
@@ -256,7 +228,6 @@ const tonerAlterHp255A = new Products(
 );
 
 // CATEGORIA VARIOS
-
 const powerBank2600TRV = new Products(
     'powerBank2600mahTRV.jpg',
     'Cargador Portátil 2600mah TRV',

@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 1080;
+const dolarCot = 1082;
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);
@@ -55,7 +55,7 @@ renderHomePrice({
 });
 
 
-// NOTEBOOK 15.6" HP G250 G9 Intel I3-12VA GENERACION
+// Notebook 15.6" Asus X515 I5-11VA Generación 
 renderHomePrice({
     pricesCont: spanPriceNotRight,
     pricesDues6: spanDuesNotRight,
@@ -70,8 +70,8 @@ function renderHomePrice({pricesCont, pricesDues6, pricesUSD, pricesTF}) {
     const priceTF = price6 * 6;
     
     pricesCont.innerText = `$${formatPrice(pricePayment)}`;    
-    pricesDues6.innerText = `$${formatPrice(price6)}*`;    
-    pricesTF.innerText = `$${formatPrice(priceTF)}`;
+    //pricesDues6.innerText = `$${formatPrice(price6)}*`;    
+    //pricesTF.innerText = `$${formatPrice(priceTF)}`;
 };
 
 /*
