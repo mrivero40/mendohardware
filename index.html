@@ -398,7 +398,8 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const script = document.getElementById('script');
-        script.src = `./src/script.js?v=${new Date().getTime()}`;
+        script.src = `./src/main.js?v=${new Date().getTime()}`;
+        
         const scriptProducts = document.getElementById('scriptProducts');
         scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
       });
