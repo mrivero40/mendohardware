@@ -48,8 +48,8 @@
           <ul class="nav-center">
             <li class="nav-item-img">
               <figure>
-                <a href="https://mrivero40.github.io/mhgame/" target="_blank" rel="noopener noreferrer" alt="Ir a un juego en una nueva ventana" title="Juego MH game (Github Pages)" tabindex="1">
-                  <img src="https://mendohardware.com.ar/img/logoMhLargo.png" alt="logo Mendohardware Computación" title="Mendohardware Computación" tabindex="0">
+                <a href="#" alt="navega al inicio" title="inicio web">
+                  <img src="https://mendohardware.com.ar/img/logoMhLargo.png" alt="logo Mendohardware Computación" title="Mendohardware Computación"/>
                 </a>
               </figure>
             </li>          
@@ -205,51 +205,51 @@
 
           <div class="flex-container-notebooks">
 
-            <div class="flex-item flex-item-left">
+            <div class="flex-item">            
               <figure>
                 <img src="https://mendohardware.com.ar/img/X515EA-EJ312W.png" alt="Notebook 15.6 Pulgadas Asus X515 I3-11VA Generación" loading="lazy">     
               </figure>
-              <div>         
-                <p class="text-description">
+              <div>
+                <h2 class="text-description">
                   Notebook 15.6" Asus X515 I3-11VA Generación
-                </p>
-                <p class="text-detail">
+                </h2>
+                <h3 class="text-detail">
                   I3-1115G4 | DDR4 8GB + SLOT | SSD NVME 256GB | 15.6" FHD | SATA DISPONIBLE | BLUETOOTH | WIFI 5 | WEBCAM | TECLADO ESPAÑOL C/NUMERAL | WINDOWS 11 HOME
-                </p>
+                </h3>
                 
                 <p class="text-price">
-                  1 pago -> <span id="spanPriceNotLeft">Consultar</span>
+                  1 pago <span id="spanPriceNotLeft">Consultar</span>
                 </p>
                 <p class="text-price">
-                  6 cuotas -> <span id="spanDuesNotLeft">Consultar</span>
-                </p>            
+                  6 cuotas <span id="spanDuesNotLeft">Consultar</span>
+                </p>
                 <p>
-                  Precio Total Financiado (PTF) <span id="spanPriceTotalNotLeft">Consultar</span>
-                </p>              
-              </div>
+                  Precio Total Financiado (PTF): <span id="spanPriceTotalNotLeft">Consultar</span>
+                </p>
+              </div>            
             </div>
 
-            <div class="flex-item flex-item-center">
+            <div class="flex-item">
               <figure>
                 <img src="https://mendohardware.com.ar/img/X515EA-EJ4327W-I5.png" alt="Notebook 15.6 Pulgadas Asus X515 I5-11VA Generación" loading="lazy">
               </figure>            
-              <div>                
-                <p class="text-description">
+              <div>
+                <h2 class="text-description">
                   Notebook 15.6" Asus X515 I5-11VA Generación
-                </p>
-                <p class="text-detail">
-                  I5-1135G7 | DDR4 8GB + SLOT | SSD NVME 256GB | 15.6" FHD | SATA DISPONIBLE | BLUETOOTH | WIFI 5 | WEBCAM | TECLADO COMPLETO ESPAÑOL | WINDOWS 11 HOME<span id="spanTFCenter"></span>
-                </p>
+                </h2>
+                <h3 class="text-detail">
+                  I5-1135G7 | DDR4 8GB + SLOT | SSD NVME 256GB | 15.6" FHD | SATA DISPONIBLE | BLUETOOTH | WIFI 5 | WEBCAM | TECLADO COMPLETO ESPAÑOL | WINDOWS 11 HOME
+                </h3>
                 
                 <p class="text-price">
-                  1 pago -> <span id="spanPriceNotRight">Consultar</span>
+                  1 pago <span id="spanPriceNotRight">Consultar</span>
                 </p>
                 <p class="text-price">
-                  6 cuotas -> <span id="spanDuesNotRight">Consultar</span>
-                </p>               
+                  6 cuotas <span id="spanDuesNotRight">Consultar</span>
+                </p>
                 <p>
-                  * Precio Total Financiado (PTF) <span id="spanPricesTotalNotRight"> Consultar</span>
-                </p>                
+                  Precio Total Financiado (PTF): <span id="spanPricesTotalNotRight"> Consultar</span>
+                </p>
               </div>
             </div>
 
@@ -391,7 +391,7 @@
 
       </div>      
 
-      <p class="pCredits">© Copyrigth derechos reservados a Mendohardware Computación 2024 | Dev @mrivero40 (Github - Matias Ezequiel Rivero)</p>
+      <p class="pCredits">© Copyrigth derechos reservados a Mendohardware Computación 2025 | Dev @mrivero40 (Github - Matias Ezequiel Rivero)</p>
 
     </footer>
 
@@ -399,7 +399,7 @@
       document.addEventListener('DOMContentLoaded', () => {
         const script = document.getElementById('script');
         script.src = `./src/main.js?v=${new Date().getTime()}`;
-        
+
         const scriptProducts = document.getElementById('scriptProducts');
         scriptProducts.src = `./src/products.js?v=${new Date().getTime()}`;
       });

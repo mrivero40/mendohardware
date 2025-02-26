@@ -382,16 +382,18 @@ main .section-hot-notebooks .flex-container-notebooks .flex-item div {
 
 main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-description {
   font-size: var(--fontStandard);
-  font-weight: bold;
   color: var(--orangeSecondary);
+  font-weight: bold;
   text-align: start;
+  margin-block-end: 1.6rem;
 }
 
-main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-detail, main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-detail span {
+main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-detail {
   font-size: var(--fontSmall);
   color: var(--whitePrimary);
+  font-weight: var(--fontWeightnormal);
   line-height: 1.4;
-  text-align: start;
+  text-align: start;  
 }
 
 main .section-hot-notebooks .flex-container-notebooks .flex-item div .text-price {
