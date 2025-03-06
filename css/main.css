@@ -481,7 +481,7 @@ main .section-hot-notebooks .text-conditions {
   width: 15rem;
   height: 15rem;
   border-radius: 2rem;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   text-align: center;
   color:var(--blackPrimary);
   font-size: var(--fontSecondary);
