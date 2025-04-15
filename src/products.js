@@ -69,17 +69,6 @@ const usbWifiPerfonmance = new Products(
     'https://mendohardware.com.ar/tienda/product/wifi-usb-300mbps-2-4ghz-realtek8192-perfonmance/',
 );
 
-// CATEGORIA DISCOS SOLIDOS
-const kinstong240 = new Products(
-    'ssd240a400Kingston.jpg',
-    'Disco Sólido SATA 240gb Kingston',
-    48.17,
-    true,
-    'discos sólidos',
-    true,
-    'https://mendohardware.com.ar/tienda/producto/disco-solido-sata-240gb-a400-kingston/',
-);
-
 // CATEGORIA FUENTES
 const fuenteSlim600WCX = new Products(
     'fuenteSlim600WCX.jpeg',
@@ -87,7 +76,7 @@ const fuenteSlim600WCX = new Products(
     53.09,
     true,
     'fuentes',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/fuente-slim-600w-satax4-p-gabslim-cx/',
 );
 
@@ -156,55 +145,8 @@ const tecladoNumGenius110 = new Products(
     20.86,
     true,
     'teclados',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/teclado-numeral-usb-numpad110-genius/',
-);
-
-// CATEGORIA TINTAS
-const botellaEpsonT544 = new Products(
-    'epsonT544.png',
-    'Botellas de Tinta T544 Epson original packX4',
-    187.5,
-    true,
-    'tintas',
-    true,
-    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-t544-epson-original-packx4/',
-);
-const botellaEpsonT664 = new Products(
-    'EpsonT664.jpg',
-    'Botella de Tinta T664 Epson original packX4',
-    187.5,
-    true,
-    'tintas',
-    true,
-    'https://mendohardware.com.ar/tienda/producto/botellas-de-tinta-t664-epson-original-packx4-2/'
-);
-const botellaBrotherBT5001 = new Products(
-    'botellaBrotherBT5001.webp',
-    'Botellas de Tinta BT5001 Brother original c/u',
-    14,
-    true,
-    'tintas',
-    false,
-    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-bt5001-brother-original-c-u/',
-);
-const botellaBrohter60bkBt5001 = new Products(    
-    'brother60bk-bt5001pack.jpg',
-    'Botellas de Tinta 60BK+BT5001 Brother original packX4',
-    58.56,
-    true,
-    'tintas',
-    true,
-    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-60bkbt5001-brother-original-packx4/',
-);
-const botellaBrotherBt6001Bt5001 = new Products(
-    'bt6001-bt5001-x4.jpeg',
-    'Botellas de Tinta BT6001+BT5001 Brother original packX4',
-    58.56,
-    true,
-    'tintas',
-    true,
-    'https://mendohardware.com.ar/tienda/product/botellas-de-tinta-bt6001bt5001-brother-original-packx4/',
 );
 
 // CATEGORIA TONER
@@ -234,7 +176,7 @@ const powerBank2600TRV = new Products(
     16.94,
     true,
     'varios',
-    false,
+    true,
     'https://mendohardware.com.ar/tienda/product/cargador-portatil-2600mah-trv/',
 );
 const cargadorInalambricoT1000 = new Products(

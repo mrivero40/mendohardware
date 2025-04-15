@@ -9,7 +9,7 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 1082;
+const dolarCot = 1200; // COTIZACION DEL DOLAR EN PESOS ARGENTINOS (ejemplo).
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);
