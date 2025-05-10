@@ -171,8 +171,8 @@ header .nav-important-news > form > button:hover {
 
 main .container-home {
   width: 100%;
-  height: 100vh;
-  max-height: 78rem;
+  height: calc(100dvh - 10rem);
+  max-height: 70rem;
   margin: auto;
   margin-block-end: 8rem;
   background: url(https://mendohardware.com.ar/img/backgroundHome.webp) no-repeat fixed center center;  
@@ -237,11 +237,16 @@ main .container-home h2 {
   color: var(--orangeSecondary);
 }
 
-main .container-home p {
-  width: 88%;
+main .container-home h3 {
+  width: 80%;
   margin: 0 auto;
   font-size: var(--fontSecondary);
   color: var(--grayPrimary);
+  line-height: 1.3;
+}
+
+main .container-home h3 span {
+  color: var(--orangeSecondary);
 }
 
 main .container-home .home-categories-container {
@@ -282,7 +287,7 @@ main .container-home .home-categories-container figure figcaption {
 
 .warranty-container {
   width: 100%;
-  margin: 0 auto 4.8rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
 }
@@ -291,6 +296,7 @@ main .container-home .home-categories-container figure figcaption {
   width: auto;
   height: 6rem;
   padding: 1.6rem 2rem;
+  margin-block-end: 4.8rem;
   font-size: var(--fontSmall);
   display: flex;
   align-items: center;
@@ -307,18 +313,6 @@ main .container-home .home-categories-container figure figcaption {
 
 .warranty-element h3 {
   text-align: center;
-}
-
-.container-home .text-phrase {
-  width: 100%;
-  height: auto;
-  padding-block-end: .8rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-style: italic;
-  color: var(--whitePrimary);
-  font-size: var(--fontStandard);  
 }
 
 
@@ -769,10 +763,6 @@ footer p {
   .warranty-element span img {
     margin-inline-end: 0;
     width: 100%;
-  }
-
-  .container-home .text-phrase {
-    width: 92%;
   }
 
 
