@@ -172,7 +172,6 @@ header .nav-important-news > form > button:hover {
 main .container-home {
   width: 100%;
   height: calc(100dvh - 10rem);
-  max-height: 70rem;
   margin: auto;
   margin-block-end: 8rem;
   background: url(https://mendohardware.com.ar/img/backgroundHome.webp) no-repeat fixed center center;  
@@ -182,16 +181,19 @@ main .container-home {
 main .container-filter {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: rgba(0, 0, 0, .7);
 }
 
 main .container-home .container-title-wapp {
   width: 88%;
-  margin: auto;
+  margin-block: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 2.4rem;
 }
 
 main .container-home .container-title-wapp .title-text {
@@ -231,18 +233,16 @@ main .container-home .container-title-wapp div figure a img {
 
 main .container-home h2 {
   width: 88%;
-  margin: 0 auto;
-  margin-block-end: 1.6rem;
   font-size: var(--fontPrimary);
   color: var(--orangeSecondary);
 }
 
 main .container-home h3 {
   width: 80%;
-  margin: 0 auto;
+  margin-block: 1.6rem;
   font-size: var(--fontSecondary);
   color: var(--grayPrimary);
-  line-height: 1.3;
+  line-height: 1.6;
 }
 
 main .container-home h3 span {
@@ -252,7 +252,6 @@ main .container-home h3 span {
 main .container-home .home-categories-container {
   width: 100%;
   height: 18.8rem;
-  margin-block: 3rem;
   background-color: rgba(6,6,7,.6);
   display: flex;
   justify-content: space-evenly;
@@ -287,16 +286,14 @@ main .container-home .home-categories-container figure figcaption {
 
 .warranty-container {
   width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
 }
 
 .warranty-element {
-  width: auto;
+  width: 25%;
   height: 6rem;
   padding: 1.6rem 2rem;
-  margin-block-end: 4.8rem;
   font-size: var(--fontSmall);
   display: flex;
   align-items: center;
@@ -744,11 +741,8 @@ footer p {
 
   .warranty-container {
     width: 92%;
+    margin-block: 1.6rem;
     justify-content: space-between;
-  }
-
-  .warranty-element {
-    width: 30%;
   }
   
   .warranty-element h3 {
@@ -758,6 +752,7 @@ footer p {
 
   .warranty-element span {
     width: 16%;
+    min-width: 2.4rem;
   }
 
   .warranty-element span img {
@@ -916,6 +911,10 @@ footer p {
     height: 9.2rem;
   }
 
+  .warranty-element {
+    width: 32%;
+  }
+
 
   /* SECTION HOT NOTEBOOKS - MEDIA QUERY 768PX */
 
@@ -1014,6 +1013,11 @@ footer p {
     width: 22rem;
   }
 
+  main .container-home h2 {
+    width: 98%;
+    text-align: center;
+  }
+
   main .container-home .warranty-container {
     flex-direction: column;
     width: 98%;
@@ -1022,7 +1026,7 @@ footer p {
 
   main .container-home .warranty-element {
     width: 90%;
-    margin-block-end: 1.6rem;
+    margin-block: .8rem;
   }
 
   main .container-home .warranty-element span {
