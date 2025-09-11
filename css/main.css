@@ -171,7 +171,6 @@ header .nav-important-news > form > button:hover {
 
 main .container-home {
   width: 100%;
-  height: calc(100dvh - 10rem);
   margin: auto;
   margin-block-end: 8rem;
   background: url(https://mendohardware.com.ar/img/backgroundHome.webp) no-repeat fixed center center;  
@@ -288,6 +287,7 @@ main .container-home .home-categories-container figure figcaption {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-block: 1.6rem;
 }
 
 .warranty-element {
