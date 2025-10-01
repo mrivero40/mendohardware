@@ -9,7 +9,22 @@ import { registerImg } from './lazy.js';
 
 // UTIL GENERALES
 
-const dolarCot = 1200; // COTIZACION DEL DOLAR EN PESOS ARGENTINOS (ejemplo).
+const dolarCot = 1350; // COTIZACION DEL DOLAR EN PESOS ARGENTINOS (ejemplo).
+
+// EVENT NAVBAR SCROLL
+
+let lastScroll = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > lastScroll && currentScroll > 40) {
+        header.classList.add('header-hidden');
+    } else {
+        header.classList.remove('header-hidden');
+    };
+    lastScroll = currentScroll;
+});
 
 window.addEventListener('load', function() {
     renderProducts(productsPromo);
